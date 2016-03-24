@@ -1,0 +1,32 @@
+[
+    {
+      "name":"PubMed",
+      "system":"PMID",
+      "uri_prefix":"http://www.ncbi.nlm.nih.gov/pubmed/"
+    },
+    {
+      "name":"arXiv.org: e-print archive",
+      "system":"arXiv",
+      "uri_prefix":"http://arxiv.org/abs/"
+    },
+    {
+      "name":"Digital object identifier",
+      "system":"DOI",
+      "uri_prefix":"https://doi.org/"
+    },
+    {
+      "name":"European persistent identifier consortium",
+      "system":"ePIC",
+      "uri_prefix":"http://hdl.handle.net/"
+    },
+    {
+      "name":"Handle persistent identifier",
+      "system":"handle",
+      "uri_prefix":"http://hdl.handle.net/"
+    },
+    {
+      "name":"International standard book number",
+      "system":"ISBN",
+      "uri_prefix": null
+    }
+]
