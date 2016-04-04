@@ -25,8 +25,7 @@ if __name__ == "__main__":
     if os.path.exists(args.csv_input):
         # read CSV file and convert into vocabulary dictionary
         csv_f = open(args.csv_input, 'r')
-        #voc_dict = {'name': args.voc_name, 'keywords': []}
-        voc_list = []
+        voc_dict = {}
         row_id = 0
         for row in csv.reader(csv_f, delimiter=args.delimiter):
             row_id += 1
@@ -35,9 +34,27 @@ if __name__ == "__main__":
                 continue
             ref = row[-1]
             key = args.delimiter.join(row[:-1])
-            #voc_dict['keywords'].append( {'keyword':key, 'id':ref} )
-            voc_list.append( {'keyword':key, 'id':ref} )
+            voc_dict[ref] = key
         csv_f.close()
+
+        # looping over voc_dict to update 'keyword' with hierarchy
+        voc_list = []
+        for id, k in voc_dict.iteritems():
+            id_fields = id.split('.')
+            for i in reversed(range(0, len(id_fields)-1)):
+
+                # find the voc with match branch id
+                branch_id = '.'.join(id_fields[0:i+1])
+
+                try:
+                    k = '%s;%s' % (voc_dict[branch_id], k)
+                except KeyError as e:
+                    sys.stderr.write('warning: expected branch not found: %s' % branch_id)
+
+            voc_list.append( {'keyword': k, 'id': id} )
+
+        # sort voc_list by ID
+        voc_list.sort(key=lambda x:x['id'])
 
         # dump vocabulary dictionary into JSON file
         json_f = open(args.json_output, 'w')
