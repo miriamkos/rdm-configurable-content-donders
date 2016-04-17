@@ -1,6 +1,5 @@
 {
   "duas": [
-      {"id": "CC-BY-4.0-utf8-test", "name": "資料使用同意書",                                                             "path": "CC-BY-4.0.txt"},
       {"id": "CC-BY-4.0",           "name": "CreativeCommons Attribution 4.0 International",                              "path": "CC-BY-4.0.txt"},
       {"id": "CC-BY-ND-4.0",        "name": "CreativeCommons Attribution-NoDerivatives 4.0 International",                "path": "CC-BY-ND-4.0.txt"},
       {"id": "CC-BY-SA-4.0",        "name": "CreativeCommons Attribution-ShareAlike 4.0 International",                   "path": "CC-BY-SA-4.0.txt"},
