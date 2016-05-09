@@ -201,6 +201,7 @@
   "editCollectionModal.userSearchFormPanel.userSearchOrganisationalUnit" : "",
   "editCollectionModal.userSearchFormPanel.userSearchOrganisationalUnitLabel" : "",
   "editCollectionModal.userSearchFormPanel.userSearchSearchString" : "",
+  "navbar.helpButton" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md",
   "otp.header-label" : "",
   "otp.otp" : "",
   "otp.userName" : ""
