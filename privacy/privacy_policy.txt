@@ -1,0 +1,31 @@
+# DI RDM Privacy Policy
+
+Personal data are stored in the Donders Institute (DI) Research Data Management (RDM) repository (in the following, called the service), and this privacy policy describes how these data are handled.
+
+The service is provided by the Donders Institute for Brain, Cognition and Behaviour (Kapittelweg 29, 6525 EN Nijmegen, The Netherlands), which belongs to the Radboud University.
+
+The service will store different types of personal data, and it is useful to distinguish between two types: (a) personal data obtained from your home organization (typically, via your home organization's identity provider), and (b) personal data pertaining to your interaction with the service.
+
+The following stored personal data are obtained from your home organization:
+1. Your name (given name and surname)
+2. Your home organization's name
+3. The personal identifier assigned to you by your home organization
+4. The email address given to you by your home organization 
+
+The following stored personal data pertain to your interaction with the service:
+1. The collections to which you have been added and removed in a particular role, and when this has happened
+2. Changes (add, delete, modify) you have made to a collection's files and/or attributes, and when this has happened
+
+The stored personal data are not accessible unless this is required for the objectives of the service. These objectives are the following:
+1. Data preservation for internal (DI) reuse
+2. Research documentation for increasing the reproducibility of published results
+3. Data sharing with the external scientific community
+
+Personal data are only accessible to users that need this information to realize the service's objectives. This is realized via a role-dependent authorization policy that determines which information is displayed.
+
+Personal data are stored for as long as is required for the objectives of the service. If collections are deleted, then also the associated personal data (pertaining to the interactions of the users with these collections) are deleted.
+
+This privacy policy is in agreement with the GEANT Data Protection Code of Conduct (http://www.geant.net/uri/dataprotection-code-of-conduct/v1, Version 1.0, 14 June 2013)
+
+
+
