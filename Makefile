@@ -12,6 +12,8 @@ JSON_FILES=$(wildcard dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_
 #constant
 VERSION:=master
 
+
+
 #targets
 .PHONY: build validate_json dist
 
