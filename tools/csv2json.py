@@ -11,7 +11,6 @@ if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description='Convert vocabulary keywords from CSV to JSON format')
 
-    parser.add_argument('voc_name', help='name of the vocabulary')
     parser.add_argument('csv_input', help='path to the input CSV file in which vocabulary keywords are defined')
     parser.add_argument('json_output', help='path to the output JSON file')
     parser.add_argument('-d', '--delimiter',
