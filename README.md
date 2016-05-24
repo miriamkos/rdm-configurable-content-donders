@@ -5,27 +5,27 @@ Repository for managing DI-specific controlled vocabularies, naming schemes and 
 
 1. download the repository
 
-```bash
-$ git clone https://github.com/donders-research-data-management/rdm-ontology
-```
+  ```bash
+  $ git clone https://github.com/donders-research-data-management/rdm-ontology
+  ```
 
 2. convert contents into proper format for CMS.
 
-```bash
-$ cd rdm-ontology
-$ make build
-```
+  ```bash
+  $ cd rdm-ontology
+  $ make build
+  ```
 
 3. validate JSON file against schema
 
-Note: for the moment, the actual validation is not implemented yet.
+  Note: for the moment, the actual validation is not implemented yet.
 
-```bash
-$ make validate_json
-```
+  ```bash
+  $ make validate_json
+  ```
 
 4. create distribution tarball
 
-```bash
-$ make dist
-```
+  ```bash
+  $ make dist
+  ```
