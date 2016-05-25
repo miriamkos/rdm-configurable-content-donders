@@ -1,5 +1,8 @@
 {
   "collections.header" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Collections",
+  
+  "addCollection.createCollectionForm.createManagerLabel" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Manager",
+  
   "editCollectionModal.form.abstractDescription" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Abstract",
   "editCollectionModal.form.abstractDescriptionLabel" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Abstract",
   "editCollectionModal.form.dataUseAgreementLabel" : "http://donders-institute.github.io/rdm-wiki/en/#!guides/sharing.md",
