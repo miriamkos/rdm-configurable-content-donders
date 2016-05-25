@@ -18,14 +18,20 @@ Repository for managing DI-specific controlled vocabularies, naming schemes and 
 
 3. validate JSON file against schema
 
-  Note: for the moment, the actual validation is not implemented yet.
-
   ```bash
   $ make validate_json
   ```
+  
+  For validating JSON document, a _schema_ file describing the [JSON schema](http://json-schema.org) the document follows should be provided.  The schema file should be in the same directory as the JSON document.  It should also be named with a prefix the same as the JSON document; and `.schema` as its file extension.
 
 4. create distribution tarball
 
   ```bash
   $ make dist
+  ```
+  
+5. or, install right into the `$(INSTALL_PREFIX)` defined in the `Makefile`
+
+  ```bash
+  $ make install
   ```
