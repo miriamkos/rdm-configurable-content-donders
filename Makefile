@@ -1,39 +1,53 @@
 #files to be included in the distribution
 DUA=$(wildcard dua/*)
-COLL_KEYWORDS=$(patsubst %.csv,%,$(wildcard vocabulary/collection_keyword/*.csv))
+COLL_KEYWORDS=$(patsubst %.csv,%.json,$(wildcard vocabulary/collection_keyword/*.csv))
 VOC_ETHICAL_REVIEW_BOARD=vocabulary/ethics_review_board.json
 VOC_PUBLICATION_SYSTEM=vocabulary/publication_system.json
 CMS_HELP_INDEX=cms_help_index.json
-CMS_SNIPPETS_MD=$(patsubst %.md,%,$(wildcard privacy/*.md))
+CMS_SNIPPETS_MD=$(patsubst %.md,%.html,$(wildcard privacy/*.md))
 
 #list of JSON files subject for validation
-JSON_FILES=$(wildcard dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_HELP_INDEX) $(patsubst %,%.json,$(COLL_KEYWORDS)) 
+JSON_FILES=$(wildcard dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_HELP_INDEX) $(COLL_KEYWORDS)
+
+#list of files to be included in distribution or installation
+DIST_FILES=$(DUA) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_HELP_INDEX) $(CMS_SNIPPETS_MD)
 
 #constant
 VERSION:=master
-
-
+INSTALL_PREFIX:=/tmp/rdm-ontology
+DIST_TARBALL:=rdm-ontology-$(VERSION).tgz
 
 #targets
-.PHONY: build validate_json dist
+.PHONY: build dist install
 
 # convert contents into proper formats
 build: $(COLL_KEYWORDS) $(CMS_SNIPPETS_MD)
 
 $(COLL_KEYWORDS):
-	@echo "--> converting $@.csv to JSON ..."
-	@python $(shell pwd)/tools/csv2json.py $@.csv $@.json
+	@echo "--> converting keyword: $@"
+	@python $(shell pwd)/tools/csv2json.py $(patsubst %.json,%.csv,$@) $@
 
 $(CMS_SNIPPETS_MD):
-	@echo "--> converting $@.md to CMS snippet ..."
-	@python $(shell pwd)/tools/md2html.py $@.md
+	@echo "--> converting CMS snippet: $@"
+	@python $(shell pwd)/tools/md2html.py $(patsubst %.html,%.md,$@)
 
 # validate JSON files
 validate_json: $(JSON_FILES)
-
-$(JSON_FILES): build 
-	@echo "--> validating $@"
+	@$(foreach f,$(dir $(JSON_FILES)), echo "validating $(f)";)
 
 # make distribution tarball 
-dist: build
-	@tar cvzf rdm-ontology-$(VERSION).tgz $(DUA) $(patsubst %,%.json,$(COLL_KEYWORDS)) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_HELP_INDEX) $(patsubst %,%.html,$(CMS_SNIPPETS_MD))
+dist: $(DIST_TARBALL) 
+
+$(DIST_TARBALL):
+	@tar cvzf $@ $(DIST_FILES)
+
+# install
+install: build
+	$(foreach d,$(dir $(DIST_FILES)),install -d -m 0755 $(INSTALL_PREFIX)/$(d);)
+	$(foreach f,$(DIST_FILES),install -m 0644 $(f) $(INSTALL_PREFIX)/$(f);)
+
+# clean 
+clean:
+	rm -f $(DIST_TARBALL)
+	$(foreach f,$(COLL_KEYWORDS),rm -f $(f);)
+	$(foreach f,$(CMS_SNIPPETS_MD),rm -f $(f);)
