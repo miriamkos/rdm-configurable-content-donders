@@ -1,4 +1,9 @@
 {
+  "controlledVocabularies" : "https://raw.githubusercontent.com/donders-research-data-management/rdm-ontology/master/vocabulary/collection_keyword/",
+  "dataUseAgreement" : "https://raw.githubusercontent.com/donders-research-data-management/rdm-ontology/master/dua/index.json",  
+  "publicationSystems" : "https://raw.githubusercontent.com/donders-research-data-management/rdm-ontology/master/vocabulary/publication_system.json",
+  "ethicalReviewBoards" : "https://raw.githubusercontent.com/donders-research-data-management/rdm-ontology/master/vocabulary/ethics_review_board.json",
+
   "collections.header" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Collections",
   
   "addCollection.createCollectionForm.createManagerLabel" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Manager",
