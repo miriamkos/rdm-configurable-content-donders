@@ -3,6 +3,7 @@
   "dataUseAgreement" : "https://raw.githubusercontent.com/donders-research-data-management/rdm-ontology/master/dua/index.json",  
   "publicationSystems" : "https://raw.githubusercontent.com/donders-research-data-management/rdm-ontology/master/vocabulary/publication_system.json",
   "ethicalReviewBoards" : "https://raw.githubusercontent.com/donders-research-data-management/rdm-ontology/master/vocabulary/ethics_review_board.json",
+  "legal" : "http://data.donders.ru.nl/rdm-ontology/privacy/privacy_policy.html",
 
   "collections.header" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Collections",
   
