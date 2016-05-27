@@ -15,6 +15,7 @@
 			    <exclude>.project</exclude>
 			    <exclude>.idea/**</exclude>
 			    <exclude>*.xml</exclude>
+			    <exclude>target/**</exclude>
 			</excludes>
 		</fileSet>
 	</fileSets>
