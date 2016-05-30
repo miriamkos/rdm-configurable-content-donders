@@ -18,5 +18,7 @@
   "editCollectionModal.form.sfnKeywordsBorder" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#SfN keywords",
   "editCollectionModal.form.sfnKeywordsLabel" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#SfN keywords",
   "editCollectionModal.header-label" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Edit Collection",
+  "editCollectionModal.changeCollectionStateConfirmationPanel" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Collection_closure",
+  
   "navbar.helpButton" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md"
 }
