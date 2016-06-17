@@ -19,7 +19,7 @@
     <scm>
         <url>https://github.com/donders-research-data-management/rdm-ontology</url>
         <connection>scm:git:https://github.com/donders-research-data-management/rdm-ontology.git</connection>
-        <developerConnection>scm:git:https@github.com:donders-research-data-management/rdm-ontology.git</developerConnection>
+        <developerConnection>scm:git:https://github.com:donders-research-data-management/rdm-ontology.git</developerConnection>
     </scm>
 
 	<build>
