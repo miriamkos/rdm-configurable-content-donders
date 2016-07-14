@@ -10,7 +10,7 @@
 	</parent>
 	
     <artifactId>rdm-ontology</artifactId>
-	<version>1.1.0</version>	
+	<version>1.2.0-SNAPSHOT</version>	
 	<name>Resource Data Management ontology</name>
 	<description>The controlled vocabularies and other external data used within the Donders Institute Research Data Management Pilot.</description>
 	<url>https://github.com/donders-research-data-management/rdm-ontology</url>
@@ -20,7 +20,7 @@
         <url>https://github.com/donders-research-data-management/rdm-ontology</url>
         <connection>scm:git:https://github.com/donders-research-data-management/rdm-ontology.git</connection>
         <developerConnection>scm:git:https://github.com/donders-research-data-management/rdm-ontology.git</developerConnection>
-      <tag>rdm-ontology-1.1.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
 	<build>
