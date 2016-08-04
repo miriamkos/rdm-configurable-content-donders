@@ -4,6 +4,9 @@
   "publicationSystems" : "http://data.donders.ru.nl/doc/vocabulary/publication_system.json",
   "ethicalReviewBoards" : "http://data.donders.ru.nl/doc/vocabulary/ethics_review_board.json",
   "legal" : "http://data.donders.ru.nl/doc/privacy/privacy_policy.html",
+  "login" : "http://data.donders.ru.nl/doc/login/login.html",
+  "logout" : "http://data.donders.ru.nl/doc/logout/logut.html",
+  "homepage" : "http://data.donders.ru.nl/doc/homepage/homepage.html",
 
   "collections.header" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Collections",
 
