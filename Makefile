@@ -5,6 +5,7 @@ VOC_ETHICAL_REVIEW_BOARD=vocabulary/ethics_review_board.json
 VOC_PUBLICATION_SYSTEM=vocabulary/publication_system.json
 CMS_EXT_RSRC_IDX=external_urls.json
 CMS_SNIPPETS_MD=$(patsubst %.md,%.html,$(wildcard privacy/*.md))
+CMS_SNIPPETS_HTML=$(wildcard login/*.html logout/*.html homepage/*.html)
 
 #list of JSON files subject for validation
 JSON_FILES=$(wildcard dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_EXT_RSRC_IDX) $(COLL_KEYWORDS)
@@ -12,7 +13,7 @@ JSON_FILES=$(wildcard dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_
 JSON_SCHEMAS=$(wildcard $(patsubst %.json,%.schema,$(JSON_FILES)))
 
 #list of files to be included in distribution or installation
-DIST_FILES=$(DUA) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_EXT_RSRC_IDX) $(CMS_SNIPPETS_MD)
+DIST_FILES=$(DUA) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_EXT_RSRC_IDX) $(CMS_SNIPPETS_MD) $(CMS_SNIPPETS_HTML)
 
 #constant
 VERSION:=master

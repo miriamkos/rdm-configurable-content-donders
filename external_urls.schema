@@ -8,7 +8,10 @@
         "dataUseAgreement",
         "publicationSystems",
         "ethicalReviewBoards",
-        "legal"
+        "legal",
+        "login",
+        "logout",
+        "homepage"
     ],
     "properties": {
         "controlledVocabularies": { "type": "string" },
@@ -16,6 +19,9 @@
         "publicationSystems": { "type": "string" },
         "ethicalReviewBoards": { "type": "string" },
         "legal": { "type": "string" },
+        "login": { "type": "string" },
+        "logout": { "type": "string" },
+        "homepage": { "type": "string" },
         "addCollection.confirmFormPanel" : { "type": "string" },
         "addCollection.confirmFormPanel.confirmEmbargoLabel" : { "type": "string" },
         "addCollection.confirmFormPanel.confirmManagerLabel" : { "type": "string" },
@@ -31,6 +37,7 @@
         "addCollection.confirmFormPanel.quotaInBytes" : { "type": "string" },
         "addCollection.confirmFormPanel.title" : { "type": "string" },
         "addCollection.createCollectionForm" : { "type": "string" },
+        "addCollection.createCollectionForm.createManagerLabel" : { "type": "string" },
         "addCollection.createCollectionForm.createOrganisationalUnitLabel" : { "type": "string" },
         "addCollection.createCollectionForm.createPreservationTimeLabel" : { "type": "string" },
         "addCollection.createCollectionForm.createProjectIdLabel" : { "type": "string" },
@@ -94,6 +101,7 @@
         "collections.fileAccessHeader" : { "type": "string" },
         "collections.freeKeywordsKey" : { "type": "string" },
         "collections.generalHeader" : { "type": "string" },
+        "collections.header" : { "type": "string" },
         "collections.header.label" : { "type": "string" },
         "collections.header.subtitle" : { "type": "string" },
         "collections.helpUrlsConfigured" : { "type": "string" },
