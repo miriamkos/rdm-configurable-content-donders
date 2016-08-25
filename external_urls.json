@@ -7,6 +7,8 @@
   "login" : "http://data.donders.ru.nl/doc/login/login.html",
   "logout" : "http://data.donders.ru.nl/doc/logout/logout.html",
   "homepage" : "http://data.donders.ru.nl/doc/homepage/homepage.html",
+  "emailCollectionChangesLeadText" : "http://data.donders.ru.nl/doc/email/collectionChangesLeadText.html",
+  "emailManagerLessCollectionsLeadText" : "http://data.donders.ru.nl/doc/email/managerLessCollectionsLeadText.html",
 
   "collections.header" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Collections",
 

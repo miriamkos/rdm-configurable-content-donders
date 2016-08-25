@@ -11,7 +11,9 @@
         "legal",
         "login",
         "logout",
-        "homepage"
+        "emailCollectionChangesLeadText",
+        "emailManagerLessCollectionsLeadText",
+        "
     ],
     "properties": {
         "controlledVocabularies": { "type": "string" },
@@ -22,6 +24,8 @@
         "login": { "type": "string" },
         "logout": { "type": "string" },
         "homepage": { "type": "string" },
+        "emailCollectionChangesLeadText": { "type": "string" },
+        "emailManagerLessCollectionsLeadText": { "type": "string" },
         "addCollection.confirmFormPanel" : { "type": "string" },
         "addCollection.confirmFormPanel.confirmEmbargoLabel" : { "type": "string" },
         "addCollection.confirmFormPanel.confirmManagerLabel" : { "type": "string" },
