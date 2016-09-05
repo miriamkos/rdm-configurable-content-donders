@@ -12,8 +12,7 @@
         "login",
         "logout",
         "emailCollectionChangesLeadText",
-        "emailManagerLessCollectionsLeadText",
-        "
+        "emailManagerLessCollectionsLeadText"
     ],
     "properties": {
         "controlledVocabularies": { "type": "string" },
