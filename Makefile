@@ -18,7 +18,7 @@ DIST_FILES=$(DUA) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION
 #constant
 VERSION:=master
 INSTALL_PREFIX:=/tmp/rdm-ontology
-DIST_TARBALL:=rdm-ontology-$(VERSION).tgz
+DIST_ZIP:=rdm-ontology-$(VERSION).zip
 
 #targets
 .PHONY: build dist install $(JSON_SCHEMAS)
@@ -42,10 +42,13 @@ $(JSON_SCHEMAS):
 	@python $(shell pwd)/tools/json-validator.py $(patsubst %.schema,%.json,$@) $@
 
 # make distribution tarball 
-dist: $(DIST_TARBALL) 
+dist: $(DIST_ZIP)
+	@echo "--> checking resource availability ..."
+	@python $(shell pwd)/tools/check-external-urls.py -i $(CMS_EXT_RSRC_IDX) $(DIST_ZIP)
 
-$(DIST_TARBALL): build validate_json
-	@tar cvzf $@ $(DIST_FILES)
+$(DIST_ZIP): build validate_json
+	@echo "--> packing $(DIST_ZIP) ..."
+	@zip $@ $(DIST_FILES)
 
 # install
 install: build validate_json
@@ -54,6 +57,6 @@ install: build validate_json
 
 # clean 
 clean:
-	rm -f $(DIST_TARBALL)
+	rm -f $(DIST_ZIP)
 	$(foreach f,$(COLL_KEYWORDS),rm -f $(f);)
 	$(foreach f,$(CMS_SNIPPETS_MD),rm -f $(f);)
