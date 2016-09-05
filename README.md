@@ -9,29 +9,16 @@ Repository for managing DI-specific controlled vocabularies, naming schemes and 
   $ git clone https://github.com/donders-research-data-management/rdm-ontology
   ```
 
-2. convert contents into proper format for CMS.
+2. create distribution zip file 
 
   ```bash
   $ cd rdm-ontology
-  $ make build
+  $ make dist 
   ```
 
-3. validate JSON file against schema
+  This makefile target will do the following things in a sequencial order:
 
-  ```bash
-  $ make validate_json
-  ```
-  
-  For validating JSON document, a _schema_ file describing the [JSON schema](http://json-schema.org) the document follows should be provided.  The schema file should be in the same directory as the JSON document.  It should also be named with a prefix the same as the JSON document; and `.schema` as its file extension.
-
-4. create distribution tarball
-
-  ```bash
-  $ make dist
-  ```
-  
-5. or, install right into the `$(INSTALL_PREFIX)` defined in the `Makefile`
-
-  ```bash
-  $ make install
-  ```
+  - convert markdown-formatted files into HTML snippets
+  - validate JSON documents as long as the corresponding `.schema` file is presented
+  - create the release zip file taking into account only the necessary (i.e. derived HTML snippets) files
+  - walk through the `external_urls.json` file in the release zip, check whether the URLs are available
