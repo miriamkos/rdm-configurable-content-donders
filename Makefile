@@ -31,7 +31,7 @@ $(COLL_KEYWORDS):
 	@python $(shell pwd)/tools/csv2json.py $(patsubst %.json,%.csv,$@) $@
 
 $(CMS_SNIPPETS_MD):
-	@echo "--> converting CMS snippet: $@"
+	@echo "--> converting HTML snippet: $@"
 	@python $(shell pwd)/tools/md2html.py $(patsubst %.html,%.md,$@)
 
 # validate JSON file when the corresponding .schema file is presented
