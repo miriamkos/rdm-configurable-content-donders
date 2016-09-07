@@ -44,7 +44,7 @@ $(JSON_SCHEMAS):
 # make distribution tarball 
 dist: $(DIST_ZIP)
 	@echo "--> checking resource availability ..."
-	@python $(shell pwd)/tools/check-external-urls.py -i $(CMS_EXT_RSRC_IDX) $(DIST_ZIP)
+	@python $(shell pwd)/tools/check-external-urls.py -l 3 -i $(CMS_EXT_RSRC_IDX) $(DIST_ZIP)
 
 $(DIST_ZIP): build validate_json
 	@echo "--> packing $(DIST_ZIP) ..."

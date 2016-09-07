@@ -52,11 +52,12 @@ if __name__ == "__main__":
 
     try:
         zf = zipfile.ZipFile(args.pkg_zipfile, 'r')
-        all_files = zf.namelist()
+        files_in_zip = zf.namelist()
+        dirs_in_zip = list(set(map(lambda x:os.path.dirname(x), files_in_zip)))
 
         # check existence of external_urls.json
-        if args.idx_file not in all_files:
-            raise IOError('file not found: external_urls.json')
+        if args.idx_file not in files_in_zip:
+            raise IOError('index file not found: {}'.format(args.idx_file))
 
         f_urls = zf.open(args.idx_file, 'r')
         d_urls = json.load(f_urls)
@@ -67,30 +68,35 @@ if __name__ == "__main__":
             if re.match('^%s' % args.url_prefix, v):
                 # the URL matches url_prefix, should just check whether the file is provided by the package
                 rel_fname = os.path.relpath(v, args.url_prefix)
-                if rel_fname not in all_files:
-                    logger.error("file not found for URL of %s: %s" % (k, rel_fname))
+
+                # determine whether the check should be on directories of files in the zip file
+                list2check = files_in_zip
+                if v[-1] == '/':
+                    list2check = dirs_in_zip
+
+                if rel_fname not in list2check:
+                    # check whether the file/directory exists in the zip file
+                    logger.error("file or dir not found: {}".format(rel_fname))
                     bad_urls[k] = v
                 else:
-                    logger.info("file found for URL of %s: %s" % (k, rel_fname))
+                    logger.info("file or dir for {}: OK".format(k))
             else:
                 try:
                     connection = urllib2.urlopen(v)
                     code = connection.getcode()
                     connection.close()
-                    logger.info("URL of %s: [%d] OK" % (k, code))
+                    logger.info("URL of {0}: [{1}] OK".format(k, code))
                 except urllib2.URLError, e:
                     if e.getcode() == 403 and v[-1] == '/':
-                        logger.warn("URL of %s: [%d] %s" % (k, e.getcode(), e.reason))
+                        logger.warn("URL of {0}: [{1}] {2}".format(k, e.getcode(), e.reason))
                     else:
-                        logger.error("URL of %s: [%d] %s" % (k, e.getcode(), e.reason))
+                        logger.error("URL of {0}: [{1}] {2}".format(k, e.getcode(), e.reason))
                         bad_urls[k] = v
                 except urllib2.HTTPError, e:
-                    logger.error("URL of %s: [%d] %s" % (k, e.getcode(), e.reason))
+                    logger.error("URL of {0}: [{1}] {2}".format(k, e.getcode(), e.reason))
                     bad_urls[k] = v
-    except IOError, e:
-        pass
-    else:
-        pass
+    except Exception:
+        raise
     finally:
         if zf:
             zf.close()
