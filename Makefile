@@ -28,23 +28,23 @@ build: $(COLL_KEYWORDS) $(CMS_SNIPPETS_MD)
 
 $(COLL_KEYWORDS):
 	@echo "--> converting keyword: $@"
-	@python $(shell pwd)/tools/csv2json.py $(patsubst %.json,%.csv,$@) $@
+	python "$(shell pwd)/tools/csv2json.py" "$(patsubst %.json,%.csv,$@)" "$@"
 
 $(CMS_SNIPPETS_MD):
 	@echo "--> converting HTML snippet: $@"
-	@python $(shell pwd)/tools/md2html.py $(patsubst %.html,%.md,$@)
+	@python "$(shell pwd)/tools/md2html.py" "$(patsubst %.html,%.md,$@)"
 
 # validate JSON file when the corresponding .schema file is presented
 validate_json: $(JSON_SCHEMAS)
 
 $(JSON_SCHEMAS):
 	@echo "--> validating JSON document: $(patsubst %.schema,%.json,$@)"
-	@python $(shell pwd)/tools/json-validator.py $(patsubst %.schema,%.json,$@) $@
+	@python "$(shell pwd)/tools/json-validator.py" "$(patsubst %.schema,%.json,$@)" "$@"
 
 # make distribution tarball 
 dist: $(DIST_ZIP)
 	@echo "--> checking resource availability ..."
-	@python $(shell pwd)/tools/check-external-urls.py -l 3 -i $(CMS_EXT_RSRC_IDX) $(DIST_ZIP)
+	@python "$(shell pwd)/tools/check-external-urls.py" -l 3 -i $(CMS_EXT_RSRC_IDX) $(DIST_ZIP)
 
 $(DIST_ZIP): build validate_json
 	@echo "--> packing $(DIST_ZIP) ..."
