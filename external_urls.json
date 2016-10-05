@@ -1,6 +1,7 @@
 {
   "controlledVocabularies" : "http://data.donders.ru.nl/doc/vocabulary/collection_keyword/",
   "dataUseAgreement" : "http://data.donders.ru.nl/doc/dua/index.json",
+  "dataUseAgreementContents" : "http://data.donders.ru.nl/doc/dua/{id}.txt",
   "publicationSystems" : "http://data.donders.ru.nl/doc/vocabulary/publication_system.json",
   "ethicalReviewBoards" : "http://data.donders.ru.nl/doc/vocabulary/ethics_review_board.json",
   "legal" : "http://data.donders.ru.nl/doc/privacy/privacy_policy.html",
