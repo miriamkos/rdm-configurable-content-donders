@@ -1,3 +1,6 @@
 /.project
 /target/
 .settings
+*.zip
+/vocabulary/collection_keyword/*.json
+/privacy/privacy_policy.html
