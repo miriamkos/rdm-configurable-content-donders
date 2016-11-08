@@ -11,20 +11,15 @@
   "emailCollectionChangesLeadText" : "http://data.donders.ru.nl/doc/email/collectionChangesLeadText.html",
   "emailManagerLessCollectionsLeadText" : "http://data.donders.ru.nl/doc/email/managerLessCollectionsLeadText.html",
 
-  "collections.header" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Collections",
+  "collections.header" : "http://www.ru.nl/donders/research/data/",
 
-  "addCollection.createCollectionForm.createManagerLabel" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Manager",
+  "editCollectionModal.form.dataUseAgreementLabel" : "http://www.ru.nl/donders/research/data/faq/data-sharing/",
+  "editCollectionModal.form.ethicalApprovalsLabel" : "http://www.ru.nl/donders/research/data/faq/data-aquisition/",
+  "editCollectionModal.form.meshKeywordsBorder" : "http://www.ru.nl/donders/research/data/faq/other/",
+  "editCollectionModal.form.meshKeywordsLabel" : "http://www.ru.nl/donders/research/data/faq/other/",
+  "editCollectionModal.form.sfnKeywordsBorder" : "http://www.ru.nl/donders/research/data/faq/other/",
+  "editCollectionModal.form.sfnKeywordsLabel" : "http://www.ru.nl/donders/research/data/faq/other/",
+  "editCollectionModal.header-label" : "http://www.ru.nl/donders/research/data/user-manual/",
 
-  "editCollectionModal.form.abstractDescription" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Abstract",
-  "editCollectionModal.form.abstractDescriptionLabel" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Abstract",
-  "editCollectionModal.form.dataUseAgreementLabel" : "http://donders-institute.github.io/rdm-wiki/en/#!guides/sharing.md",
-  "editCollectionModal.form.ethicalApprovalsLabel" : "http://donders-institute.github.io/rdm-wiki/en/#!faq/dac.md#How_should_I_specify_the_ethics_approval_identifier%22?",
-  "editCollectionModal.form.meshKeywordsBorder" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#MeSH keywords",
-  "editCollectionModal.form.meshKeywordsLabel" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#MeSH keywords",
-  "editCollectionModal.form.sfnKeywordsBorder" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#SfN_keywords",
-  "editCollectionModal.form.sfnKeywordsLabel" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#SfN_keywords",
-  "editCollectionModal.header-label" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Edit Collection",
-  "editCollectionModal.changeCollectionStateConfirmationPanel" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md#Collection_closure",
-
-  "navbar.helpButton" : "http://donders-institute.github.io/rdm-wiki/en/#!help/context_sensitive.md"
+  "navbar.helpButton" : "http://www.ru.nl/donders/research/data/"
 }
