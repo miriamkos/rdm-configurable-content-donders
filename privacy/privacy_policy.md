@@ -36,5 +36,5 @@ The personal data stored by the service are not shared with other services, unle
  
 Personal data are stored for as long as is required for the objectives of the service. If collections are deleted, then also the personal data associated with those collections are deleted.
 
-This privacy policy is in agreement with the GEANT Data Protection Code of Conduct (http://www.geant.net/uri/dataprotection-code-of-conduct/v1, Version 1.0, 14 June 2013) and with the Dutch law on the protection of personal data.
+This privacy policy is in agreement with the [GEANT Data Protection Code of Conduct](http://www.geant.net/uri/dataprotection-code-of-conduct/v1) (version 1.0, 14 June 2013) and with the Dutch law on the protection of personal data.
 
