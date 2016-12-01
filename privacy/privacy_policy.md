@@ -18,11 +18,17 @@ The following data are obtained from your IdP upon login:
 4. The email address assigned to you by your IdP 
 
 The following data are obtained from your interaction with the service:
-1. The your roles in the system that allow you to access collections,  and when changes in roles were made
+1. Your roles in the system that allow you to access collections (i.e., organized sets of data), and when changes in roles were made
 2. The modifications that you make to a collection's files and/or attributes
-3. The your access to collection's files and/or attributes
+3. Your access to collection's files and/or attributes
 
-The personal data stored by the service is not accessible to other users of the service, unless this is required for the objectives of the service. Your contributions to collections are visible to the managers and other contributors of that collection. Your contributions to a data sharing collection as an author are treated as a publication and are publicly visible.
+The personal data stored by the service is not accessible to other users of the service, unless this is required for the objectives of the service. To realise these objectives, the following is required:
+1. A collection's manager, who is responsible for the access to the collection, must know who currently has access to this collection and who has had access in the past. 
+2. All users of a collection must be informed about modifications to this collection's files and/or attributes, and also about who has made these modification and when this has occured. 
+
+Your contributions to collections are visible to the managers and other contributors of that collection. 
+
+Your contributions to a data sharing collection as an author are treated as a publication and are publicly visible.
 
 The personal data stored by the service are not shared with other services, unless required for the objectives of the service. 
  
