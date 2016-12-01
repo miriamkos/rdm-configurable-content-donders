@@ -6,9 +6,9 @@ The service is provided by the Donders Institute for Brain, Cognition and Behavi
 
 The service has the following objectives:
 
-1. Data preservation for reuse within the DI
-2. Documentation of the research process to support the reproducibility of published results
-3. Data sharing with the scientific community outside the DI
+1. Data preservation and reuse in the DI
+2. Documentation of the research process
+3. Open access data sharing
 
 The service processes and stores two types of data about its users: (a) information obtained from the user's identity provider (IdP) and (b) information pertaining to the user's interaction with the service.
 
