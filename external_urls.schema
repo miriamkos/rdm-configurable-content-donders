@@ -11,6 +11,8 @@
         "legal",
         "login",
         "logout",
+        "pagefooterCopyright",
+        "pagefooterCustom",
         "emailCollectionChangesLeadText",
         "emailManagerLessCollectionsLeadText"
     ],
@@ -23,6 +25,8 @@
         "login": { "type": "string" },
         "logout": { "type": "string" },
         "homepage": { "type": "string" },
+        "pagefooterCopyright": { "type": "string" },
+        "pagefooterCustom": { "type": "string" },
         "emailCollectionChangesLeadText": { "type": "string" },
         "emailManagerLessCollectionsLeadText": { "type": "string" },
         "addCollection.confirmFormPanel" : { "type": "string" },
