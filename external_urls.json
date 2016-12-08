@@ -10,6 +10,7 @@
   "homepage" : "http://data.donders.ru.nl/doc/homepage/homepage.html",
   "pagefooterCopyright" : "http://data.donders.ru.nl/doc/footer/footerCopyright.html",
   "pagefooterCustom" : "http://data.donders.ru.nl/doc/footer/footerCustom.html",
+  "privacyPolicy" : "http://data.donders.ru.nl/doc/privacy/privacy_policy.html",
   "emailCollectionChangesLeadText" : "http://data.donders.ru.nl/doc/email/collectionChangesLeadText.html",
   "emailManagerLessCollectionsLeadText" : "http://data.donders.ru.nl/doc/email/managerLessCollectionsLeadText.html",
 
