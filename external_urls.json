@@ -8,6 +8,8 @@
   "login" : "http://data.donders.ru.nl/doc/login/login.html",
   "logout" : "http://data.donders.ru.nl/doc/logout/logout.html",
   "homepage" : "http://data.donders.ru.nl/doc/homepage/homepage.html",
+  "pagefooterCopyright" : "http://data.donders.ru.nl/doc/footer/footerCopyright.html",
+  "pagefooterCustom" : "http://data.donders.ru.nl/doc/footer/footerCustom.html",
   "emailCollectionChangesLeadText" : "http://data.donders.ru.nl/doc/email/collectionChangesLeadText.html",
   "emailManagerLessCollectionsLeadText" : "http://data.donders.ru.nl/doc/email/managerLessCollectionsLeadText.html",
 
