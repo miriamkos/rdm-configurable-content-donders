@@ -1,5 +1,10 @@
 [
    {
+      "id":"PD",
+      "name":"Public Domain",
+      "path":"PD.txt"
+   },
+   {
       "id":"CC0-1.0",
       "name":"CreativeCommons Zero 1.0 Public Domain Dedication",
       "path":"CC0-1.0.txt"
