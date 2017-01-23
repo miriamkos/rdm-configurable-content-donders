@@ -8,7 +8,7 @@
   "login" : "http://data.donders.ru.nl/doc/login/login.html",
   "logout" : "http://data.donders.ru.nl/doc/logout/logout.html",
   "homepage" : "http://data.donders.ru.nl/doc/homepage/homepage.html",
-  "footer" : "https://raw.githubusercontent.com/donders-research-data-management/rdm-ontology/master/footer/footer.html",
+  "footer" : "http://data.donders.ru.nl/doc/footer/footer.html",
   "privacyPolicy" : "http://data.donders.ru.nl/doc/privacy/privacy_policy.html",
   "emailCollectionChangesLeadText" : "http://data.donders.ru.nl/doc/email/collectionChangesLeadText.html",
   "emailManagerLessCollectionsLeadText" : "http://data.donders.ru.nl/doc/email/managerLessCollectionsLeadText.html",
