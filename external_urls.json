@@ -22,5 +22,8 @@
   "editCollectionModal.form.sfnKeywordsLabel" : "http://www.ru.nl/donders/research/data/faq/get-started/#hd52a3e99-1250-43dc-9203-4397db955132",
   "editCollectionModal.header-label" : "http://www.ru.nl/donders/research/data/user-manual/get-started/edit-your-collection-details/",
 
-  "navbar.helpButton" : "http://www.ru.nl/donders/research/data/"
+  "navbar.helpButton" : "http://www.ru.nl/donders/research/data/",
+  "researcherIdUrlPrefix" : "http://www.researcherid.com/rid/",
+  "openResearcherAndContributorIdUrlPrefix" : "http://orcid.org/",
+  "meshKeywordUrlPrefix" : "http://id.nlm.nih.gov/mesh/"
 }
