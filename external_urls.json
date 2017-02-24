@@ -25,5 +25,5 @@
   "navbar.helpButton" : "http://www.ru.nl/donders/research/data/",
   "researcherIdUrlPrefix" : "http://www.researcherid.com/rid/",
   "openResearcherAndContributorIdUrlPrefix" : "http://orcid.org/",
-  "meshKeywordUrlPrefix" : "http://id.nlm.nih.gov/mesh/"
+  "mesh2015KeywordUrlPrefix" : "http://id.nlm.nih.gov/mesh/"
 }
