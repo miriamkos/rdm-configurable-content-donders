@@ -16,7 +16,7 @@
         "emailManagerLessCollectionsLeadText",
         "researcherIdUrlPrefix",
         "openResearcherAndContributorIdUrlPrefix",
-        "meshKeywordUrlPrefix"
+        "mesh2015KeywordUrlPrefix"
     ],
     "properties": {
         "controlledVocabularies": { "type": "string" },
@@ -32,7 +32,7 @@
         "emailManagerLessCollectionsLeadText": { "type": "string" },
         "researcherIdUrlPrefix": { "type": "string" },
         "openResearcherAndContributorIdUrlPrefix": { "type": "string" },
-        "meshKeywordUrlPrefix": { "type": "string" },
+        "mesh2015KeywordUrlPrefix": { "type": "string" },
         "addCollection.confirmFormPanel" : { "type": "string" },
         "addCollection.confirmFormPanel.confirmEmbargoLabel" : { "type": "string" },
         "addCollection.confirmFormPanel.confirmManagerLabel" : { "type": "string" },
