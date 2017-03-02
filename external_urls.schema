@@ -14,9 +14,9 @@
         "footer",
         "emailCollectionChangesLeadText",
         "emailManagerLessCollectionsLeadText",
-        "researcherIdUrlPrefix",
-        "openResearcherAndContributorIdUrlPrefix",
-        "mesh2015KeywordUrlPrefix"
+        "user.researcherId.urlPrefix",
+        "user.openResearcherAndContributorId.urlPrefix",
+        "collection.mesh2015Keyword.urlPrefix"
     ],
     "properties": {
         "controlledVocabularies": { "type": "string" },
@@ -30,9 +30,9 @@
         "footer": { "type": "string" },
         "emailCollectionChangesLeadText": { "type": "string" },
         "emailManagerLessCollectionsLeadText": { "type": "string" },
-        "researcherIdUrlPrefix": { "type": "string" },
-        "openResearcherAndContributorIdUrlPrefix": { "type": "string" },
-        "mesh2015KeywordUrlPrefix": { "type": "string" },
+        "user.researcherId.urlPrefix": { "type": "string" },
+        "user.openResearcherAndContributorId.urlPrefix": { "type": "string" },
+        "collection.mesh2015Keyword.urlPrefix": { "type": "string" },
         "addCollection.confirmFormPanel" : { "type": "string" },
         "addCollection.confirmFormPanel.confirmEmbargoLabel" : { "type": "string" },
         "addCollection.confirmFormPanel.confirmManagerLabel" : { "type": "string" },
