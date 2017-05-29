@@ -14,6 +14,7 @@
         "footer",
         "emailCollectionChangesLeadText",
         "emailManagerLessCollectionsLeadText",
+        "oneTimePasswordModal.explanationLink",
         "user.researcherId.urlPrefix",
         "user.openResearcherAndContributorId.urlPrefix",
         "collection.mesh2015Keyword.urlPrefix"
@@ -30,6 +31,7 @@
         "footer": { "type": "string" },
         "emailCollectionChangesLeadText": { "type": "string" },
         "emailManagerLessCollectionsLeadText": { "type": "string" },
+        "oneTimePasswordModal.explanationLink": { "type": "string" },
         "user.researcherId.urlPrefix": { "type": "string" },
         "user.openResearcherAndContributorId.urlPrefix": { "type": "string" },
         "collection.mesh2015Keyword.urlPrefix": { "type": "string" },

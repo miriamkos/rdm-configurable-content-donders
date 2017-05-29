@@ -23,6 +23,8 @@
   "editCollectionModal.header-label" : "http://www.ru.nl/donders/research/data/user-manual/get-started/edit-your-collection-details/",
 
   "navbar.helpButton" : "http://www.ru.nl/donders/research/data/",
+  "oneTimePasswordModal.explanationLink" : "http://www.ru.nl/donders/research/data/user-manual/transfer-data/",
+  
   "user.researcherId.urlPrefix" : "http://www.researcherid.com/rid/",
   "user.openResearcherAndContributorId.urlPrefix" : "http://orcid.org/",
   "collection.mesh2015Keyword.urlPrefix" : "http://id.nlm.nih.gov/mesh/"
