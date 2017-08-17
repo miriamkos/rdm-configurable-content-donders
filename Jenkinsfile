@@ -19,6 +19,6 @@ node {
     }
 
     stage('Archive') {
-        archiveArtifacts artifacts: '**/*.zip, **/target/*.zip', fingerprint: true
+        archiveArtifacts artifacts: 'target/rdm-ontology-*.zip', fingerprint: true
     }
 }

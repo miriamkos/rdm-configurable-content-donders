@@ -11,11 +11,19 @@
 	<fileSets>
 		<fileSet>
 			<excludes>
-			    <exclude>.gitignore</exclude>
-			    <exclude>.project</exclude>
-			    <exclude>.idea/**</exclude>
-			    <exclude>*.xml</exclude>
+			    <exclude>**/.gitignore</exclude>
+			    <exclude>**/*.xml</exclude>
+                <exclude>**/*.zip</exclude>
+                <exclude>.settings/**</exclude>
 			    <exclude>target/**</exclude>
+                <exclude>**/Makefile</exclude>
+                <exclude>**/*.csv</exclude>
+                <exclude>**/*.schema</exclude>
+			    <exclude>.idea/**</exclude>
+                <exclude>tools/**</exclude>
+			    <exclude>.project</exclude>
+                <exclude>Jenkins*</exclude>
+                <exclude>README.md</exclude>
 			</excludes>
 		</fileSet>
 	</fileSets>
