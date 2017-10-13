@@ -1,24 +1,23 @@
 node {
     def mvnHome = tool 'M3'
+    try {
+        stage('Checkout') {
+            checkout scm
+        }
 
-    stage('Checkout') {
-        checkout scm
-    }
+        stage('Build') {
+            sh 'echo "Git hash: `git rev-parse --verify HEAD` , Build on `date`" > build.txt'
+            sh "make dist"
+        }
 
-    stage('Build') {
-        sh "make dist"
-        sh "${mvnHome}/bin/mvn -U clean package"
-    }
+        stage('Maven deploy') {
+            sh "${mvnHome}/bin/mvn -U clean deploy"
+        }
 
-    stage('Install') {
-        sh "${mvnHome}/bin/mvn install"
-    }
-
-    stage('Analyse') {
-        sh "${mvnHome}/bin/mvn sonar:sonar"
-    }
-
-    stage('Archive') {
-        archiveArtifacts artifacts: 'target/rdm-ontology-*.zip', fingerprint: true
+        stage('Archive') {
+            archiveArtifacts artifacts: 'target/rdm-ontology-*', fingerprint: true
+        }
+    } finally {
+        deleteDir()
     }
 }
