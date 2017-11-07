@@ -2,6 +2,7 @@
 import sys
 import os
 import re
+import cookielib
 import urllib2
 import json
 import zipfile
@@ -62,6 +63,11 @@ if __name__ == "__main__":
         f_urls.close()
 
         bad_urls={}
+        
+        cookies = cookielib.LWPCookieJar()
+        handlers = [ urllib2.HTTPHandler(), urllib2.HTTPSHandler(), urllib2.HTTPCookieProcessor(cookies)]
+        opener = urllib2.build_opener(*handlers)
+        
         for k, v in sorted(d_urls.items(), key=operator.itemgetter(1)):
             if re.match('^%s' % args.url_prefix, v):
                 # the URL matches url_prefix, should just check whether the file is provided by the package
@@ -80,7 +86,8 @@ if __name__ == "__main__":
                     logger.info("file or dir for {}: OK".format(k))
             else:
                 try:
-                    connection = urllib2.urlopen(v)
+                    #connection = urllib2.urlopen(v)
+                    connection = opener.open(v)
                     code = connection.getcode()
                     connection.close()
                     logger.info("URL of {0}: [{1}] OK".format(k, code))
