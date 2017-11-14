@@ -35,6 +35,7 @@
         "user.researcherId.urlPrefix": { "type": "string" },
         "user.openResearcherAndContributorId.urlPrefix": { "type": "string" },
         "collection.mesh2015Keyword.urlPrefix": { "type": "string" },
+        "message.user.signup": { "type": "string"},
         "addCollection.confirmFormPanel" : { "type": "string" },
         "addCollection.confirmFormPanel.confirmEmbargoLabel" : { "type": "string" },
         "addCollection.confirmFormPanel.confirmManagerLabel" : { "type": "string" },
