@@ -2,6 +2,7 @@
 /target/
 .settings
 *.zip
+*.pyc
 /vocabulary/collection_keyword/*.json
 /privacy/privacy_policy.html
 .idea

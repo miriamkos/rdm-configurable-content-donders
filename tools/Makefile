@@ -1,19 +1,20 @@
 #files to be included in the distribution
-DUA=$(wildcard dua/*)
-COLL_KEYWORDS=$(patsubst %.csv,%.json,$(wildcard vocabulary/collection_keyword/*.csv))
-VOC_ETHICAL_REVIEW_BOARD=vocabulary/ethics_review_board.json
-VOC_PUBLICATION_SYSTEM=vocabulary/publication_system.json
+DUA=$(wildcard doc/dua/*)
+LOGOS=logo.png logo@2x.png
+COLL_KEYWORDS=$(patsubst %.csv,%.json,$(wildcard doc/keyword/*.csv))
+VOC_ETHICAL_REVIEW_BOARD=doc/ethics/ethics_review_board.json
+VOC_PUBLICATION_SYSTEM=doc/publication/publication_system.json
 CMS_EXT_RSRC_IDX=external_urls.json
-CMS_SNIPPETS_MD=$(patsubst %.md,%.html,$(wildcard privacy/*.md))
-CMS_SNIPPETS_HTML=$(wildcard privacy/*.html login/*.html logout/*.html homepage/*.html footer/*.html email/*.html messages/*.html)
+CMS_SNIPPETS_MD=$(patsubst %.md,%.html,$(wildcard doc/privacy/*.md))
+CMS_SNIPPETS_HTML=$(wildcard doc/privacy/*.html doc/*.html doc/email/*.html doc/messages/*.html)
 
 #list of JSON files subject for validation
-JSON_FILES=$(wildcard dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_EXT_RSRC_IDX) $(COLL_KEYWORDS)
+JSON_FILES=$(wildcard doc/dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_EXT_RSRC_IDX) $(COLL_KEYWORDS)
 
 JSON_SCHEMAS=$(wildcard $(patsubst %.json,%.schema,$(JSON_FILES)))
 
 #list of files to be included in distribution or installation
-DIST_FILES=$(DUA) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_EXT_RSRC_IDX) $(CMS_SNIPPETS_MD) $(CMS_SNIPPETS_HTML)
+DIST_FILES=$(DUA) $(LOGOS) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_EXT_RSRC_IDX) $(CMS_SNIPPETS_MD) $(CMS_SNIPPETS_HTML)
 
 #constant
 VERSION:=master
@@ -44,7 +45,7 @@ $(JSON_SCHEMAS):
 # make distribution tarball 
 dist: $(DIST_ZIP)
 	@echo "--> checking resource availability ..."
-	@python "$(shell pwd)/tools/check-external-urls.py" -l 3 -i $(CMS_EXT_RSRC_IDX) $(DIST_ZIP)
+	@python "$(shell pwd)/tools/check-external-urls.py" -p http://data.donders.ru.nl -l 3 -i $(CMS_EXT_RSRC_IDX) $(DIST_ZIP)
 
 $(DIST_ZIP): build validate_json
 	@echo "--> packing $(DIST_ZIP) ..."
