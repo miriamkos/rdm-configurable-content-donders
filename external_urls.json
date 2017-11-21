@@ -1,7 +1,7 @@
 {
-  "controlledVocabularies" : "http://data.donders.ru.nl/doc/vocabulary/collection_keyword/",
-  "publicationSystems" : "http://data.donders.ru.nl/doc/vocabulary/publication_system.json",
-  "ethicalReviewBoards" : "http://data.donders.ru.nl/doc/vocabulary/ethics_review_board.json",
+  "controlledVocabularies" : "http://data.donders.ru.nl/doc/keyword/",
+  "publicationSystems" : "http://data.donders.ru.nl/doc/publication/publication_system.json",
+  "ethicalReviewBoards" : "http://data.donders.ru.nl/doc/ethics/ethics_review_board.json",
   "dataUseAgreement" : "http://data.donders.ru.nl/doc/dua/index.json",
   "dataUseAgreementContents" : "http://data.donders.ru.nl/doc/dua/{id}.html",
 
@@ -32,5 +32,5 @@
   "user.openResearcherAndContributorId.urlPrefix" : "http://orcid.org/",
   "collection.mesh2015Keyword.urlPrefix" : "http://id.nlm.nih.gov/mesh/",
 
-  "message.user.signup": "http://data.donders.ru.nl/doc/messages/signup.html"
+  "message.user.signup": "http://data.donders.ru.nl/doc/signup.html"
 }
