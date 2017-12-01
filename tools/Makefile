@@ -24,7 +24,7 @@ DIST_FILES=$(DUA) $(LOGOS) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PU
 #constant
 VERSION:=master
 INSTALL_PREFIX:=/tmp/rdm-ontology
-DIST_ZIP:=rdm-ontology-$(VERSION).zip
+DIST_ZIP:=rdm-configurable-content-donders-$(VERSION).zip
 
 #targets
 .PHONY: build dist install $(JSON_SCHEMAS)
