@@ -13,8 +13,8 @@ Repository for managing DI-specific controlled vocabularies, naming schemes and 
 2. create distribution zip file 
 
   ```bash
-  $ cd rdm-ontology
-  $ make -f tools/Makefile dist 
+  $ cd rdm-configurable-content-donders
+  $ make -f tools/Makefile dist
   ```
 
   This makefile target will do the following things in a sequencial order:
