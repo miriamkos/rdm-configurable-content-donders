@@ -27,7 +27,7 @@ Repository for managing DI-specific controlled vocabularies, naming schemes and 
   
 ## Deployment
 
-The deployment will be triggered by changes in the `release` branch of the repository. After the changes in the `master` branch is confirmed, one can update the `release` branch using the following git command:
+The deployment will be triggered by changes in the `release` branch of the repository. After the changes in the `master` branch is confirmed, one can update the `release` branch using the following git commands:
 
 ```bash
 $ git checkout release
