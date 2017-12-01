@@ -69,6 +69,11 @@ if __name__ == "__main__":
         opener = urllib2.build_opener(*handlers)
         
         for k, v in sorted(d_urls.items(), key=operator.itemgetter(1)):
+
+            if re.match('.*{.*.}.*', v ):
+                logger.warn("file or dir for {}: SKIPPED".format(v))
+                continue
+
             if re.match('^%s' % args.url_prefix, v):
                 # the URL matches url_prefix, should just check whether the file is provided by the package
                 rel_fname = os.path.relpath(v, args.url_prefix)

@@ -13,7 +13,7 @@ Repository for managing DI-specific controlled vocabularies, naming schemes and 
 
   ```bash
   $ cd rdm-ontology
-  $ make dist 
+  $ make -f tools/Makefile dist 
   ```
 
   This makefile target will do the following things in a sequencial order:
