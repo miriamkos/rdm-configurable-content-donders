@@ -27,7 +27,7 @@ INSTALL_PREFIX:=/tmp/rdm-ontology
 DIST_ZIP:=rdm-configurable-content-donders-$(VERSION).zip
 
 #targets
-.PHONY: build dist install $(JSON_SCHEMAS)
+.PHONY: build dist install $(JSON_SCHEMAS) $(CMS_EXT_RSRC_IDX)
 
 # convert contents into proper formats
 build: $(COLL_KEYWORDS) $(CMS_SNIPPETS_MD)
@@ -40,6 +40,10 @@ $(CMS_SNIPPETS_MD):
 	@echo "--> converting HTML snippet: $@"
 	@python "$(shell pwd)/tools/md2html.py" "$(patsubst %.html,%.md,$@)"
 
+$(CMS_EXT_RSRC_IDX):
+	@echo "--> build index file: $@"
+	sed "s|http://data.donders.ru.nl|$(BASEURL)|g" $(CMS_EXT_RSRC_IDX) > $(CMS_EXT_RSRC_IDX).tmp
+
 # validate JSON file when the corresponding .schema file is presented
 validate_json: $(JSON_SCHEMAS)
 
@@ -47,22 +51,27 @@ $(JSON_SCHEMAS):
 	@echo "--> validating JSON document: $(patsubst %.schema,%.json,$@)"
 	@python "$(shell pwd)/tools/json-validator.py" "$(patsubst %.schema,%.json,$@)" "$@"
 
-# make distribution tarball 
+# make distribution tarball
 dist: $(DIST_ZIP)
 	@echo "--> checking resource availability ..."
 	@python "$(shell pwd)/tools/check-external-urls.py" -p $(BASEURL) -l 3 -i $(CMS_EXT_RSRC_IDX) $(DIST_ZIP)
 
-$(DIST_ZIP): build validate_json
+$(DIST_ZIP): build validate_json $(CMS_EXT_RSRC_IDX)
 	@echo "--> packing $(DIST_ZIP) ..."
-	@zip $@ $(DIST_FILES)
+	@mkdir dist
+	@zip dist/$@ $(DIST_FILES) $(CMS_EXT_RSRC_IDX).tmp && unzip dist/$@ $(CMS_EXT_RSRC_IDX).tmp -d dist && mv dist/$(CMS_EXT_RSRC_IDX).tmp dist/$(CMS_EXT_RSRC_IDX)
+	@cd dist && zip -d $@ $(CMS_EXT_RSRC_IDX) $(CMS_EXT_RSRC_IDX).tmp && zip $@ $(CMS_EXT_RSRC_IDX) && cd - && mv dist/$@ .
 
 # install
-install: build validate_json
+install: build validate_json $(CMS_EXT_RSRC_IDX)
 	$(foreach d,$(dir $(DIST_FILES)),install -d -m 0755 $(INSTALL_PREFIX)/$(d);)
 	$(foreach f,$(DIST_FILES),install -m 0644 $(f) $(INSTALL_PREFIX)/$(f);)
+	@install -m 0644 $(CMS_EXT_RSRC_IDX).tmp $(INSTALL_PREFIX)/$(CMS_EXT_RSRC_IDX)
 
 # clean 
 clean:
-	rm -f $(DIST_ZIP)
+	@if [ -f $(DIST_ZIP) ]; then rm -f $(DIST_ZIP); fi
 	$(foreach f,$(COLL_KEYWORDS),rm -f $(f);)
 	$(foreach f,$(CMS_SNIPPETS_MD),rm -f $(f);)
+	@if [ -f $(CMS_EXT_RSRC_IDX).tmp ]; then rm $(CMS_EXT_RSRC_IDX).tmp; fi
+	@if [ -d dist ]; then rm -rf dist; fi
