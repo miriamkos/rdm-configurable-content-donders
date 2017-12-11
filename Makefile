@@ -54,13 +54,15 @@ $(JSON_SCHEMAS):
 # make distribution tarball
 dist: $(DIST_ZIP)
 	@echo "--> checking resource availability ..."
-	@python "$(shell pwd)/tools/check-external-urls.py" -p $(BASEURL) -l 3 -i $(CMS_EXT_RSRC_IDX) $(DIST_ZIP)
+	@python "$(shell pwd)/tools/check-external-urls.py" -p $(BASEURL)/doc -l 3 -i $(CMS_EXT_RSRC_IDX) $(DIST_ZIP)
 
 $(DIST_ZIP): build validate_json $(CMS_EXT_RSRC_IDX)
 	@echo "--> packing $(DIST_ZIP) ..."
 	@mkdir dist
-	@zip dist/$@ $(DIST_FILES) $(CMS_EXT_RSRC_IDX).tmp && unzip dist/$@ $(CMS_EXT_RSRC_IDX).tmp -d dist && mv dist/$(CMS_EXT_RSRC_IDX).tmp dist/$(CMS_EXT_RSRC_IDX)
-	@cd dist && zip -d $@ $(CMS_EXT_RSRC_IDX) $(CMS_EXT_RSRC_IDX).tmp && zip $@ $(CMS_EXT_RSRC_IDX) && cd - && mv dist/$@ .
+	$(foreach d,$(dir $(DIST_FILES)),mkdir -p $(patsubst doc/%,dist/%,$(d));)
+	$(foreach f,$(DIST_FILES),cp $(f) $(patsubst doc/%,dist/%,$(f));)
+	@mv $(CMS_EXT_RSRC_IDX).tmp dist/$(CMS_EXT_RSRC_IDX)
+	@cd dist && zip -r ../$@ * && cd -
 
 # install
 install: build validate_json $(CMS_EXT_RSRC_IDX)
