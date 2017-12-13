@@ -5,7 +5,7 @@ endif
 
 #files to be included in the distribution
 DUA=$(wildcard doc/dua/*)
-LOGOS=logo.png logo@2x.png
+LOGOS=$(wildcard doc/style/logo*.png)
 COLL_KEYWORDS=$(patsubst %.csv,%.json,$(wildcard doc/keyword/*.csv))
 VOC_ETHICAL_REVIEW_BOARD=doc/ethics/ethics_review_board.json
 VOC_PUBLICATION_SYSTEM=doc/publication/publication_system.json
@@ -19,7 +19,7 @@ JSON_FILES=$(wildcard doc/dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICAT
 JSON_SCHEMAS=$(wildcard $(patsubst %.json,%.schema,$(JSON_FILES)))
 
 #list of files to be included in distribution or installation
-DIST_FILES=$(DUA) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_EXT_RSRC_IDX) $(CMS_SNIPPETS_MD) $(CMS_SNIPPETS_HTML)
+DIST_FILES=$(DUA) $(LOGOS) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_EXT_RSRC_IDX) $(CMS_SNIPPETS_MD) $(CMS_SNIPPETS_HTML)
 
 #constant
 VERSION:=master
@@ -61,7 +61,7 @@ $(DIST_ZIP): build validate_json $(CMS_EXT_RSRC_IDX)
 	@mkdir dist
 	@$(foreach d,$(dir $(DIST_FILES)),mkdir -p $(patsubst doc/%,dist/%,$(d));)
 	@$(foreach f,$(DIST_FILES),cp $(f) $(patsubst doc/%,dist/%,$(f));)
-	@$(foreach f,$(LOGOS),cp $(f) dist/$(f);)
+#	@$(foreach f,$(LOGOS),cp $(f) dist/$(f);)
 	@mv $(CMS_EXT_RSRC_IDX).tmp dist/$(CMS_EXT_RSRC_IDX)
 	@cd dist && zip -r ../$@ * && cd -
 
@@ -69,7 +69,7 @@ $(DIST_ZIP): build validate_json $(CMS_EXT_RSRC_IDX)
 install: build validate_json $(CMS_EXT_RSRC_IDX)
 	$(foreach d,$(dir $(DIST_FILES)),install -d -m 0755 $(INSTALL_PREFIX)/$(d);)
 	$(foreach f,$(DIST_FILES),install -m 0644 $(f) $(INSTALL_PREFIX)/$(f);)
-	$(foreach f,$(LOGOS),install -m 0644 $(f) $(INSTALL_PREFIX)/$(f);)
+#	$(foreach f,$(LOGOS),install -m 0644 $(f) $(INSTALL_PREFIX)/$(f);)
 	@install -m 0644 $(CMS_EXT_RSRC_IDX).tmp $(INSTALL_PREFIX)/$(CMS_EXT_RSRC_IDX)
 
 # clean 
