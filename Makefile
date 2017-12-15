@@ -6,6 +6,7 @@ endif
 #files to be included in the distribution
 DUA=$(wildcard doc/dua/*)
 LOGOS=$(wildcard doc/style/logo*.png)
+BUILDINFO=build.txt
 COLL_KEYWORDS=$(patsubst %.csv,%.json,$(wildcard doc/keyword/*.csv))
 VOC_ETHICAL_REVIEW_BOARD=doc/ethics/ethics_review_board.json
 VOC_PUBLICATION_SYSTEM=doc/publication/publication_system.json
@@ -24,13 +25,13 @@ DIST_FILES=$(DUA) $(LOGOS) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PU
 #constant
 VERSION:=master
 INSTALL_PREFIX:=/tmp/rdm-ontology
-DIST_ZIP:=rdm-configurable-content-$(VERSION).zip
+DIST_ZIP:=rdm-configurable-content-$(VERSION).tar.gz
 
 #targets
 .PHONY: build dist install $(JSON_SCHEMAS) $(CMS_EXT_RSRC_IDX)
 
 # convert contents into proper formats
-build: $(COLL_KEYWORDS) $(CMS_SNIPPETS_MD)
+build: $(COLL_KEYWORDS) $(CMS_SNIPPETS_MD) $(BUILDINFO)
 
 $(COLL_KEYWORDS):
 	@echo "--> converting keyword: $@"
@@ -56,20 +57,22 @@ dist: $(DIST_ZIP)
 	@echo "--> checking resource availability ..."
 	@python "$(shell pwd)/tools/check-external-urls.py" -p $(BASEURL)/doc -l 3 -i $(CMS_EXT_RSRC_IDX) $(DIST_ZIP)
 
+$(BUILDINFO):
+	@if [ -f $@ ]; then cp $@ $@.dist; else touch $@.dist; fi
+
 $(DIST_ZIP): build validate_json $(CMS_EXT_RSRC_IDX)
 	@echo "--> packing $(DIST_ZIP) ..."
-	@mkdir dist
+	@if [ ! -d dist ]; then mkdir dist; fi 
 	@$(foreach d,$(dir $(DIST_FILES)),mkdir -p $(patsubst doc/%,dist/%,$(d));)
 	@$(foreach f,$(DIST_FILES),cp $(f) $(patsubst doc/%,dist/%,$(f));)
-#	@$(foreach f,$(LOGOS),cp $(f) dist/$(f);)
+	@cp $(BUILDINFO).dist dist/$(BUILDINFO)
 	@mv $(CMS_EXT_RSRC_IDX).tmp dist/$(CMS_EXT_RSRC_IDX)
-	@cd dist && zip -r ../$@ * && cd -
+	@cd dist && tar cvzf ../$@ * && cd -
 
 # install
 install: build validate_json $(CMS_EXT_RSRC_IDX)
 	$(foreach d,$(dir $(DIST_FILES)),install -d -m 0755 $(INSTALL_PREFIX)/$(d);)
 	$(foreach f,$(DIST_FILES),install -m 0644 $(f) $(INSTALL_PREFIX)/$(f);)
-#	$(foreach f,$(LOGOS),install -m 0644 $(f) $(INSTALL_PREFIX)/$(f);)
 	@install -m 0644 $(CMS_EXT_RSRC_IDX).tmp $(INSTALL_PREFIX)/$(CMS_EXT_RSRC_IDX)
 
 # clean 
@@ -79,3 +82,4 @@ clean:
 	$(foreach f,$(CMS_SNIPPETS_MD),rm -f $(f);)
 	@if [ -f $(CMS_EXT_RSRC_IDX).tmp ]; then rm $(CMS_EXT_RSRC_IDX).tmp; fi
 	@if [ -d dist ]; then rm -rf dist; fi
+	@if [ -f $(BUILDINFO).dist ]; then rm -rf $(BUILDINFO).dist; fi

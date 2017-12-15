@@ -6,6 +6,7 @@ import cookielib
 import urllib2
 import json
 import zipfile
+import tarfile
 import operator
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from common import getMyLogger
@@ -22,9 +23,16 @@ if __name__ == "__main__":
             msg = "Invalid release file: %s" % s
             raise argparse.ArgumentTypeError(msg)
 
+    def valid_tarfile(s):
+        if tarfile.is_tarfile(s):
+            return s
+        else:
+            msg = "Invalid release file: %s" % s
+            raise argparse.ArgumentTypeError(msg)
+
     parg = argparse.ArgumentParser(description='check availability of external URLs defined by an index file (e.g. external_urls.json) within the release zipfile', version="0.1")
 
-    parg.add_argument('pkg_zipfile', type=valid_zipfile, help='path to the zipped package for release')
+    parg.add_argument('pkg_zipfile', type=valid_tarfile, help='path to the zipped package for release')
 
     parg.add_argument('-p', '--prefix',
                       action='store',
@@ -49,16 +57,20 @@ if __name__ == "__main__":
     args = parg.parse_args()
     logger = getMyLogger(name=os.path.basename(__file__), lvl=args.verbose)
 
+    zf = None
     try:
-        zf = zipfile.ZipFile(args.pkg_zipfile, 'r')
-        files_in_zip = zf.namelist()
+        #zf = tarfile.TarFile(args.pkg_zipfile, 'r')
+        #files_in_zip = zf.namelist()
+        zf = tarfile.open(args.pkg_zipfile, mode='r:gz')
+        files_in_zip = zf.getnames()
         dirs_in_zip = list(set(map(lambda x:os.path.dirname(x), files_in_zip)))
 
         # check existence of external_urls.json
         if args.idx_file not in files_in_zip:
             raise IOError('index file not found: {}'.format(args.idx_file))
 
-        f_urls = zf.open(args.idx_file, 'r')
+        f_urls = zf.extractfile(args.idx_file)
+        #f_urls = zf.open(args.idx_file, 'r')
         d_urls = json.load(f_urls)
         f_urls.close()
 
