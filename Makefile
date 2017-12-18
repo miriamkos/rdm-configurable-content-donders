@@ -67,7 +67,7 @@ $(DIST_ZIP): build validate_json $(CMS_EXT_RSRC_IDX)
 	@$(foreach f,$(DIST_FILES),cp $(f) $(patsubst doc/%,dist/%,$(f));)
 	@cp $(BUILDINFO).dist dist/$(BUILDINFO)
 	@mv $(CMS_EXT_RSRC_IDX).tmp dist/$(CMS_EXT_RSRC_IDX)
-	@cd dist && tar cvzf ../$@ * && cd -
+	@cd dist && COPYFILE_DISABLE=true tar cvzf ../$@ * && cd -
 
 # install
 install: build validate_json $(CMS_EXT_RSRC_IDX)
