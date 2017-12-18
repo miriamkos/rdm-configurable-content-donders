@@ -20,7 +20,7 @@ JSON_FILES=$(wildcard doc/dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICAT
 JSON_SCHEMAS=$(wildcard $(patsubst %.json,%.schema,$(JSON_FILES)))
 
 #list of files to be included in distribution or installation
-DIST_FILES=$(DUA) $(LOGOS) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_EXT_RSRC_IDX) $(CMS_SNIPPETS_MD) $(CMS_SNIPPETS_HTML)
+DIST_FILES=$(DUA) $(LOGOS) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_SNIPPETS_MD) $(CMS_SNIPPETS_HTML)
 
 #constant
 VERSION:=master
@@ -28,7 +28,7 @@ INSTALL_PREFIX:=/tmp/rdm-ontology
 DIST_ZIP:=rdm-configurable-content-$(VERSION).tar.gz
 
 #targets
-.PHONY: build dist install $(JSON_SCHEMAS) $(CMS_EXT_RSRC_IDX)
+.PHONY: build dist install $(BUILDINFO) $(JSON_SCHEMAS) $(CMS_EXT_RSRC_IDX)
 
 # convert contents into proper formats
 build: $(COLL_KEYWORDS) $(CMS_SNIPPETS_MD) $(BUILDINFO)
