@@ -10,12 +10,7 @@ node {
             sh "make dist"
         }
 
-        stage('Maven deploy') {
-            sh "${mvnHome}/bin/mvn -U clean deploy"
-        }
-
         stage('Archive') {
-            archiveArtifacts artifacts: 'target/rdm-ontology-*', fingerprint: true
 			archiveArtifacts artifacts: '**/rdm-configurable-content-*', fingerprint: true
         }
     } finally {
