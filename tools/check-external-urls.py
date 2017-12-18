@@ -109,13 +109,10 @@ if __name__ == "__main__":
                     connection.close()
                     logger.info("URL of {0}: [{1}] OK".format(k, code))
                 except urllib2.URLError, e:
-                    if e.getcode() == 403 and v[-1] == '/':
-                        logger.warn("URL of {0}: [{1}] {2}".format(k, e.getcode(), e.reason))
-                    else:
-                        logger.error("URL of {0}: [{1}] {2}".format(k, e.getcode(), e.reason))
-                        bad_urls[k] = v
+                    logger.error("URL of {0}: {1}".format(k, e.reason))
+                    bad_urls[k] = v
                 except urllib2.HTTPError, e:
-                    logger.error("URL of {0}: [{1}] {2}".format(k, e.getcode(), e.reason))
+                    logger.error("URL of {0}: [{1}] {2}".format(k, e.code, e.reason))
                     bad_urls[k] = v
     except Exception:
         raise
