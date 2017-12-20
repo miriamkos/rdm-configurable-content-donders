@@ -1,6 +1,6 @@
 #define the baseURL of the static content
 ifndef BASEURL
-BASEURL=http://data.donders.ru.nl
+BASEURL=/
 endif
 
 #files to be included in the distribution
@@ -55,7 +55,7 @@ $(JSON_SCHEMAS):
 # make distribution tarball
 dist: $(DIST_ZIP)
 	@echo "--> checking resource availability ..."
-	@python "$(shell pwd)/tools/check-external-urls.py" -p $(BASEURL)/doc -l 3 -i $(CMS_EXT_RSRC_IDX) $(DIST_ZIP)
+	@python "$(shell pwd)/tools/check-external-urls.py" -p $(BASEURL) -l 3 -i $(CMS_EXT_RSRC_IDX) $(DIST_ZIP)
 
 $(BUILDINFO):
 	@if [ -f $@ ]; then cp $@ $@.dist; else touch $@.dist; fi
