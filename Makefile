@@ -1,6 +1,6 @@
 #define the baseURL of the static content
 ifndef BASEURL
-BASEURL=/
+BASEURL=/doc
 endif
 
 #files to be included in the distribution
