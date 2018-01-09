@@ -1,8 +1,28 @@
 [
    {
-      "id":"PD",
-      "name":"Public Domain",
-      "path":"/doc/dua/PD.html"
+     "id":"RU-DI-HD-1.0",
+     "name":"Radboud University - Donders Institute - Human Data 1.0",
+     "path":"/doc/dua/RU-DI-HD-1.0.html"
+   },
+   {
+     "id":"RU-DI-NH-1.0",
+     "name":"Radboud University - Donders Institute - Non-Human Data 1.0",
+     "path":"/doc/dua/RU-DI-NH-1.0.html"
+   },
+   {
+      "id":"ODC-BY-1.0",
+      "name":"OpenDataCommons Attribution License",
+      "path":"/doc/dua/ODC-BY-1.0.html"
+   },
+   {
+      "id":"ODC-ODbL-1.0",
+      "name":"OpenDataCommons Open Database License",
+      "path":"/doc/dua/ODC-ODbL-1.0.html"
+   },
+   {
+      "id":"ODC-PDDL-1.0",
+      "name":"OpenDataCommons Public Domain Dedication & Licence",
+      "path":"/doc/dua/ODC-PDDL-1.0.html"
    },
    {
       "id":"CC0-1.0",
@@ -40,31 +60,6 @@
       "path":"/doc/dua/CC-BY-NC-SA-4.0.html"
    },
    {
-      "id":"RU-DI-HD-1.0",
-      "name":"Radboud University - Donders Institute - Human Data 1.0",
-      "path":"/doc/dua/RU-DI-HD-1.0.html"
-   },
-   {
-      "id":"RU-DI-NH-1.0",
-      "name":"Radboud University - Donders Institute - Non-Human Data 1.0",
-      "path":"/doc/dua/RU-DI-NH-1.0.html"
-   },
-   {
-      "id":"ODC-BY-1.0",
-      "name":"OpenDataCommons Attribution License",
-      "path":"/doc/dua/ODC-BY-1.0.html"
-   },
-   {
-      "id":"ODC-ODbL-1.0",
-      "name":"OpenDataCommons Open Database License",
-      "path":"/doc/dua/ODC-ODbL-1.0.html"
-   },
-   {
-      "id":"ODC-PDDL-1.0",
-      "name":"OpenDataCommons Public Domain Dedication & Licence",
-      "path":"/doc/dua/ODC-PDDL-1.0.html"
-   },
-   {
       "id":"GPL-2.0",
       "name":"GNU General Public License v2.0",
       "path":"/doc/dua/GPL-2.0.html"
@@ -73,6 +68,11 @@
       "id":"GPL-3.0",
       "name":"GNU General Public License v3.0",
       "path":"/doc/dua/GPL-3.0.html"
+   },
+   {
+      "id":"LGPL-3.0",
+      "name":"GNU Lesser General Public License v3.0",
+      "path":"/doc/dua/LGPL-3.0.html"
    },
    {
       "id":"APACHE-2.0",
@@ -95,11 +95,6 @@
       "path":"/doc/dua/EPL-1.0.html"
    },
    {
-      "id":"LGPL-3.0",
-      "name":"GNU Lesser General Public License v3.0",
-      "path":"/doc/dua/LGPL-3.0.html"
-   },
-   {
       "id":"MIT",
       "name":"MIT License",
       "path":"/doc/dua/MIT.html"
@@ -113,5 +108,10 @@
       "id":"ISC",
       "name":"ISC License",
       "path":"/doc/dua/MIT.html"
+   },
+   {
+      "id":"PD",
+      "name":"Public Domain",
+      "path":"/doc/dua/PD.html"
    }
 ]
