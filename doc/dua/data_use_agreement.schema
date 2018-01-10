@@ -13,11 +13,11 @@
                  "type": "string"
              },
             "name": {
-                 "description": "Name of the Data Use Agreement",
+                 "description": "Full name of the Data Use Agreement",
                  "type": "string"
              },
             "path": {
-                 "description": "path to the DUA content",
+                 "description": "Content of the Data Use Agreement",
                  "type": "string"
              }
         }
