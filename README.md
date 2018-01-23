@@ -18,7 +18,7 @@ Please refer to [this README](README.editor.md).
 
   ```bash
   $ cd rdm-configurable-content-donders
-  $ make -f tools/Makefile dist
+  $ make -f Makefile dist
   ```
 
   This makefile target will do the following things in a sequencial order:
