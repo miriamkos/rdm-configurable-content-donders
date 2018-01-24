@@ -4,7 +4,7 @@ This page provides instructions for content manager to edit the configurable con
 
 ## How to edit
 
-In the repository, you will see two branches, the `master` and the `release`.  __You should only edit the master branch__.  Thus, before you start editing, make sure that you are on the master branch.
+In the repository, you will see two branches, the _master_ and the _release_.  __You should only edit the master branch__.  Thus, before you start editing, make sure that you are on the master branch.
 
 There are two ways of editing the static content:
 
