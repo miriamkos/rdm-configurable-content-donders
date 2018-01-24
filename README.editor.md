@@ -85,7 +85,7 @@ Currently, the CSS-style is coded in the portal code.  The only customisable com
 
 * [doc/style/logo.png](doc/style/logo.png): A 100px height logo in png format (logo.png). Width can vary but the height is important to keep the aspect ratio.
 
-* [doc/style/logo2x.png](doc/style/logo2x.png): A 200px height logo in png format for retina screens (logo\@2.png). Width can vary but the height is important to keep the aspect ratio.
+* [doc/style/logo@2x.png](doc/style/logo@2x.png): A 200px height logo in png format for retina screens. Width can vary but the height is important to keep the aspect ratio.
 
 ## Providing online helps
 
