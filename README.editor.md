@@ -57,21 +57,21 @@ Snippets are HTML files that will be inserted in relevant portal pages, providin
 
 Supported snippets are listed below:
 
-* [login.html](login.html) contains text to be shown on the portal's login page, after the user clicks on the `LOG IN` button.
+* [doc/login.html](doc/login.html) contains text to be shown on the portal's login page, after the user clicks on the `LOG IN` button.
 
-* [logout.html](logout.html) contains text to be shown on the portal after the user logs out the portal.
+* [doc/logout.html](doc/logout.html) contains text to be shown on the portal after the user logs out the portal.
 
-* [signup.html](signup.html) contains text to be shown on the portal after the user signed up to the portal the first time.
+* [doc/signup.html](doc/signup.html) contains text to be shown on the portal after the user signed up to the portal the first time.
 
-* [homepage.html](homepage.html) contains text to be shown on the portal's homepage.
+* [doc/homepage.html](doc/homepage.html) contains text to be shown on the portal's homepage.
 
-* [footer.html](footer.html) contains text to be shown on the footer of every portal page.
+* [doc/footer.html](doc/footer.html) contains text to be shown on the footer of every portal page.
 
-* [privacy_policy.html](privacy_policy.html) contains the privacy policy of the Donders Repository.
+* [doc/privacy_policy.html](doc/privacy_policy.html) contains the privacy policy of the Donders Repository.
 
-* [requestaccess.html](requestaccess.html) contains text guiding user to request data access to a published collection.  The text is used, e.g., in the "Content" tab of the collection detail page.
+* [doc/requestaccess.html](doc/requestaccess.html) contains text guiding user to request data access to a published collection.  The text is used, e.g., in the "Content" tab of the collection detail page.
 
-* [downloadcontent.html](downloadcontent.html) contains text guiding user to download data via a data access method, such as WebDAV.
+* [doc/downloadcontent.html](doc/downloadcontent.html) contains text guiding user to download data via a data access method, such as WebDAV.
 
 * [doc/email/collectionChangesLeadText.html](doc/email/collectionChangesLeadText.html) provides leading message of the notification email concerning recent collection changes.
 
