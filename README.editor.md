@@ -77,7 +77,7 @@ Supported snippets are listed below:
 
 * [doc/email/managerLessCollectionsLeadText.html](doc/email/managerLessCollectionsLeadText.html) provides leading message of the notification email concerning manager-less collections.
 
-* [dua/\*.html](doc/dua/RU-DI-HD-1.0.html) provides contents of a specific data use agreement.
+* [doc/dua/\*.html](doc/dua/RU-DI-HD-1.0.html) provides contents of a specific data use agreement.
 
 ### Styles
 
@@ -85,7 +85,7 @@ Currently, the CSS-style is coded in the portal code.  The only customisable com
 
 * [doc/style/logo.png](doc/style/logo.png): A 100px height logo in png format (logo.png). Width can vary but the height is important to keep the aspect ratio.
 
-* [doc/style/logo2x.png](doc/style/logo2x.png): A 200px height logo in png format for retina screens (logo@2.png). Width can vary but the height is important to keep the aspect ratio.
+* [doc/style/logo2x.png](doc/style/logo2x.png): A 200px height logo in png format for retina screens (logo\@2.png). Width can vary but the height is important to keep the aspect ratio.
 
 ## Providing online helps
 
