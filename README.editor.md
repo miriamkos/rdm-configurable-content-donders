@@ -49,7 +49,7 @@ A list of indices are given blow:
 
 * [doc/keyword/MeSH2015.csv](doc/keyword/MeSH2015.csv) and [doc/keyword/SFN2013.csv](doc/keyword/SFN2013.csv) are two controlled vocabularies currently supported by the Donders Repository for collection keywords.  They are provided in the CSV format, and will be converted to a JSON format during the deployment.  __For the moment, adding a new keyword set requires development works in the Donders Repository.__
 
-As the JSON documents are imported by the portal code, any invalid JSON document can cause errors.  Therefore, all the JSON indices come with a schema file for validating the JSON document during the build process. This process prevents broken JSON indices being deployed to the production system. __One should make sure the schema matches the modified JSON file so that the build process will not fail.__  
+As the JSON documents are imported by the portal code, invalid JSON document can cause errors.  Therefore, all the JSON indices come with a schema file for validating the JSON document during the build process. This process prevents broken JSON indices being deployed to the production system. __One should make sure the schema matches the modified JSON file so that the build process will not fail.__  
 
 ### Snippets
 
