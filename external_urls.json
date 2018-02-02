@@ -12,6 +12,10 @@
   "footer" : "/doc/footer.html",
   "privacyPolicy" : "/doc/privacy_policy.html",
 
+  "changeStateFromOpenToTobeclosed" : "/doc/changestate/opentotobeclosed.html",
+  "changeStateFromTobeclosedToOpen" : "/doc/changestate/tobeclosedtoopen.html",
+  "changeStateFromTobeclosedToClosed" : "/doc/changestate/tobeclosedtoclosed.html",
+  
   "emailCollectionChangesLeadText" : "/doc/email/collectionChangesLeadText.html",
   "emailManagerLessCollectionsLeadText" : "/doc/email/managerLessCollectionsLeadText.html",
 
