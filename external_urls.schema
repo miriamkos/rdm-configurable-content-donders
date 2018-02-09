@@ -35,6 +35,7 @@
         "changeStateFromTobeclosedToOpen": { "type": "string" },
         "changeStateFromTobeclosedToClosed": { "type": "string" },        
         "emailCollectionChangesLeadText": { "type": "string" },
+        "emailCollectionCreatedLeadText": { "type": "string" },
         "emailManagerLessCollectionsLeadText": { "type": "string" },
         "oneTimePasswordModal.explanationLink": { "type": "string" },
         "user.researcherId.urlPrefix": { "type": "string" },

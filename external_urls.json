@@ -18,6 +18,7 @@
   
   "emailCollectionChangesLeadText" : "/doc/email/collectionChangesLeadText.html",
   "emailManagerLessCollectionsLeadText" : "/doc/email/managerLessCollectionsLeadText.html",
+  "emailCollectionCreatedLeadText" : "/doc/email/collectionCreatedLeadText.html",
 
   "collections.header" : "http://www.ru.nl/donders/research/data/faq/get-started/#h11c325e4-dbac-4ce9-a903-6b349ae3336c",
 
