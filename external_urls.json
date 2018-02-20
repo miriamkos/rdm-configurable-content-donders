@@ -43,5 +43,8 @@
   "collection.content.requestaccess" : "/doc/requestaccess.html",
   "collection.content.download" : "/doc/downloadcontent.html",
 
-  "message.user.signup": "/doc/signup.html"
+  "message.user.signup": "/doc/signup.html",
+
+  "message.reviewer.signin.success": "/doc/reviewer/signInSuccess.html",
+  "message.reviewer.signin.failed": "/doc/reviewer/signInFailed.html"
 }
