@@ -45,6 +45,7 @@
 
   "message.user.signup": "/doc/signup.html",
 
-  "message.reviewer.signin.success": "/doc/reviewer/signInSuccess.html",
-  "message.reviewer.signin.failed": "/doc/reviewer/signInFailed.html"
+  "login.signup.message": "/doc/login/signup.html",
+  "login.authenticationHash.success.message": "/doc/login/hashSignInSuccess.html",
+  "login.authenticationHash.failed.message": "/doc/login/hashSignInFailed.html"
 }
