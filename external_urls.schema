@@ -31,6 +31,7 @@
         "logout": { "type": "string" },
         "homepage": { "type": "string" },
         "footer": { "type": "string" },
+        "editCollection.confirmSocialUser": { "type": "string" },
         "changeStateFromEditableToReviewableInternal": { "type": "string" },
         "changeStateFromReviewableInternalToEditable": { "type": "string" },
         "changeStateFromReviewableInternalToReviewableExternal": { "type": "string" },

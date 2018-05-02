@@ -12,6 +12,7 @@
   "footer" : "/doc/footer.html",
   "privacyPolicy" : "/doc/privacy_policy.html",
 
+  "editCollection.confirmSocialUser" : "/doc/editcollection/confirmsocialuser.html",
   "changeStateFromEditableToReviewableInternal" : "/doc/changestate/editabletoreviewableinternal.html",
   "changeStateFromReviewableInternalToEditable" : "/doc/changestate/reviewabletoeditable.html",
   "changeStateFromReviewableInternalToReviewableExternal" : "/doc/changestate/editabletoreviewableinternal.html",
