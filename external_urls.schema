@@ -48,6 +48,8 @@
 		"collection.content.requestaccess": { "type": "string" },
         "collection.content.download": { "type": "string" },
         "login.signup.message": { "type": "string"},
+        "login.viewerEligibilty.disabled": { "type": "string"},
+        "login.contributorEligibilty.disabled": { "type": "string"},
         "login.authenticationHash.success.message": { "type": "string"},
         "login.authenticationHash.failed.message": { "type": "string"},
         "addCollection.confirmFormPanel" : { "type": "string" },
