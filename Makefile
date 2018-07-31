@@ -7,6 +7,7 @@ endif
 DUA=$(wildcard doc/dua/*)
 LOGOS=$(wildcard doc/style/logo*.png)
 BACKGROUND=doc/style/background.jpg
+BADGES=$(wildcard doc/style/badge*.svg)
 BUILDINFO=build.txt
 COLL_KEYWORDS=$(patsubst %.csv,%.json,$(wildcard doc/keyword/*.csv))
 VOC_ETHICAL_REVIEW_BOARD=doc/ethics/ethics_review_board.json
@@ -21,7 +22,7 @@ JSON_FILES=$(wildcard doc/dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICAT
 JSON_SCHEMAS=$(wildcard $(patsubst %.json,%.schema,$(JSON_FILES)))
 
 #list of files to be included in distribution or installation
-DIST_FILES=$(DUA) $(LOGOS) $(BACKGROUND) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_SNIPPETS_MD) $(CMS_SNIPPETS_HTML)
+DIST_FILES=$(DUA) $(LOGOS) $(BACKGROUND) $(BADGES) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_SNIPPETS_MD) $(CMS_SNIPPETS_HTML)
 
 #constant
 VERSION:=master
