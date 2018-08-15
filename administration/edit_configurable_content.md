@@ -96,14 +96,16 @@ Currently, the CSS-style is coded in the portal code.  The only customisable com
 * [doc/style/logo@2x.png](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/style/logo@2x.png): A 200px height logo in png format for retina screens. Width can vary but the height is important to keep the aspect ratio.
 
 ### variables
+To make the configurable content more dynamic a number of variables is supported that are replaced by the system with actual values. For instance, the footer text is configurable and displays the software version. The syntax for using variables is as follows: `${variable name}`. For example: `${version}`.
+The following variables are supported, which is a combination of variables that can be used everywhere (without context) and ones specific to a certain context:
 
-Some configurable content files support variables that need to be present in order to refer dynamically to, for example, a collection identifier, when the content is incorporated in a web page.  Those variables are specified in an HTML element with an attribute `wicket:id`.  The table below summarises those variables and their usage:
+| Variable | Context |
+| -------- | ------- |
+|`version`||
+|`year`||
+|`downloadLink`|[doc/downloadcontent.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/downloadcontent.html)|collection content page|
 
-| File | Web portal page | Variable|Processing|
-| ---  | --------------- | ------- | -------- |
-|[doc/downloadcontent.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/downloadcontent.html)|collection content page|`downloadLink`|The data access page of the collection is set as the href attribute of the a element|
-|[doc/footer.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/footer.html)|all pages|`year`|The current year is set as the body of the element|
-|[doc/footer.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/footer.html)|all pages|`version`|The web portal software version is set as the body of the element|
+Please be aware that when using variables that do not exist within a certain context the system will not be able to present the corresponding page on the web portal, or send out corresponding emails.
 
 ## Online helps
 
