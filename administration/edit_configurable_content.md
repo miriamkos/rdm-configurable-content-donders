@@ -97,13 +97,20 @@ Currently, the CSS-style is coded in the portal code.  The only customisable com
 
 ### variables
 To make the configurable content more dynamic a number of variables is supported that are replaced by the system with actual values. For instance, the footer text is configurable and displays the software version. The syntax for using variables is as follows: `${variable name}`. For example: `${version}`.
-The following variables are supported, which is a combination of variables that can be used everywhere (without context) and ones specific to a certain context:
+The following variables are supported, which is a combination of variables that can be used everywhere (without context) and ones that are only available within a certain context:
 
-| Variable | Context |
-| -------- | ------- |
-|`version`||
-|`year`||
-|`downloadLink`|[doc/downloadcontent.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/downloadcontent.html)|collection content page|
+| Variable | Context | Description |
+| -------- | ------- | ----------- |
+|`version`|| Software version |
+|`year`|| Current year |
+|`userCount`|| Number of users (excluding system accounts) |
+|`collectionDscPublishedCount`|| Number of Data Sharing Collections that have been published |
+|`collectionDscWorkingCount`|| Number of Data Sharing Collections that have not been published |
+|`collectionDacArchivedCount`|| Number of Data Acquisition Collections that have been archived |
+|`collectionDacWorkingCount`|| Number of Data Acquisition Collections that have not been archived |
+|`collectionRdcArchivedCount`|| Number of Research Documentation Collections that have been archived |
+|`collectionRdcWorkingCount`|| Number of Research Documentation Collections that have not been archived |
+|`downloadLink`|[doc/downloadcontent.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/downloadcontent.html)|Link to download the Collection's content |
 
 Please be aware that when using variables that do not exist within a certain context the system will not be able to present the corresponding page on the web portal, or send out corresponding emails.
 
