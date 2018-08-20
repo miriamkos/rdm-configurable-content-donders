@@ -1,6 +1,6 @@
 # Managing the configurable content of the Donders Repository portal
 
-The Donders Repository portal separates the configurable contents from the code. This allows content editors (e.g. the data stewards) to modify text that appears on the portal (e.g. information, policies, links to documentations) without the need of developers updating the code. It also allows different research institutions to customize their specific portal.
+This page explains how to update the configurable contents which is displayed on the Donders Repository portal.
 
 This repository has two branches, the _master_ and the _release_.  They serve different purposes in the following workflow from editing the contents to managing how these changes appear online.
 
@@ -15,9 +15,9 @@ Two roles are involved in the workflow: the _content editor_ which is responsibl
 
 ## Content editing
 
-Please refer to [this document](edit_configurable_content.md) for details.
+Please refer to [this document](content_editors.md) for details.
 
-## Test
+## Verify the updated content
 
 1. download the repository
 
@@ -39,7 +39,7 @@ Please refer to [this document](edit_configurable_content.md) for details.
   - create the release package (`rdm-configurable-content-*.tar.gz`) taking into account only the needed files (e.g. derived HTML snippets and JSON documents) for deployment
   - walk through the `external_urls.json` file in the release zip, check whether the URLs are (or will be) available after the deployment
 
-## Deployment
+## Deploy the updated content
 
 The deployment process is triggered by changes in the `release` branch of the repository. After the changes in the `master` branch is confirmed, one can update the `release` branch using the following git commands:
 
