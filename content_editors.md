@@ -1,6 +1,6 @@
 # Editing the configurable content of the Donders Repository portal
 
-This page provides instructions for content manager to edit the configurable contents of the Donders Repository portal.
+This page explains how to edit the configurable contents that is used on the Donders Repository portal.
 
 ## How to edit
 
