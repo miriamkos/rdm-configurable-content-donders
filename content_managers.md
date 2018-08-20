@@ -1,10 +1,8 @@
-# Configurable content for the Donders Repository portal
+# Managing the configurable content of the Donders Repository portal
 
-This is the repository for managing DI-specific controlled vocabularies, naming schemes and references to external resources that map terms and names onto meanings and definitions.
+The Donders Repository portal separates the configurable contents from the code. This allows content editors (e.g. the data stewards) to modify text that appears on the portal (e.g. information, policies, links to documentations) without the need of developers updating the code. It also allows different research institutions to customize their specific portal.
 
-In the implementation of the Donders Repository portal, configurable contents are decoupled from the codes.  This allows content editors (e.g. the data stewards) to modify informations on the portal, such as policy, links to documentations, without the need of developers updating the code.  It also provides certain level of customise-ability of the portal for different research institutions.
-
-This repository has two branches, the _master_ and the _release_.  They serve different purposes in the following workflow from editing the contents to applying changes online.
+This repository has two branches, the _master_ and the _release_.  They serve different purposes in the following workflow from editing the contents to managing how these changes appear online.
 
 ## The workflow
 
