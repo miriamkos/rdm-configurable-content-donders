@@ -1,7 +1,5 @@
 # Configurable content for the Donders Repository portal
 
-## Documentation for data stewards and editors of the configurable content
-
 This repository allows managing the snippets of text that appear on the web portal, specific controlled vocabularies, naming schemes and references to external resources that map terms and names onto meanings and definitions.
 
 The Donders Repository portal separates the configurable contents from the code. This allows content editors (e.g. the data stewards) to modify text that appears on the portal (e.g. information, policies, links to documentations) without the need of developers updating the code. It also allows different research institutions to customize their specific portal.
