@@ -4,7 +4,7 @@ The repository can be accessed at http://data.donders.ru.nl/
 
 The end-user documentation is at http://www.ru.nl/donders/research/data/
 
-Technical documentation for system administrators is at https://radboud.atlassian.net/wiki/spaces/RDM/page
+Technical documentation for system administrators is at https://radboud.atlassian.net/wiki/spaces/RDM/overview
 
 ## Documentation for data stewards and editors of the configurable content
 
