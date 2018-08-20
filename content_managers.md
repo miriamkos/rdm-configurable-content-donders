@@ -1,4 +1,4 @@
-# Managing the configurable content of the Donders Repository portal
+# Managing and deploying the configurable content of the Donders Repository portal
 
 This page explains how to update the configurable contents which is displayed on the Donders Repository portal.
 
