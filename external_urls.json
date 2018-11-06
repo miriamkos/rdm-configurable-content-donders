@@ -51,6 +51,14 @@
   "login.viewerEligibilty.disabled" : "/doc/login/viewerEligibilityDisabled.html",
   "login.contributorEligibilty.disabled" : "/doc/login/contributorEligibilityDisabled.html",
   "login.authenticationHash.success.message": "/doc/login/hashSignInSuccess.html",
-  "login.authenticationHash.failed.message": "/doc/login/hashSignInFailed.html"
-  
+  "login.authenticationHash.failed.message": "/doc/login/hashSignInFailed.html",
+
+  "collection.tab.metadata.loggedin" : "/doc/collection/metadata_loggedin.html",
+  "collection.tab.metadata.anonymous" : "/doc/collection/metadata_anonymous.html",
+  "collection.tab.files.loggedin" : "/doc/collection/files_loggedin.html",
+  "collection.tab.files.anonymous" : "/doc/collection/files_anonymous.html",
+  "collection.tab.history.loggedin" : "/doc/collection/history_loggedin.html",
+  "collection.tab.history.anonymous" : "/doc/collection/history_anonymous.html",
+  "collection.tab.manifest.loggedin" : "/doc/collection/manifest_loggedin.html",
+  "collection.tab.manifest.anonymous" : "/doc/collection/manifest_anonymous.html"
 }
