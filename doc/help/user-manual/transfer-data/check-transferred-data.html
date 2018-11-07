@@ -1,1 +1,45 @@
-<hr><a href="../../index.html">Back to help overview</a></p>
+<h1>Check transferred data</h1>
+<p>After transferring files (uploading or downloading) between the repository and your computer you need to make sure all the files are transferred completely. Especially when transferring a large number of files and/or large files, something can go wrong along the way (e.g., short interruption in the network connection, unexpected downtime of the server, etc.).</p>
+<p>To check the presence (i.e. the number) and the content of the files, you can use the <em>manifest file</em> for the collection. This contains a list of all files with a checksum for each. You can download the manifest file from the collection&rsquo;s content page.</p>
+<p><img title="manifest file" src="https://www.ru.nl/publish/pages/822777/manifest_file.jpg" alt="manifest file" width="647" height="500" /></p>
+<p>After downloading the manifest file, move it to the folder on your computer that contains the local copy of the files from the repository.</p>
+<p>The subsequent instructions depend on your computer&rsquo;s operating system. Choose the appropriate option.</p>
+<ol>
+<li><a href="https://www.ru.nl/donders/research/data/user-manual/transfer-data/check-transferred-data/#hbcc1eb5f-39a1-b03c-7a9e-7411992ccafb">Windows</a></li>
+<li><a href="https://www.ru.nl/donders/research/data/user-manual/transfer-data/check-transferred-data/#h705a3e73-141b-88bd-b99c-9db3d4f10556">Linux and Mac OS-X</a></li>
+</ol>
+<p>Common problems:</p>
+<p><a href="https://www.ru.nl/donders/research/data/faq/transferring-data/#hdbaf5226-3624-41a4-a700-f9c6145fe2f8">Why are there files without checksum in the manifest file?</a></p>
+<p><a href="https://www.ru.nl/donders/research/data/faq/transferring-data/#hc1f643a7-fd76-499c-a4d5-d422063d7112">It took very long time to download the manifest file; and eventually failed with the &ldquo;504 Gateway Time-out&rdquo; error. What should I do?</a></p>
+<p>Go to next section <a href="https://www.ru.nl/donders/research/data/user-manual/archive-publish-collections/">Archive/publish Collections</a></p>
+<h2><strong>Windows</strong></h2>
+<p><strong>Download the Hashcheck tool.</strong></p>
+<p>Go to <a href="https://github.com/gurnec/HashCheck/releases/tag/v2.4.0">https://github.com/gurnec/HashCheck/releases/tag/v2.4.0</a> and download the file: HashCheckSetup-v2.4.0.exe</p>
+<p><img title="CS_1" src="https://www.ru.nl/publish/pages/822777/cs_1.png" alt="CS_1" width="701" height="429" /></p>
+<p>Run the executable file (HashCheckSetup-v2.4.0.exe) and install the Hashcheck tool (you need administrator rights of the computer for this). Restart your computer after the installation.</p>
+<p><img title="CS_2" src="https://www.ru.nl/publish/pages/822777/cs_2.png" alt="CS_2" width="701" height="451" /></p>
+<p>Hashcheck only needs to be installed once; after installation, you can use it for all your future file transferring.</p>
+<p><strong>Change the manifest file&rsquo;s extension from .txt to .sha256</strong><br />After this change of the extension, Windows will open the file with HashCheck instead of Notepad when double-clicking on it.</p>
+<p>If the file extensions are not visible, go to the start menu of your computer, search for &ldquo;Folder options&rdquo; and select the top option - &ldquo;Folder options.&rdquo; Select &ldquo;View&rdquo; on the top menu. Remove the tick from &ldquo;Hide extensions for known file types. &rdquo; Click on OK.</p>
+<p><strong>Check for correct file transfer</strong></p>
+<p>Double-click on the manifest file to open the HashCheck application. This will open a window that lists the files that are matched and non-matched. Note that computing the checksum can take some time, especially if there are many and/or large files.</p>
+<h2><strong>Linux/MacOSX</strong></h2>
+<p>Open the command window/terminal.</p>
+<p>Change directory to folder that contains the local copy of the files from the repository.</p>
+<pre><p>$ cd ~/Download/MyCollectionName</p></pre>
+<p>In which <em>MyCollectionName</em> is the name of the folder on your local computer that must contain the same files as the collection in the repository.</p>
+<p><strong>Check the success of file transfer</strong></p>
+<p>For Linux check the success of transferring process with the sha256sum command:</p>
+<pre><p>$ sha256sum -c ~/Download/ManifestFile.txt</p></pre>
+<p>Most linux distributions come with the sha256sum utility. If sha256sum is not installed on your computer, you can do</p>
+<pre><p>$ apt-get install coreutils</p></pre>
+<p>for Debian and Ubuntu-based distributions, or</p>
+<pre><p>$ yum install coreutils</p></pre>
+<p>for RedHat, Fedora and CentOS-based distributions.</p>
+<p>For Mac OS-X check the success of transferring process with the shasum command:</p>
+<pre><p>$ shasum -a 256 -c ~/Download/ManifestFile.txt</p></pre>
+<p>If shasum is not installed on your system, you can use Homebrew to install it. See <a href="http://brew.sh/">http://brew.sh</a> for details.</p>
+<p>In these commands <em>ManifestFile </em>is the name of the manifest file downloaded from the repository. This reports the matched and non-matched files within the collection directory</p>
+<p>To see only the names of the non-matched files, use the following command</p>
+<pre><p>$ shasum -a 256 -c ~/Download/ManifestFile.txt | grep -v &lsquo;OK&rsquo;</p></pre>
+<hr>Back to <a href="../transfer-data.html">transfer data</a>, <a href="../../user-manual.html">user manual</a> or <a href="../../index.html">help overview</a></p>
