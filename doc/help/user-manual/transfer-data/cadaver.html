@@ -1,1 +1,239 @@
-<hr><a href="../../index.html">Back to help overview</a></p>
+<h1>Cadaver</h1>
+<p>For Linux users who don&rsquo;t work with a graphical desktop environment, the recommended command-line tool is Cadaver.</p>
+<h2>2.3.1 Install Cadaver</h2>
+<p>For help installing Cadaver on your Linux device please contact <a href="mailto:datasupport@donders.ru.nl">datasupport@donders.ru.nl</a>.</p>
+<h2>2.3.2 Start with Cadaver</h2>
+<p>The following section will demonstrate how to transfer files to the repository using Cadaver. Find a command reference for Cadaver <a href="https://www.ru.nl/donders/research/data/user-manual/transfer-data/cadaver/#hb7fe2327-ed36-4af5-8e77-7610d923de18">here</a>.</p>
+<p>Open the Linux terminal and type the following command.</p>
+<p>$ cadaver <a href="https://webdav.data.donders.ru.nl/">https://webdav.data.donders.ru.nl</a></p>
+<p>You will be asked to provide the <em>username</em> (CASE SENSITIVE!) and <em>password</em> of your <a href="https://www.ru.nl/donders/research/data/user-manual/transfer-data/data-access-account/">data access account</a> to login.</p>
+<p><img title="Cadaver-username" src="https://www.ru.nl/publish/pages/820696/cadaver-username.png" alt="Cadaver-username" width="794" height="100" /></p>
+<h2>2.3.3 Navigating local and remote directories</h2>
+<p>Once you login to the WebDAV service, you are in the root directory. It allows you to navigate to the different Donders Institute organizational units. Type the following command to list the content of the current collection.</p>
+<p>$ ls</p>
+<p><img title="Cadaver-root" src="https://www.ru.nl/publish/pages/820696/cadaver-root.png" alt="Cadaver-root" width="794" height="135" /></p>
+<p>This example will load files to a collection from the organizational unit DCC.</p>
+<p>In the subtree of a particular organizational unit, you will see the directories of all its collections. You can only see these collections if you are authorized (i.e., if you are a viewer, contributor or manager of the corresponding collection). As a viewer of a collection, you are only allowed to download data from that collection. As a contributor or manager, you are also allowed to upload and modify data.</p>
+<p>Change directory to the DCC and list the collections available for the user in this example.</p>
+<p>$ cd dcc</p>
+<p>$ ls</p>
+<p><img title="Cadaver-my-root" src="https://www.ru.nl/publish/pages/820696/cadaver-my-root.png" alt="Cadaver-my-root" width="794" height="135"  /></p>
+<p>Change directory to the DAC and list the content of the DAC.</p>
+<p>$ cd DAC_DEMO_DCC_4Doc_613</p>
+<p>$ls</p>
+<p><img title="Cadaver-empty-DAC" src="https://www.ru.nl/publish/pages/820696/cadaver-empty-dac.png" alt="Cadaver-empty-DAC" width="794" height="76"  /></p>
+<p>The DSC is still empty, let&rsquo;s upload a first file. The following commands will display the current local directory and list files and folders in it.</p>
+<p>$ lpwd</p>
+<p>$ lls</p>
+<p><img title="Cadaver-list-localdir" src="https://www.ru.nl/publish/pages/820696/cadaver-list-localdir.png" alt="Cadaver-list-localdir" width="794" height="95"  /></p>
+<p>Now let&rsquo;s upload the file &lsquo;tryme.py&rsquo; to the DAC</p>
+<p>$ put tryme.py</p>
+<p>$ ls</p>
+<p><img title="Cadaver-upload1file" src="https://www.ru.nl/publish/pages/820696/cadaver-upload1file.png" alt="Cadaver-upload1file" width="794" height="130"  /></p>
+<p>In the local folder &lsquo;playfiles&rsquo; are four files. Here we navigate to that folder and list its contents</p>
+<p>$ lcd playfiles</p>
+<p>$ lls</p>
+<p><img title="Cadaver-listlocalfolder" src="https://www.ru.nl/publish/pages/820696/cadaver-listlocalfolder.png" alt="Cadaver-listlocalfolder" width="794" height="77"  /></p>
+<p>The following commands will create a new folder in the DAC and upload the four files at the same time.</p>
+<p>$ mkcol playfiles</p>
+<p>$ cd playfiles</p>
+<p>$ mput playfile*</p>
+<p><img title="Cadaver-uploadNfiles" src="https://www.ru.nl/publish/pages/820696/cadaver-uploadnfiles.png" alt="Cadaver-uploadNfiles" width="794" height="265" /></p>
+<p>In the Command list below, we list more commands that show you e.g. how to delete folders and files from the DAC. If you try to upload files to a directory for which you are not authorized (i.e., you are not a contributor or manager of the corresponding collection), you will get an Internal Server Error. Below, we give an example that was obtained by trying to upload the file tryme.py to the collection RDC_Demo_4Doc_364, in which you only have the viewer role.</p>
+<p><img title="Cadaver-internalservererror" src="https://www.ru.nl/publish/pages/820696/cadaver-internalservererror.png" alt="Cadaver-internalservererror" width="794" height="267" /></p>
+<p>As last example we show you how to download a file with the command get.</p>
+<p><img title="Cadaver-download" src="https://www.ru.nl/publish/pages/820696/cadaver-download.png" alt="Cadaver-download" width="794" height="210" /></p>
+<h2>Read more about the content of collections:</h2>
+<ul>
+<li>What files should I upload in different collections? Read the FAQ about files in the Data Aquisition Collection (<a href="https://www.ru.nl/donders/research/data/faq/transferring-data/#h0d754df8-c40e-4626-9b36-53b8ce1c2798">DAC</a>), Reseach Documentation Collection (<a href="https://www.ru.nl/donders/research/data/faq/transferring-data/#h0778af01-7ee3-4613-b063-e6224b9a1fd8">RDC</a>) and Data Sharing Collection (<a href="https://www.ru.nl/donders/research/data/faq/closing-collections/#h9f953f9e-87c9-4a27-8eec-cd50e86e4b0b">DSC</a>)?</li>
+<li>How should I organize my data? Read the FAQ about organizing data in a <a href="https://www.ru.nl/donders/research/data/faq/transferring-data/#hf32e6d1e-683c-4020-9c20-ba3345ca37f0">DAC </a>and <a href="https://www.ru.nl/donders/research/data/faq/transferring-data/#h445a83a3-5c49-4dd2-b517-1490fd79c1fd">RDC</a>?</li>
+<li><a href="https://www.ru.nl/donders/research/data/faq/transferring-data/#hed677519-a355-4a4b-9c7d-607ded53f4e2">Where should I store personal information about the participants?</a></li>
+<li><a href="https://www.ru.nl/donders/research/data/faq/transferring-data/#h6a87e84a-9204-4e1d-b6e9-34c71ad07dbb">How to refer to data that the researcher did not collect?</a></li>
+<li><a href="https://www.ru.nl/donders/research/data/faq/transferring-data/#h0c91e10c-89f0-4e6d-82e5-f54128e3405d">How should I document the experimental setup?</a></li>
+</ul>
+<p>Go to next section: <a href="https://www.ru.nl/donders/research/data/user-manual/transfer-data/check-transferred-data/">Check transferred data</a></p>
+
+<h2>2.3.4 Command list</h2>
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Command</strong></p>
+</td>
+<td>
+<p><strong>Function</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>help [command]</p>
+</td>
+<td>
+<p>Display help message</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>cadaver <a href="https://webdav.data.donders.ru.nl/">https://webdav.data.donders.ru.nl</a></p>
+</td>
+<td>
+<p>Log into on the WebDAV server</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>cd [path]</p>
+</td>
+<td>Change working directory</td>
+</tr>
+<tr>
+<td>
+<p>lcd [path]</p>
+</td>
+<td>Change local working directory</td>
+</tr>
+<tr>
+<td>
+<p>ls [path]</p>
+</td>
+<td>
+<p>List contents of current [or other] collection</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>lls [options]</p>
+</td>
+<td>Display local directory listing</td>
+</tr>
+<tr>
+<td>
+<p>pwd</p>
+</td>
+<td>
+<p>Display name of current collection</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>put local [remote]</p>
+</td>
+<td>
+<p>Upload local file</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>get remote [local]</p>
+</td>
+<td>
+<p>Download remote resource</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>mget remote</p>
+</td>
+<td>
+<p>Download many remote resources</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>mput local</p>
+</td>
+<td>
+<p>Upload many local files</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>edit resource</p>
+</td>
+<td>
+<p>Edit given resource</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>less remote</p>
+</td>
+<td>
+<p>Display remote resource through pager</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>mkcol remote</p>
+</td>
+<td>
+<p>Create remote collection(s)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>cat remote</p>
+</td>
+<td>
+<p>Display remote resource(s)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>delete remote</p>
+</td>
+<td>
+<p>Delete non-collection resource(s)</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>rmcol remote</p>
+</td>
+<td>
+<p>Delete remote collections and ALL contents</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>copy source... dest</p>
+</td>
+<td>
+<p>Copy resource(s) from source to dest</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>move source... dest</p>
+</td>
+<td>
+<p>Move resource(s) from source to dest</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>close</p>
+</td>
+<td>
+<p>Close current connection</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>quit</p>
+</td>
+<td>
+<p>Exit program</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>logout</p>
+</td>
+<td>
+<p>Logout of authentication session</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr>Back to <a href="../transfer-data.html">transfer data</a>, <a href="../../user-manual.html">user manual</a> or <a href="../../index.html">help overview</a></p>
