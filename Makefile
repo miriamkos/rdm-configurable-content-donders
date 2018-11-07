@@ -14,7 +14,8 @@ VOC_ETHICAL_REVIEW_BOARD=doc/ethics/ethics_review_board.json
 VOC_PUBLICATION_SYSTEM=doc/publication/publication_system.json
 CMS_EXT_RSRC_IDX=external_urls.json
 CMS_SNIPPETS_MD=$(patsubst %.md,%.html,$(wildcard doc/privacy/*.md))
-CMS_SNIPPETS_HTML=$(wildcard doc/privacy/*.html doc/*.html doc/email/*.html doc/messages/*.html doc/changestate/*.html doc/login/*.html doc/editcollection/*.html)
+CMS_SNIPPETS_HTML=$(wildcard doc/privacy/*.html doc/*.html doc/email/*.html doc/messages/*.html doc/changestate/*.html doc/login/*.html doc/editcollection/*.html doc/collection/*.html doc/help/**/*.html)
+CMS_SNIPPETS_HELP=$(shell find doc/help -name '*.html')
 
 #list of JSON files subject for validation
 JSON_FILES=$(wildcard doc/dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_EXT_RSRC_IDX) $(COLL_KEYWORDS)
@@ -22,7 +23,7 @@ JSON_FILES=$(wildcard doc/dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICAT
 JSON_SCHEMAS=$(wildcard $(patsubst %.json,%.schema,$(JSON_FILES)))
 
 #list of files to be included in distribution or installation
-DIST_FILES=$(DUA) $(LOGOS) $(BACKGROUND) $(BADGES) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_SNIPPETS_MD) $(CMS_SNIPPETS_HTML)
+DIST_FILES=$(DUA) $(LOGOS) $(BACKGROUND) $(BADGES) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_SNIPPETS_MD) $(CMS_SNIPPETS_HTML) $(CMS_SNIPPETS_HELP)
 
 #constant
 VERSION:=master
