@@ -15,7 +15,7 @@ VOC_PUBLICATION_SYSTEM=doc/publication/publication_system.json
 CMS_EXT_RSRC_IDX=external_urls.json
 CMS_SNIPPETS_MD=$(patsubst %.md,%.html,$(wildcard doc/privacy/*.md))
 CMS_SNIPPETS_HTML=$(wildcard doc/privacy/*.html doc/*.html doc/email/*.html doc/messages/*.html doc/changestate/*.html doc/login/*.html doc/editcollection/*.html doc/collection/*.html doc/help/**/*.html)
-CMS_SNIPPETS_HELP=$(shell find doc/help -name '*.html')
+CMS_SNIPPETS_HELP=$(shell find doc/help -name '*')
 
 #list of JSON files subject for validation
 JSON_FILES=$(wildcard doc/dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_EXT_RSRC_IDX) $(COLL_KEYWORDS)
