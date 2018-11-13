@@ -17,6 +17,10 @@ p.caption {
     font-size: inherit;
 }
 
+div.document {
+    width: 100%;
+}
+
 div.footer {
     color: #fff;
     padding: 40px 0;
