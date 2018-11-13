@@ -6,15 +6,27 @@ body {
     margin: 0;
     padding: 0;
 }
+
 a {
     text-decoration: none;
 }
+
+p.caption {
+    font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: inherit;
+}
+
 div.footer {
     color: #fff;
     padding: 40px 0;
     text-align: left;
     width: auto;
     margin: auto;
+}
+
+div.body p, div.body dd, div.body li {
+    line-height: 24pt;
 }
 
 div.body h1,
@@ -36,6 +48,20 @@ div.body h3 { font-size: 130%; }
 div.body h4 { font-size: 100%; }
 div.body h5 { font-size: 100%; }
 div.body h6 { font-size: 100%; }
+
+div.sphinxsidebar h3,
+div.sphinxsidebar h4 {
+    font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
+    color: #444;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+
+div.sphinxsidebar h4 {
+    font-size: 14px;
+}
 
 @media screen and (max-width: 875px)
 div.sphinxsidebar {
