@@ -14,12 +14,8 @@ VOC_ETHICAL_REVIEW_BOARD=doc/ethics/ethics_review_board.json
 VOC_PUBLICATION_SYSTEM=doc/publication/publication_system.json
 CMS_EXT_RSRC_IDX=external_urls.json
 CMS_SNIPPETS_MD=$(patsubst %.md,%.html,$(wildcard doc/privacy/*.md))
-CMS_SNIPPETS_HTML=$(wildcard doc/privacy/*.html doc/*.html doc/email/*.html doc/messages/*.html doc/changestate/*.html doc/login/*.html doc/editcollection/*.html doc/collection/*.html)
-
-#the directory containing help documentations in RST format
-DIR_HELPDOC=doc/help
-DIR_HELPDOC_HTML=_build/$(notdir $(DIR_HELPDOC))
-TMPDIR := $(shell mktemp -d)
+CMS_SNIPPETS_HTML=$(wildcard doc/privacy/*.html doc/*.html doc/email/*.html doc/messages/*.html doc/changestate/*.html doc/login/*.html doc/editcollection/*.html doc/collection/*.html doc/help/**/*.html)
+CMS_SNIPPETS_HELP=$(shell find doc/help -name '*')
 
 #list of JSON files subject for validation
 JSON_FILES=$(wildcard doc/dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_EXT_RSRC_IDX) $(COLL_KEYWORDS)
@@ -27,7 +23,7 @@ JSON_FILES=$(wildcard doc/dua/*.json) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICAT
 JSON_SCHEMAS=$(wildcard $(patsubst %.json,%.schema,$(JSON_FILES)))
 
 #list of files to be included in distribution or installation
-DIST_FILES=$(DUA) $(LOGOS) $(BACKGROUND) $(BADGES) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_SNIPPETS_MD) $(CMS_SNIPPETS_HTML)
+DIST_FILES=$(DUA) $(LOGOS) $(BACKGROUND) $(BADGES) $(COLL_KEYWORDS) $(VOC_ETHICAL_REVIEW_BOARD) $(VOC_PUBLICATION_SYSTEM) $(CMS_SNIPPETS_MD) $(CMS_SNIPPETS_HTML) $(CMS_SNIPPETS_HELP)
 
 #constant
 VERSION:=master
@@ -38,7 +34,7 @@ DIST_ZIP:=rdm-configurable-content-$(VERSION).tar.gz
 .PHONY: build dist install $(BUILDINFO) $(JSON_SCHEMAS) $(CMS_EXT_RSRC_IDX)
 
 # convert contents into proper formats
-build: $(COLL_KEYWORDS) $(CMS_SNIPPETS_MD) $(BUILDINFO) $(DIR_HELPDOC_HTML)
+build: $(COLL_KEYWORDS) $(CMS_SNIPPETS_MD) $(BUILDINFO)
 
 $(COLL_KEYWORDS):
 	@echo "--> converting keyword: $@"
@@ -51,12 +47,6 @@ $(CMS_SNIPPETS_MD):
 $(CMS_EXT_RSRC_IDX):
 	@echo "--> build index file: $@"
 	sed "s|http://data.donders.ru.nl|$(BASEURL)|g" $(CMS_EXT_RSRC_IDX) > $(CMS_EXT_RSRC_IDX).tmp
-
-$(DIR_HELPDOC_HTML):
-	@echo "--> build helpdoc files in $(DIR_HELPDOC)"
-	cp -R $(DIR_HELPDOC)/* $(TMPDIR) && make -C $(TMPDIR) html
-	mkdir -p $@ && mv $(TMPDIR)/_build/html/* $@
-	rm -rf $(TMPDIR)
 
 # validate JSON file when the corresponding .schema file is presented
 validate_json: $(JSON_SCHEMAS)
@@ -80,7 +70,6 @@ $(DIST_ZIP): build validate_json $(CMS_EXT_RSRC_IDX)
 	@$(foreach f,$(DIST_FILES),cp $(f) $(patsubst doc/%,dist/%,$(f));)
 	@cp $(BUILDINFO).dist dist/$(BUILDINFO)
 	@mv $(CMS_EXT_RSRC_IDX).tmp dist/$(CMS_EXT_RSRC_IDX)
-	@mkdir -p dist/$(DIR_HELPDOC) && cp -R $(DIR_HELPDOC_HTML)/* dist/$(DIR_HELPDOC)
 	@cd dist && COPYFILE_DISABLE=true tar cvzf ../$@ * && cd -
 
 # install
@@ -97,4 +86,3 @@ clean:
 	@if [ -f $(CMS_EXT_RSRC_IDX).tmp ]; then rm $(CMS_EXT_RSRC_IDX).tmp; fi
 	@if [ -d dist ]; then rm -rf dist; fi
 	@if [ -f $(BUILDINFO).dist ]; then rm -rf $(BUILDINFO).dist; fi
-	@if [ -d _build ]; then rm -rf _build; fi
