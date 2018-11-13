@@ -53,11 +53,15 @@ div.body h4 { font-size: 100%; }
 div.body h5 { font-size: 100%; }
 div.body h6 { font-size: 100%; }
 
+
+div.sphinxsidebar {
+    font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
+    font-size: 14px;
+}
+
 div.sphinxsidebar h3,
 div.sphinxsidebar h4 {
-    font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
     color: #444;
-    font-size: 14px;
     font-weight: normal;
     margin: 0 0 5px 0;
     padding: 0;
