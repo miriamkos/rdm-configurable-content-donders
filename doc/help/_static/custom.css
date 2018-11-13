@@ -6,3 +6,10 @@ body {
     margin: 0;
     padding: 0;
 }
+div.footer {
+    color: #fff;
+    padding: 40px 0;
+    text-align: left;
+    width: auto;
+    margin: auto;
+}
