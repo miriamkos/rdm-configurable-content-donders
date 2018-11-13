@@ -6,6 +6,7 @@
 /vocabulary/collection_keyword/*.json
 /privacy/privacy_policy.html
 .idea
+_build
 
 /external_urls_DEV.json
 /.pydevproject
