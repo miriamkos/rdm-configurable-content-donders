@@ -14,7 +14,7 @@ a {
 p.caption {
     font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
     font-style: italic;
-    font-size: inherit;
+    font-size: 20px;
 }
 
 div.document {
@@ -30,7 +30,7 @@ div.footer {
 }
 
 div.body p, div.body dd, div.body li {
-    line-height: 24pt;
+    line-height: 24px;
 }
 
 div.body h1,
@@ -57,6 +57,7 @@ div.body h6 { font-size: 100%; }
 div.sphinxsidebar {
     font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
     font-size: 14px;
+    height: 100%;
 }
 
 div.sphinxsidebar h3,
