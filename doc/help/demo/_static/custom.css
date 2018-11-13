@@ -11,10 +11,10 @@ a {
     text-decoration: none;
 }
 
-p.caption {
+div.figure p.caption {
     font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
     font-style: italic;
-    font-size: 20px;
+    font-size: 12px;
 }
 
 div.document {
@@ -55,7 +55,8 @@ div.body h6 { font-size: 100%; }
 
 
 div.sphinxsidebar {
-    font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    //font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
     font-size: 14px;
     height: 100%;
 }
@@ -75,6 +76,12 @@ div.sphinxsidebar h3 {
 
 div.sphinxsidebar h4 {
     font-size: 14px;
+}
+
+div.sphinxsidebar p.caption {
+    font-family: "Noto Serif", Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    font-size: 20px;
 }
 
 div.sphinxsidebarwrapper {
