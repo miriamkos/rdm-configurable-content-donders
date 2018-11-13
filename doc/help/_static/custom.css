@@ -6,10 +6,20 @@ body {
     margin: 0;
     padding: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
 div.footer {
     color: #fff;
     padding: 40px 0;
     text-align: left;
     width: auto;
     margin: auto;
+}
+
+@media screen and (max-width: 875px)
+div.sphinxsidebar {
+    margin-left: 0px;
 }
