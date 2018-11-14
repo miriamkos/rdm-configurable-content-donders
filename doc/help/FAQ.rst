@@ -61,7 +61,7 @@ You should not upload any data that can be obtained as the result of analyses th
 
 Organize your DAC in a standard way (such as BIDS), because will make it much easier to share the data at a later point in time. Below is one example from the BIDS website. See for more examples here.
 
-.. figure:: images/BIDS.png
+.. figure:: images/BIDS.PNG
    :scale: 50%
 
 For all types of data we recommend that you add a 'readme' document that describes the organization of the data over the files and directories.
@@ -132,7 +132,8 @@ Raw photos, videos or audio files should not be shared in a DSC.
 
 Organize your collections in a standard way (such as BIDS), because will make it much easier to share the data at a later point in time. Below is one example from the BIDS website. See more examples here.
 
-bids2
+.. figure:: images/BIDS.PNG
+   :scale: 50%
 
 For all types of data we recommend that you add a text document (txt, pdf or Microsoft Word) that describes the organization of the data over the files and directories.
 
