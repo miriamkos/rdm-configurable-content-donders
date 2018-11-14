@@ -1,10 +1,10 @@
 Frequently Asked Questions
 =================
 
-Get started / deposit data
+Get started: deposit data
 -----------
 
-Edit collection metadata (for collection managers)
+Edit collection metadata
 -----------
 
 Organize data collections 
@@ -186,6 +186,6 @@ Share data with external reviewers
 
 
 
-Access published data
+Access shared data
 -------------
 
