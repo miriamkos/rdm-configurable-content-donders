@@ -2,7 +2,7 @@
 User Manual
 =================
 
-This user manual will help you get a jump start with the Data Repository.
+This user manual will help you get a jump start with the Donders Repository.
 
 Get started
 
