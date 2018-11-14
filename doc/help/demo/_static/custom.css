@@ -99,7 +99,7 @@ div.sphinxsidebarwrapper {
         padding: 0;
     }
     
-    div.sphinxsidebar h3, h4, ul {
+    div.sphinxsidebar h3, h4 {
         color: #ffffff;
     }
 }
