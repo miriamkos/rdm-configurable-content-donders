@@ -9,4 +9,5 @@
    Publish data <publish-data.rst>
    Review to-be-published data <review-data.rst>
    Access published data <access-published-data.rst>
+   FAQ <FAQ.rst>
    
