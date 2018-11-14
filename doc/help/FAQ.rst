@@ -4,12 +4,10 @@ Frequently Asked Questions
 Get started / deposit data
 -----------
 
-
 Edit collection metadata (for collection managers)
 -----------
 
-
-Organize & upload data 
+Organize data collections 
 -------------
 
 **1. Which files should and should I not upload to a Data Acquisition Collection (DAC)?**
@@ -182,10 +180,12 @@ Since the original collection is persistent, it will remain accessible as well. 
 
 A DSC can be linked to zero, one or multiple publications. The first situation (no publication) occurs when a data set is considered useful for external researchers in their future studies. The second situation (one publication) typically occurs when a data set is used in a publication, and the DSC is shared around the same time that the paper becomes available on the publisher’s website. The third situation (more publications) typically occurs when a DSC gets reused in other publications following the paper that was published together with DSC.
 
-Review data 
+Share data with external reviewers 
 -------------
+
 
 
 
 Access published data
 -------------
+
