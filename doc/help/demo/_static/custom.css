@@ -91,6 +91,7 @@ div.sphinxsidebarwrapper {
 @media screen and (max-width: 875px) {
     div.sphinxsidebar {
         margin-left: 0px;
+        width: 100%;
     }
     
     ul, ol {
