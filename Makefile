@@ -54,8 +54,11 @@ $(CMS_EXT_RSRC_IDX):
 
 $(DIR_HELPDOC_HTML):
 	@echo "--> build helpdoc files in $(DIR_HELPDOC)"
-	cp -R $(DIR_HELPDOC)/* $(TMPDIR) && make -C $(TMPDIR) html
-	find $(TMPDIR)/_build/html -name '*.html' -exec sed -i 's|.*src="_static/jquery.js".*||g' {} +
+	cp -R $(DIR_HELPDOC)/* $(TMPDIR) && \
+		cp -R $(shell pwd)/tools/sphinx/* $(TMPDIR) && \
+		make -C $(TMPDIR) html
+	find $(TMPDIR)/_build/html -name '*.html' -exec \
+		sed -i 's|.*src="_static/jquery.js".*||g' {} +
 	mkdir -p $@ && mv $(TMPDIR)/_build/html/* $@
 	rm -rf $(TMPDIR)
 
