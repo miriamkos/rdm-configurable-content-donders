@@ -93,7 +93,7 @@ html_theme = 'alabaster'
 html_theme_options = {
     'page_width'             : "940px",
     'sidebar_width'          : "220px",
-    'fixed_sidebar'          : "true",
+    'fixed_sidebar'          : "false",
     'sidebar_includehidden'  : "false",
     'body_text'              : "#3E4349",
     'body_text_align'        : "left",
