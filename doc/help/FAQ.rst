@@ -297,5 +297,5 @@ The majority of data sets shared through the Donders Repository include data col
 
 The Donders Repository needs to be able to verify your identity based on the e-mail address that is shared with your ORCID-iD. Therefore, you must allow (at least) trusted parties to be able to see your e-mail address. Please go to https://orcid.org/, click on your e-mail address settings and change the visibility settings to (at least) trusted parties as below.
 
-.. figure:: images/e-mailsettingsorcid.jpg
+.. figure:: images/e-mail_settings_orcid.jpg
    :scale: 50%
