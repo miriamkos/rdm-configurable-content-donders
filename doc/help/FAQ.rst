@@ -39,10 +39,67 @@ One person can have multiple user profiles in the repository, e.g. if that perso
 
 Get started: deposit data
 -----------
+**1. What are the different Collection types?**
+
+There are three collection types, one for data acquisition (Data Acquisition Collection), one for research documentation (Research Documentation Collection) and one for data sharing (Data Sharing Collection).
+
+**Data Acquisition Collection (DAC).** In a Data Acquisition Collection, the research data are archived in their original form. Here, “original” means without any manipulations that limit future analyses of these data. To learn more about the files that you must upload to a Research Data Collection, see this FAQ.
+
+**Research Documentation Collection (RDC).** When a paper is accepted for publication, the associated RDC must document the process via which data are converted into the to-be-published results. Prior to the paper being accepted for publication, the RDC can be used as a collaboration platform via which all kinds of files are shared (analysis scripts, preliminary figures, the different versions of the paper, …). To learn more about the files that you must upload to a RDC, see this FAQ.
+
+**Data Sharing Collection (DSC).** A DSC contains the data on which the published results are based, allowing other researchers to extend scientific findings by re-analyzing data with new methods, and/or by addressing new research questions using these data. To learn more about the files that you must upload to a DSC, see this FAQ.
+
+**2. How should I request a Data Acquisition Collection/Research Documentation Collection/ Data Sharing Collection (DAC/RDC/DSC)?**
+
+New collections can only be requested by researchers working at or affiliated with the Donders Institute for Brain, Cognition and Behavior. The Donders Insitute has 4 organizational units, which all have their own management and implementation of RDM procedures: DCCN, DCC, DCN and DCMN. The way to request a collection differs per organizational unit. For details please check the Intranet of Donders Institute: https://intranet.donders.ru.nl/
+
+**3. What are research data?**
+
+Research data are defined as follows:
+
+All information that is (1) generated as a part of the research process and (2) on which a scientific report is/will be based.
+
+This definition of research data does not only include empirical data, but also simulated data, computer scripts for analysis and simulations, stimuli presented in experiments and the computer scripts for presenting them, etc. A good way to determine what is the research data on which a study is based, is asking oneself what information has contributed to the results on which you report in your publication. And a good way to delineate the empirical from the other research data, is by asking oneself whether one has used some device for obtaining these data: empirical data are always collected using a device (a button box, a keyboard, an MRI scanner, an EEG or MEG system, a video camera, a touch screen, a microscope, …).
+
+Not all studies and publications depend on research data, as defined above. This holds for theoretical, perspective and opinion papers, as well as for reviews. The Donders Repository is only relevant for those studies and publications that do depend on research data.
+
 
 Edit collection metadata
 -----------
 
+Ethics & privacy
+-----------
+
+**1. Where should I apply for ethics approval for studies involving human participants?**
+
+A lot of the research at the Donders Institute is covered by existing ethical agreements. If you are not sure whether you need to apply, please ask your local ethics officer or your data steward. For the DCCN you can look up more details here.
+
+There are 23 accredited METCs in the Netherlands that review medical/scientific research proposals that involve human subjects. The majority are linked to an institution such as an academic medical centre or a hospital. The Faculty of Social Sciences at the Radboud University has its own Ethics Committee that is referred to as "ECSW". The Faculty of Humanities at the Radboud University has its own Ethics Committee that is referred to as "EACH". As of recently, the Faculty of Science at the Radboud University also has its own Ethics Committee. Please contact Huub Zwarts or Frank van der Molen.
+
+In case you need to apply for approval for studies that involve human participants, please ask your local ethics officer or your data steward to support you with the procedure and ask for the template informed consent forms and brochures. These include the appropriate text on how we manage and share data.
+
+**2. Where should I apply for ethics approval for studies that involve animals?**
+
+The Centrale Commissie Dierproeven (CCD) has approved 17 Animal Ethics Committees (Dierexperimentencommissie, DEC) in the Netherlands that review the applications for projects involving animal research. All research involving animals at the Donders Institute requires approval from the Radboud University’s Animal Experiment Committee.
+
+**3. How should I specify the "ethics approval identifier"?**
+
+Depending on the ethics approval board, the format of the identifier is slightly different. The identifier always specifies the board that approved it, followed by the number at which it is known at that board. Here are some examples:
+
+    CMO regio A-N 2014/288
+    ECSW 2013-0410-133
+    RUDEC 2013-180
+    IRBN 2014/005 
+
+Besides the local ethics board identifier, an ABR ("Algemeen Beoordeling en Registratie") number might be assigned. The combination of these two ensures that the study is registered and can be identified both at the local as well as at the central level (i.e. at the CCMO in The Hague). Through the ABR number, the ethics application can be queried in a public database.
+
+The ABR identifier is always of the form "NLxxxxx.xxx.xx". Here are some examples of ABR identifiers:
+
+    NL57538.091.16
+    NL47093.091.13
+    NL45835.091.13 
+
+On www.toetsingsonline.nl you can find details on studies with an ABR number.
 
 Organize data collections 
 -------------
@@ -222,9 +279,23 @@ A DSC can be linked to zero, one or multiple publications. The first situation (
 Share data with external reviewers 
 -------------
 
+**1. How do I share data with external reviewers?**
+
+The Donders Repository includes the possibility of sharing data from a Data Sharing Collection with external reviewers (i.e. before publication) in a way that protects the anonymity of the reviewers. For details on this see the manual on data sharing.
 
 
 
 Access shared data
 -------------
+**1. Why do I need to login / create an account to download published data?**
 
+The majority of data sets shared through the Donders Repository include data collected in human subjects. If the data is potentially identifiable - e.g. MRI data - these data are shared with restrictions to ensure the privacy of research participants. In line with privacy legislation, the Radboud University (security officer) and local ethical committee require that users of these data publications can be identified (e.g. in case of violation of a Data Use Agreement). Therefore, authentication in the Donders Repository is required to download these data sets.
+
+*Downloading completely anonymized datasets and non-human / non-sensitive datasets published under an OpenDataCommons or CreativeCommons license, preferably does not require authentication. Developments to allow anonymous access to these data publications are currently ongoing. (Expected release: January 2019).*
+
+**2. I logged in with my ORCID-iD but it appears I have not the right permissions to download data, what should I do?**
+
+The Donders Repository needs to be able to verify your identity based on the e-mail address that is shared with your ORCID-iD. Therefore, you must allow (at least) trusted parties to be able to see your e-mail address. Please go to https://orcid.org/, click on your e-mail address settings and change the visibility settings to (at least) trusted parties as below.
+
+.. figure:: images/e-mailsettingsorcid.jpg
+   :scale: 50%
