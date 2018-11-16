@@ -101,21 +101,21 @@ By raw, we mean without any manipulations that limit future analyses of these da
 Some examples for the different methods:
 *Behavioral experiments*
 
-    stimulus files
-    computer scripts for presenting the stimuli (to be run by Presentation or PsychoPy)
-    experiment log files 
+* stimulus files
+* computer scripts for presenting the stimuli (to be run by Presentation or PsychoPy)
+* experiment log files 
 
 *Anatomical MRI experiments*
 
-    DICOM files 
+* DICOM files 
 
 *Functional MRI experiments*
 
-    DICOM files
-    possibly eye tracker data
-    possibly video files
-    possibly ExG files
-    (if applicable) the files specified under "behavioral experiments" 
+* DICOM files
+* possibly eye tracker data
+* possibly video files
+* possibly ExG files
+* (if applicable) the files specified under "behavioral experiments" 
 
 *EEG experiments*
 
