@@ -1,9 +1,5 @@
 {% extends "!layout.html" %}
 
-{# % block document % #}
-{# { super() } #}
-{# % endblock % #}
-
 {%- block content %}
 <div class="document">
     {%- block document %}
@@ -27,6 +23,7 @@
             <form class="search form" action="{{ pathto('search') }}" method="get">
               <input type="text" class="form-control" name="q" placeholder="Search for help..." />
             </form>
+            <div id="searchbox" style="display: none" role="search"></div>
             <script type="text/javascript">$('#searchbox').show(0);</script>
 	  </div>
 	</div>
@@ -36,4 +33,5 @@
   </div>
 {%- endblock %}
 
+{# remove the footer #}
 {% block footer %}{% endblock %}
