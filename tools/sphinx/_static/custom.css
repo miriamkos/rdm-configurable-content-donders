@@ -98,8 +98,14 @@ div.input-group {
     display: inline-block;  /* this override "display: table" for input-group in the DR CMS */
 }
 
+div.panel-body {
+    padding: 0px;  /* this override "padding: 15px" for bootstrap panel-body in the DR CMS */
+}
+
 @media screen and (max-width: 875px) {
     div.sphinxsidebar {
+        padding: 0px;
+        background: #fff;
         margin-left: 0px;
         width: 100%;
     }
@@ -111,5 +117,9 @@ div.input-group {
     
     div.sphinxsidebar h3, h4 {
         color: #ffffff;
+    }
+
+    div.sphinxsidebar a {
+        color: #444;
     }
 }
