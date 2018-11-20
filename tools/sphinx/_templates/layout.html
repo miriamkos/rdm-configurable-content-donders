@@ -16,6 +16,14 @@
       </div>
       {# add sidebar #}
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+	{# make use of bootstrap panel for TOC #}
+        <div class="panel panel-default">
+          <div class="panel-heading">Table of contents</div>
+	  <div class="panel-body">
+            {{ toctree(maxdepth=2, collapse=True, includehidden=False) }}
+          </div>
+	</div>
+
         {# searchbox #}
         <div id="searchbox" style="display: none" role="search">
           <div class="searchformwrapper">
@@ -29,17 +37,8 @@
               </form>
           </div>
         </div>
+        <script type="text/javascript">$('#searchbox').show(0);</script>
 
-	{# make use of bootstrap panel for TOC #}
-        <div class="panel panel-default">
-          <div class="panel-heading">Table of contents</div>
-	  <div class="panel-body">
-            <script type="text/javascript">$('#searchbox').show(0);</script>
-
-            {# toctree #}
-            {{ toctree(maxdepth=2, collapse=True, includehidden=False) }}
-          </div>
-	</div>
       </div>
     {%- endblock %}
     <div class="clearer"></div>
