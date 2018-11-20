@@ -91,8 +91,8 @@ html_theme = 'alabaster'
 # documentation.
 #
 html_theme_options = {
-    'page_width'             : "940px",
-    'sidebar_width'          : "220px",
+    'page_width'             : "1140px",
+    'sidebar_width'          : "250px",
     'fixed_sidebar'          : "false",
     'sidebar_includehidden'  : "false",
     'body_text'              : "#3E4349",
