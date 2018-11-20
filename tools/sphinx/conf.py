@@ -133,8 +133,8 @@ html_static_path = ['_static']
 # refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
 html_sidebars = {
     '**': [
-        'searchbox.html', # this file is provided via local template
-        'toc.html'        # this file is provided via local template
+        #'searchbox.html', # this file is provided via local template
+        #'toc.html'        # this file is provided via local template
     ]
 }
 
