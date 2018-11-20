@@ -94,6 +94,10 @@ div.sphinxsidebarwrapper {
     padding: 10px 5px 0 10px;
 }
 
+div.input-group-btn {
+    display: none;  /* this override "tabular" display in the DR CMS */
+}
+
 @media screen and (max-width: 875px) {
     div.sphinxsidebar {
         margin-left: 0px;
