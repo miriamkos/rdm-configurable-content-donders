@@ -99,7 +99,11 @@ div.input-group {
 }
 
 div.panel-body {
-    padding: 0px;  /* this override "padding: 15px" for bootstrap panel-body in the DR CMS */
+    padding: 5px;  /* this override "padding: 15px" for bootstrap panel-body in the DR CMS */
+}
+
+div.panel-heading {
+    padding: 5px;  /* this override "padding: 15px" for bootstrap panel-body in the DR CMS */
 }
 
 @media screen and (max-width: 875px) {
