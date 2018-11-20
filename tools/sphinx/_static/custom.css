@@ -29,6 +29,10 @@ div.footer {
     margin: auto;
 }
 
+div.body {
+    max-width: none;
+}
+
 div.body p, div.body dd, div.body li {
     line-height: 24px;
 }
