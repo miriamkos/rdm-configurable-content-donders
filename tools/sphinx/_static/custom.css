@@ -95,7 +95,7 @@ div.sphinxsidebarwrapper {
 }
 
 div.input-group {
-    display: table-cell;  /* this override "display: table" for input-group in the DR CMS */
+    display: inline-block;  /* this override "display: table" for input-group in the DR CMS */
 }
 
 @media screen and (max-width: 875px) {
