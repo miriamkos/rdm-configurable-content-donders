@@ -134,7 +134,7 @@ html_static_path = ['_static']
 html_sidebars = {
     '**': [
         'searchbox.html', # this file is provided via local template
-        'sidebar.html'    # this file is provided via local template
+        'toc.html'        # this file is provided via local template
     ]
 }
 
