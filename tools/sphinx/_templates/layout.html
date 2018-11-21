@@ -1,9 +1,5 @@
 {% extends "!layout.html" %}
 
-{# % block document % #}
-{# { super() } #}
-{# % endblock % #}
-
 {%- block content %}
 <div class="document">
     {%- block document %}
@@ -37,4 +33,5 @@
   </div>
 {%- endblock %}
 
+{# remove the footer #}
 {% block footer %}{% endblock %}
