@@ -120,11 +120,11 @@ The following variables are supported, which is a combination of variables that 
 |`year`|| Current year |
 |`userCount`|| Number of users (excluding system accounts) |
 |`collectionDscPublishedCount`|| Number of Data Sharing Collections that have been published |
-|`collectionDscWorkingCount`|| Number of Data Sharing Collections that have not been published |
+|`collectionDscDraftCount`|| Number of Data Sharing Collections that have not been published |
 |`collectionDacArchivedCount`|| Number of Data Acquisition Collections that have been archived |
-|`collectionDacWorkingCount`|| Number of Data Acquisition Collections that have not been archived |
+|`collectionDacDraftCount`|| Number of Data Acquisition Collections that have not been archived |
 |`collectionRdcArchivedCount`|| Number of Research Documentation Collections that have been archived |
-|`collectionRdcWorkingCount`|| Number of Research Documentation Collections that have not been archived |
+|`collectionRdcDraftCount`|| Number of Research Documentation Collections that have not been archived |
 |`collectionSizeTotal`|| Total size of all collections in the repository |
 |`downloadLink`|[doc/downloadcontent.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/downloadcontent.html)|Link to download the Collection's content |
 
