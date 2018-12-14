@@ -20,6 +20,8 @@
   "changeStateFromReviewableExternalToPublished" : "/doc/changestate/reviewableexternaltopublished.html",
   "changeStateFromReviewableExternalToEditable" : "/doc/changestate/reviewabletoeditable.html",
   "changeStateFromReviewableInternalToArchived" : "/doc/changestate/reviewableexternaltopublished.html",
+  "changeStateFromPublishedToEditable" : "/doc/changestate/publishedtoeditable.html",
+  "changeStateFromArchivedToEditable" : "/doc/changestate/archivedtoeditable.html",
 
   "emailCollectionChangesLeadText" : "/doc/email/collectionChangesLeadText.html",
   "emailManagerLessCollectionsLeadText" : "/doc/email/managerLessCollectionsLeadText.html",
