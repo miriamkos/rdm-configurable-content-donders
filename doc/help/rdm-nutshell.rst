@@ -1,4 +1,4 @@
-RDM in a nutshell
+The Donders Repository in a nutshell
 =================
 
 Research Data Management (RDM) aims to improve the research **efficiency and transparency**, and to fulfill the **requirements** of the university, funders, and legislation. The Donders Institute for Brain, Cognition and Behaviour (DI) uses a Data Repository (DR) for data management. The repository serves three purposes:
