@@ -2,7 +2,7 @@
    :maxdepth: 1
 
    Home <index.rst>
-   What is RDM? <rdm-nutshell.rst>
+   Intro <rdm-nutshell.rst>
    Archive data <archive-getstarted.rst>
    Share work-in-progress data
    Publish data <publish-data.rst>
