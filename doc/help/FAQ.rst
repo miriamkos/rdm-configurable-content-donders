@@ -79,13 +79,16 @@ Depending on the ethics approval board, the format of the identifier is slightly
 | ECSW 2013-0410-133
 | RUDEC 2013-180
 | IRBN 2014/005 
-| Besides the local ethics board identifier, an ABR ("Algemeen Beoordeling en Registratie") number might be assigned. The combination of these two ensures that the study is registered and can be identified both at the local as well as at the central level (i.e. at the CCMO in The Hague). Through the ABR number, the ethics application can be queried in a public database.
 
-| The ABR identifier is always of the form "NLxxxxx.xxx.xx". Here are some examples of ABR identifiers:
+Besides the local ethics board identifier, an ABR ("Algemeen Beoordeling en Registratie") number might be assigned. The combination of these two ensures that the study is registered and can be identified both at the local as well as at the central level (i.e. at the CCMO in The Hague). Through the ABR number, the ethics application can be queried in a public database.
+
+The ABR identifier is always of the form "NLxxxxx.xxx.xx". Here are some examples of ABR identifiers:
+
 | NL57538.091.16
 | NL47093.091.13
 | NL45835.091.13 
-| On www.toetsingsonline.nl you can find details on studies with an ABR number.
+
+On www.toetsingsonline.nl you can find details on studies with an ABR number.
 
 Organize data collections 
 -------------
