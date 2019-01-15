@@ -4,7 +4,7 @@ Frequently Asked Questions
 Login and collection roles
 -----------
 **1. What is SURFconext?**
-SURFconext allows all academic institutes and schools in The Netherlands to use a single login. SURFconext allows you to access online services with the username and password issued by your own institution.
+| SURFconext allows all academic institutes and schools in The Netherlands to use a single login. SURFconext allows you to access online services with the username and password issued by your own institution.
 
 In SURFconext your personal details are only provided to a service provider (such as the Donders Repository) if these details are needed to use the service.
 
@@ -88,7 +88,7 @@ The ABR identifier is always of the form "NLxxxxx.xxx.xx". Here are some example
 | NL47093.091.13
 | NL45835.091.13 
 
-On www.toetsingsonline.nl you can find details on studies with an ABR number.
+| On www.toetsingsonline.nl you can find details on studies with an ABR number.
 
 Organize data collections 
 -------------
