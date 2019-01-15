@@ -14,12 +14,9 @@ The dialog box to select your institution can be used in most popular browsers, 
 | **3. What if my institute is not listed in the login window?**
 If your institute is not listed when you try to log in, you should contact the person who is responsible for SURFconext at your institution and ask for your institute to be allowed to access the Donders Repository. You can contact SURFconext (support@surfconext.nl) to find out who is responsible at your institution. When contacting SURFconext, you can use this template email:
 
+*Dear SURFconext support team,* 
 
-         *Dear SURFconext support team,* 
-
-         *I am employed by [the name of your university/institute] and would like to get access to the Donders Repository, 
-         a service to which I can get access via SURFconext. Could you give me the contact details of the SURFconext person 
-         of my organization?*
+*I am employed by [the name of your university/institute] and would like to get access to the Donders Repository, a service to which I can get access via SURFconext. Could you give me the contact details of the SURFconext person of my organization?*
 
 In case your institute does not use SURFconext, you can use any of your social accounts (Google, LinkedIn, Facebook, Twitter, MicroSoft) via the Onegini option to log in. With a social account the access to data is limited to published Data Sharing Collections. You cannot be added to Data Acquisition Collections or Research Documentation Collections with a social account.
 
