@@ -3,8 +3,8 @@ Frequently Asked Questions
 
 Login and collection roles
 -----------
-**1. What is SURFconext?**
-| SURFconext allows all academic institutes and schools in The Netherlands to use a single login. SURFconext allows you to access online services with the username and password issued by your own institution.
+| **1. What is SURFconext?**
+SURFconext allows all academic institutes and schools in The Netherlands to use a single login. SURFconext allows you to access online services with the username and password issued by your own institution.
 
 In SURFconext your personal details are only provided to a service provider (such as the Donders Repository) if these details are needed to use the service.
 
