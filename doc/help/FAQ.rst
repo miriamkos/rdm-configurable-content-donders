@@ -238,6 +238,8 @@ Currently, this is not possible. The reason is that most DSCs have restrictions 
 
 Journals usually accept that data sets are shared only after registering / access request, if data sets include potentially identifiable human data (e.g. MRI). In this case, you should explain to the journal why access request, and logging in to the repository, is required to access the data. Here's a template paragraph that you can use for this purpose:
 
+::
+
 "All data was acquired in accordance with the declaration of Helsinki, following informed consent of participants and in line with the requirements of the Ethics Committee. In line with requirements of the Ethics Committee and the Radboud University security officer, potentially identifying data (such as imaging data) can only be shared to identifable researchers, hence the requirement for registration and for requesting access. Neither authors nor data steward is involved in granting access to external researchers, this is only based on the complete registration of the researcher and follows a “click-through” procedure. We believe that this procedure is in line with your policy, while at the same time being as open and transparent as possible."    
 
 | **9. What if a 'published' Data Sharing Collection (DSC) contains incorrect information?**
