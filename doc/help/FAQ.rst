@@ -79,15 +79,12 @@ Depending on the ethics approval board, the format of the identifier is slightly
 | ECSW 2013-0410-133
 | RUDEC 2013-180
 | IRBN 2014/005 
-
 | Besides the local ethics board identifier, an ABR ("Algemeen Beoordeling en Registratie") number might be assigned. The combination of these two ensures that the study is registered and can be identified both at the local as well as at the central level (i.e. at the CCMO in The Hague). Through the ABR number, the ethics application can be queried in a public database.
 
 | The ABR identifier is always of the form "NLxxxxx.xxx.xx". Here are some examples of ABR identifiers:
-
 | NL57538.091.16
 | NL47093.091.13
 | NL45835.091.13 
-
 | On www.toetsingsonline.nl you can find details on studies with an ABR number.
 
 Organize data collections 
@@ -152,11 +149,11 @@ For an example of a well-organized DAC from a DCCN project see here (pdf, 75 kB)
 | **3. Which files should and should I not upload to a Research Documentation Collection (RDC)?**
 An RDC has three functions: documenting the scientific process, sharing preliminary results within the project team, and documenting the editorial and peer-review process:
 
-    In general, a RDC must contain all the information that a knowledgeable colleague needs to reproduce the results in the publication that is linked to this collection. More specifically, an RDC should contain files that document the process in which raw data are converted into results (statistical tests, summary measures, figures, tables, etc.). In a common scenario, this conversion from raw data to results is (partially or fully) specified by analysis scripts that can be executed by software packages such as MATLAB, R, Python, SPSS, Bash+FSL, etc. In this scenario, the obvious way of documenting the scientific process is by providing these analysis scripts. Also the version number of the software being use should be specified. 
+In general, a RDC must contain all the information that a knowledgeable colleague needs to reproduce the results in the publication that is linked to this collection. More specifically, an RDC should contain files that document the process in which raw data are converted into results (statistical tests, summary measures, figures, tables, etc.). In a common scenario, this conversion from raw data to results is (partially or fully) specified by analysis scripts that can be executed by software packages such as MATLAB, R, Python, SPSS, Bash+FSL, etc. In this scenario, the obvious way of documenting the scientific process is by providing these analysis scripts. Also the version number of the software being use should be specified. 
 
 Our definition of “data” is a broad one. For instance, it also includes computer scripts, as used for analysis or modeling work. Thus, if the published results depend on computer scripts, these must be added to the RDC.
 
-    A RDC is a platform for sharing preliminary results (figures, tables, PowerPoint presentations, etc.) with collaborators in a project team. A RDC should contain the documents of the editorial and peer-review process pertaining to the publication that is linked to this collection (uploaded manuscripts, reviews, reply to the reviewers, …). An archived RDC must be linked to one publication. 
+The RDC is a platform for sharing preliminary results (figures, tables, PowerPoint presentations, etc.) with collaborators in a project team. A RDC should contain the documents of the editorial and peer-review process pertaining to the publication that is linked to this collection (uploaded manuscripts, reviews, reply to the reviewers, …). An archived RDC must be linked to one publication. 
 
 Also include a description of the experimental setup.
 
@@ -165,8 +162,8 @@ Before closing the RDC, the preliminary results may be removed.
 | **4. How to refer to the data that the researcher did not collect?**
 It is possible to publish papers without having collected data yourself. For example, modeling work or using an existing data set. There are three ways to link these types of data to the new RDC.
 
-    If the data is already represented in the repository as one or more DAC’s, specify the DAC identification numbers in the RDC. This only works for archived DACs. A single archived DAC may be associated with multiple RDCs.
-    If the data is not represented in the repository, the researchers must either add the data to the repository, or document the data by a persistent identifier (e.g. DOI or URL). This situation applies when a DAC is not yet archived or the data was collected at another institute. 
+If the data is already represented in the repository as one or more DAC’s, specify the DAC identification numbers in the RDC. This only works for archived DACs. A single archived DAC may be associated with multiple RDCs.
+If the data is not represented in the repository, the researchers must either add the data to the repository, or document the data by a persistent identifier (e.g. DOI or URL). This situation applies when a DAC is not yet archived or the data was collected at another institute. 
 
 | **5. How should I organize the data in a Research Documentation Collection (RDC)?**
 Data in a RDC should be organized in separate folders and sub-folders according to the type of data (e.g. raw data, scripts, peer-review process, etc.). The names of the folders should clearly indicate to the content of the folder.
