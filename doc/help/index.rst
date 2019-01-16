@@ -23,6 +23,12 @@ You can easily share your research data with collaborators around the world with
 Get started!
 ------------
 
+Research data management in a nutshell
+User manual
+Frequently asked questions
+Reference documents
+
+
 You can send questions and feedback regarding the Data Repository to `datasupport@donders.ru.nl <datasupport@donders.ru.nl>`_.
 
 .. Indices and tables
