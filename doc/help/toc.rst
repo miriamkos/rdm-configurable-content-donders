@@ -3,11 +3,9 @@
 
    Home <index.rst>
    Intro <rdm-nutshell.rst>
-   User manual <DR-user-manual.rst>
-   Archive data <archive-getstarted.rst>
-   Share work-in-progress data
-   Publish data <publish-data.rst>
-   Review to-be-published data <review-data.rst>
-   Access published data <access-published-data.rst>
+   Get started <get-started.rst>
+   Transfer data <transfer-data.rst>
+   Archive / publish collections <archive-publish-collections.rst>
+   Access shared data <access-shared-data.rst>
    FAQ <FAQ.rst>
    
