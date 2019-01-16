@@ -23,9 +23,9 @@ You can easily share your research data with collaborators around the world with
 Get started!
 ------------
 
-|`Donders Repository in a nutshell <https://data.donders.ru.nl/doc/help/demo/rdm-nutshell.html?11>`_.
-|User manual
-|Frequently asked questions
+`Donders Repository in a nutshell <https://data.donders.ru.nl/doc/help/demo/rdm-nutshell.html?11>`_.
+_'User manual <>'_.
+_'Frequently asked questions <https://data.donders.ru.nl/doc/help/demo/FAQ.html?13>'_.
 Reference documents
 
 
