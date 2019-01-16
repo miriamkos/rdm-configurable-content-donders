@@ -24,8 +24,11 @@ Get started!
 ------------
 
 `Donders Repository in a nutshell <https://data.donders.ru.nl/doc/help/demo/rdm-nutshell.html?11>`_.
-_'User manual <>'_.
+
+User manual
+
 _'Frequently asked questions <https://data.donders.ru.nl/doc/help/demo/FAQ.html?13>'_.
+
 Reference documents
 
 
