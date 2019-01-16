@@ -27,7 +27,7 @@ Get started!
 
 User manual
 
-_'Frequently asked questions <https://data.donders.ru.nl/doc/help/demo/FAQ.html?13>'_.
+`Frequently asked questions <https://data.donders.ru.nl/doc/help/demo/FAQ.html?13>`_.
 
 Reference documents
 
