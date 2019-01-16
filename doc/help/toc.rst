@@ -3,6 +3,7 @@
 
    Home <index.rst>
    Intro <rdm-nutshell.rst>
+   User manual <user-manual.rst>
    Archive data <archive-getstarted.rst>
    Share work-in-progress data
    Publish data <publish-data.rst>
