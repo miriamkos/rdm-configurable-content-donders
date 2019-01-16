@@ -36,7 +36,7 @@ Get started: deposit data
 | **1. What are the different Collection types?**
 There are three collection types, one for data acquisition (Data Acquisition Collection), one for research documentation (Research Documentation Collection) and one for data sharing (Data Sharing Collection).
 
-* **Data Acquisition Collection (DAC).** In a Data Acquisition Collection, the research data are archived in their original form. Here, “original” means without any manipulations that limit future analyses of these data. To learn more about the files that you must upload to a Data Acquisition Collection, see :ref:DACfiles <this FAQ>.
+* **Data Acquisition Collection (DAC).** In a Data Acquisition Collection, the research data are archived in their original form. Here, “original” means without any manipulations that limit future analyses of these data. To learn more about the files that you must upload to a Data Acquisition Collection, see :ref:OrganizeCollections.
 
 * **Research Documentation Collection (RDC).** When a paper is accepted for publication, the associated RDC must document the process via which data are converted into the to-be-published results. Prior to the paper being accepted for publication, the RDC can be used as a collaboration platform via which all kinds of files are shared (analysis scripts, preliminary figures, the different versions of the paper, …). To learn more about the files that you must upload to a RDC, see this FAQ.
 
@@ -88,11 +88,10 @@ The ABR identifier is always of the form "NLxxxxx.xxx.xx". Here are some example
 NL45835.091.13 
 
 On www.toetsingsonline.nl you can find details on studies with an ABR number.
-
+.. _OrganizeCollections:
 Organize data collections 
 -------------
 
-.. _DACfiles:
 | **1. Which files should and should I not upload to a Data Acquisition Collection (DAC)?**
 A DAC must contain all raw data plus a description that would allow a colleague to make sense of the .
 
