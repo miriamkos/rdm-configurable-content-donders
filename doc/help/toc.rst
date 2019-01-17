@@ -2,10 +2,10 @@
    :maxdepth: 1
 
     Home <index.rst>
-    Intro <rdm-nutshell.rst>
-    Get started <get-started.rst>
+    Introduction <rdm-nutshell.rst>
     User manual <user-manual.rst>
     FAQ <faq.rst>
+..    Get started <get-started.rst>
 ..    Transfer data <transfer-data.rst>
 ..    Archive / publish collections <archive-publish-collections.rst>
 ..    Reviewer access to data <reviewer-access.rst>
