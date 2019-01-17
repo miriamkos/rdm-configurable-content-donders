@@ -51,7 +51,7 @@ Get started: deposit data
 
    - **Research Documentation Collection (RDC).** When a paper is accepted for publication, the associated RDC must document the process via which data are converted into the to-be-published results. Prior to the paper being accepted for publication, the RDC can be used as a collaboration platform via which all kinds of files are shared (analysis scripts, preliminary figures, the different versions of the paper, …). To learn more about the files that you must upload to a RDC, see this FAQ.
 
-   - **Data Sharing Collection (DSC).** A DSC contains the data on which the published results are based, allowing other researchers to extend scientific findings by re-analyzing data with new methods, and/or by addressing new research questions using these data. To learn more about the files that you must upload to a DSC, see `this FAQ <https://data.donders.ru.nl/doc/help/demo/FAQ.html?0#organize-data-collections/>`_.
+   - **Data Sharing Collection (DSC).** A DSC contains the data on which the published results are based, allowing other researchers to extend scientific findings by re-analyzing data with new methods, and/or by addressing new research questions using these data. To learn more about the files that you must upload to a DSC, see :ref:`organize-data-collections`.
 
 #. **How should I request a Data Acquisition Collection/Research Documentation Collection/ Data Sharing Collection (DAC/RDC/DSC)?**
 
@@ -103,6 +103,8 @@ Ethics & privacy
    - NL45835.091.13
 
    On www.toetsingsonline.nl you can find details on studies with an ABR number.
+
+.. _organize-data-collections:
 
 Organize data collections
 -------------------------
