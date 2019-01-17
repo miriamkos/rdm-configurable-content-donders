@@ -23,7 +23,7 @@ You can easily share your research data with collaborators around the world with
 Get started!
 ------------
 
-`The Donders Repository in a nutshell`_
+`nutshell`_
 
 User manual
 
