@@ -34,9 +34,3 @@ Get started!
 * :ref:`Reference documents <references>`
 
 You can send questions and feedback regarding the Data Repository to `datasupport@donders.ru.nl <datasupport@donders.ru.nl>`_.
-
-.. Indices and tables
-   ==================
-   * :ref:`genindex`
-   * :ref:`modindex`
-   * :ref:`search`
