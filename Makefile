@@ -55,6 +55,8 @@ $(CMS_EXT_RSRC_IDX):
 $(DIR_HELPDOC_HTML):
 	@echo "--> build helpdoc files in $(DIR_HELPDOC)"
 	cp -R $(DIR_HELPDOC)/* $(TMPDIR) && \
+		if [ -d $(TMPDIR)/_build ]; then rm -rf $(TMPDIR)/_build; fi && \
+		ls -l $(TMPDIR) && \
 		cp -R $(shell pwd)/tools/sphinx/* $(TMPDIR) && \
 		make -C $(TMPDIR) html
 	find $(TMPDIR)/_build/html -name '*.html' -exec \
