@@ -1,4 +1,4 @@
-.. _nutshell:
+.. _nutshell
 The Donders Repository in a nutshell
 ====================================
 
