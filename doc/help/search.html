@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>User Manual &#8212; Donders Repository Online Help 0.1 documentation</title>
+    <title>Search &#8212; Donders Repository Online Help 0.1 documentation</title>
     
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -24,15 +24,21 @@
 
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/searchtools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Transfer data" href="transfer-data.html" />
-    <link rel="prev" title="Get started with the Donders Repository" href="get-started.html" />
+    <link rel="search" title="Search" href="#" />
+  <script type="text/javascript">
+    jQuery(function() { Search.loadIndex("searchindex.js"); });
+  </script>
+  
+  <script type="text/javascript" id="searchindexloader"></script>
+  
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
 
   </head>
   <body role="document">
@@ -41,20 +47,29 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="user-manual">
-<span id="id1"></span><h1>User Manual<a class="headerlink" href="#user-manual" title="Permalink to this headline">¶</a></h1>
-<p>This user manual will help you get a jump start with the Donders Repository.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="get-started.html">Get started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transfer-data.html">Transfer data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archive-publish-collections.html">Archive / publish collections</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reviewer-access.html">Reviewer access to data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="access-shared-data.html">Access shared data</a></li>
-</ul>
-</div>
-</div>
-
+  <h1 id="search-documentation">Search</h1>
+  <div id="fallback" class="admonition warning">
+  <script type="text/javascript">$('#fallback').hide();</script>
+  <p>
+    Please activate JavaScript to enable the search
+    functionality.
+  </p>
+  </div>
+  <p>
+    From here you can search these documents. Enter your search
+    words into the box below and click "search". Note that the search
+    function will automatically search for all of the words. Pages
+    containing fewer words won't appear in the result list.
+  </p>
+  <form action="" method="get">
+    <input type="text" name="q" value="" />
+    <input type="submit" value="search" />
+    <span id="search-progress" style="padding-left: 10px"></span>
+  </form>
+  
+  <div id="search-results">
+  
+  </div>
 
           </div>
         </div>
@@ -65,25 +80,18 @@
         <div class="panel panel-default">
           <div class="panel-heading"><b>Table of contents</b></div>
 	  <div class="panel-body">
-            <ul class="current">
+            <ul>
 <li class="toctree-l1"><a class="reference internal" href="index.html"> Home</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rdm-nutshell.html"> Intro</a></li>
 <li class="toctree-l1"><a class="reference internal" href="get-started.html"> Get started</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#"> User manual</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="get-started.html">Get started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="transfer-data.html">Transfer data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="archive-publish-collections.html">Archive / publish collections</a></li>
-<li class="toctree-l2"><a class="reference internal" href="reviewer-access.html">Reviewer access to data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="access-shared-data.html">Access shared data</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="user-manual.html"> User manual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="faq.html"> FAQ</a></li>
 </ul>
 
           </div>
           <div class="panel-footer">
             
-            <form class="search form" action="search.html" method="get">
+            <form class="search form" action="#" method="get">
               <input type="text" class="form-control" name="q" placeholder="Search for help..." />
             </form>
             <div id="searchbox" style="display: none;" role="search"></div>
