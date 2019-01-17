@@ -3,6 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+.. _index:
+
 Donders Repository
 ==================
 
@@ -23,14 +25,13 @@ You can easily share your research data with collaborators around the world with
 Get started!
 ------------
 
-`Donders Repository in a nutshell <https://data.donders.ru.nl/doc/help/demo/rdm-nutshell.html?11>`_
+* :ref:`The Donders Repository in a nutshell <rdm-nutshell>`
 
-User manual
+* :ref:`User Manual <user-manual>`
 
-`Frequently asked questions <https://data.donders.ru.nl/doc/help/demo/FAQ.html?13>`_
+* :ref:`Frequently asked questions <faq>`
 
-Reference documents
-
+* :ref:`Reference documents <references>`
 
 You can send questions and feedback regarding the Data Repository to `datasupport@donders.ru.nl <datasupport@donders.ru.nl>`_.
 
