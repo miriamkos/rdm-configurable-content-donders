@@ -20,6 +20,7 @@ Fill in your username and password of the user account from your home institute.
 .. figure:: images/enter-login_60.png
 
 .. note::
+    :class: alert alert-info
 
     If your institute is not listed, then it can be added by the :ref:`SURFconext <faq-surfconext>` contact person of your institute. See this :ref:`FAQ <faq-surfconext-add-institute>` for instructions.
 
