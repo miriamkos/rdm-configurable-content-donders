@@ -1,0 +1,37 @@
+{% extends "!layout.html" %}
+
+{%- block content %}
+<div class="document">
+    {%- block document %}
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            {% block body %} {% endblock %}
+          </div>
+        </div>
+      </div>
+      {# add sidebar #}
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+	{# make use of bootstrap panel for TOC #}
+        <div class="panel panel-default">
+          <div class="panel-heading"><b>Table of contents</b></div>
+	  <div class="panel-body">
+            {{ toctree(maxdepth=2, collapse=True, includehidden=False) }}
+          </div>
+          <div class="panel-footer">
+            {# searchbox #}
+            <form class="search form" action="{{ pathto('search') }}" method="get">
+              <input type="text" class="form-control" name="q" placeholder="Search for help..." />
+            </form>
+            <div id="searchbox" style="display: none;" role="search"></div>
+            <script type="text/javascript">$('#searchbox').show(0);</script>
+	  </div>
+	</div>
+      </div>
+    {%- endblock %}
+    <div class="clearer"></div>
+  </div>
+{%- endblock %}
+
+{# remove the footer #}
+{% block footer %}{% endblock %}
