@@ -59,10 +59,14 @@ $(DIR_HELPDOC_HTML):
 		ls -l $(TMPDIR) && \
 		cp -R $(shell pwd)/tools/sphinx/* $(TMPDIR) && \
 		make -C $(TMPDIR) html
-	find $(TMPDIR)/_build/html -name '*.html' -exec \
+	find $(TMPDIR)/_build -name '*.html' -exec \
 		sed -i 's|.*src="_static/jquery.js".*||g' {} +
-	mkdir -p $@ && mv $(TMPDIR)/_build/html/* $@
-	rm -rf $(TMPDIR)
+	mkdir -p $@ && mv $(TMPDIR)/_build/* $@
+#	rm -rf $(TMPDIR)
+#	find $(TMPDIR)/_build/html -name '*.html' -exec \
+#		sed -i 's|.*src="_static/jquery.js".*||g' {} +
+#	mkdir -p $@ && mv $(TMPDIR)/_build/html/* $@
+#	rm -rf $(TMPDIR)
 
 # validate JSON file when the corresponding .schema file is presented
 validate_json: $(JSON_SCHEMAS)
