@@ -112,7 +112,7 @@ html_theme_options = {
     'narrow_sidebar_fg'      : "#FFF",
     'narrow_sidebar_link'    : "",
     'note_bg'                : "#8bcbeb",
-    'note_border'            : "1px solid #16acdd",
+    'note_border'            : "#16acdd",
     'font_size'              : "14px",
     'caption_font_size'      : '20px',
     'code_font_size'         : '0.9em',
