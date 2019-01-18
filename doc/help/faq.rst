@@ -23,11 +23,11 @@ Login and collection roles
    ::
 
       Dear SURFconext support team,
-
+ 
       I am employed by [the name of your university/institute] and would like to get access to the Donders Repository, a service to which I can get access via SURFconext. Could you give me the contact details of the SURFconext person of my organization?
       
       In case your institute does not use SURFconext, you can use any of your social accounts (Google, LinkedIn, Facebook, Twitter, MicroSoft) via the Onegini option to log in. With a social account the access to data is limited to published Data Sharing Collections. You cannot be added to Data Acquisition Collections or Research Documentation Collections with a social account.
-
+ 
       For further questions on authenticating yourself, contact datasupport@donders.ru.nl.
 
 #. **What is an ORCID-iD?**
@@ -121,37 +121,37 @@ Organize data collections
 
    **Behavioral experiments**
 
-      * stimulus files
-      * computer scripts for presenting the stimuli (to be run by Presentation or PsychoPy)
-      * experiment log files
+   - stimulus files
+   - computer scripts for presenting the stimuli (to be run by Presentation or PsychoPy)
+   - experiment log files
 
    **Anatomical MRI experiments**
 
-      * DICOM files
+   - DICOM files
 
    **Functional MRI experiments**
 
-      * DICOM files
-      * possibly eye tracker data
-      * possibly video files
-      * possibly ExG files
-      * (if applicable) the files specified under "behavioral experiments"
+   - DICOM files
+   - possibly eye tracker data
+   - possibly video files
+   - possibly ExG files
+   - (if applicable) the files specified under "behavioral experiments"
 
    **EEG experiments**
 
-      * EEG files (vhdr/vmrk/dat)
-      * Presentation log files
-      * possibly eye tracker data
-      * possibly video and audio files that were recorded along with the EEG
-      * (if applicable) the files specified under "behavioral experiments"
+   - EEG files (vhdr/vmrk/dat)
+   - Presentation log files
+   - possibly eye tracker data
+   - possibly video and audio files that were recorded along with the EEG
+   - (if applicable) the files specified under "behavioral experiments"
 
    **MEG experiments**
 
-      * MEG datasets
-      * Presentation log files
-      * possibly eye tracker data that was recorded along
-      * possibly video and audio files that were recorded along with the EEG
-      * (if applicable) the files specified under "behavioral experiments"
+   - MEG datasets
+   - Presentation log files
+   - possibly eye tracker data that was recorded along
+   - possibly video and audio files that were recorded along with the EEG
+   - (if applicable) the files specified under "behavioral experiments"
 
    In general, you should also upload a copy of the Presentation code and stimulus material that you used during the experiment and of the lab notes that you took during the experiment. Also include a description of the experimental setup.
 
