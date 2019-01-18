@@ -7,6 +7,8 @@ Login and collection roles
 --------------------------
 
 #. **What is SURFconext?**
+   
+   .. _faq-surfconext:
 
    SURFconext allows all academic institutes and schools in The Netherlands to use a single login. SURFconext allows you to access online services with the username and password issued by your own institution.
 
@@ -17,6 +19,8 @@ Login and collection roles
    The dialog box to select your institution can be used in most popular browsers, including Internet Explorer, Firefox, Chrome, and Safari. Other browsers may not be supported. Your browser must support the use of cookies and JavaScript.
 
 #. **What if my institute is not listed in the login window?**
+
+   .. _faq-surfconext-add-institute:
 
    If your institute is not listed when you try to log in, you should contact the person who is responsible for SURFconext at your institution and ask for your institute to be allowed to access the Donders Repository. You can contact SURFconext (support@surfconext.nl) to find out who is responsible at your institution. When contacting SURFconext, you can use this template email:
 
@@ -35,10 +39,18 @@ Login and collection roles
    ORCID provides you with a unique individual and persistent digital identifier that enables you to connect research contributions and to share information on large scale with other researchers. You can login to the Donders Repository using your ORCID-iD. Read how to create and ORCID-iD on the webpage (https://orcid.org/). Note that you must set your ORCID account **e-mail settings** such that your e-mail address is shared with at least trusted parties (such as the Donders Repository). This is required to verify your identity on the background.
 
 #. **What is an Onegini account?**
+   
+   .. _faq-onegini:
+
    Onegini allows you to create a digital identity that can be used to access repository. You can use Google+, LinkedIn, Facebook, Twitter or Microsoft account to login to the Donders Repository via Onegini. Read how to create an Onegini account on the Onegini webpage (https://www.onegini.com/).
 
 #. **Can I have multiple user profiles in the repository?**
+
+   .. _faq-multiple-user-profiles:
+
    One person can have multiple user profiles in the repository, e.g. if that person has an account at multiple universities, or if that person uses both his academic account and his social account. If you log in to the Donders Repository with different accounts, your profiles are likely to have access to different collections in different roles. Different accounts from the same user cannot be linked.
+
+.. _faq-get-started:
 
 Get started: deposit data
 -------------------------
@@ -50,6 +62,8 @@ Get started: deposit data
    - **Data Acquisition Collection (DAC).** In a Data Acquisition Collection, the research data are archived in their original form. Here, “original” means without any manipulations that limit future analyses of these data. To learn more about the files that you must upload to a Data Acquisition Collection, see :ref:`what to upload for DAC <DACfiles>`.
 
    - **Research Documentation Collection (RDC).** When a paper is accepted for publication, the associated RDC must document the process via which data are converted into the to-be-published results. Prior to the paper being accepted for publication, the RDC can be used as a collaboration platform via which all kinds of files are shared (analysis scripts, preliminary figures, the different versions of the paper, …). To learn more about the files that you must upload to a RDC, see this FAQ.
+
+   .. _faq-dsc:
 
    - **Data Sharing Collection (DSC).** A DSC contains the data on which the published results are based, allowing other researchers to extend scientific findings by re-analyzing data with new methods, and/or by addressing new research questions using these data. To learn more about the files that you must upload to a DSC, see :ref:`organize-data-collections`.
 
