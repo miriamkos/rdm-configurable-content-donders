@@ -60,7 +60,7 @@ $(DIR_HELPDOC_HTML):
 		cp -R $(shell pwd)/tools/sphinx/* $(TMPDIR) && \
 		make -C $(TMPDIR) html
 	find $(TMPDIR)/_build/html -name '*.html' -exec \
-		sed -i '' -e 's|.*src="_static/jquery.js".*||g' {} +
+		sed -i 's|.*src="_static/jquery.js".*||g' {} +
 	mkdir -p $@ && mv $(TMPDIR)/_build/html/* $@
 	rm -rf $(TMPDIR)
 
