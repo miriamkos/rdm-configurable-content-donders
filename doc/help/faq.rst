@@ -239,6 +239,8 @@ Organize data collections
 
     You should not upload any data that can be obtained as the result of analyses that take raw data as input (processed data). Documenting the data analysis is a part of the Research Documentation Collection (RDC).
 
+.. _faq-dac-organisation:
+
 2.  **How should I organize the data in a Data Acquisition Collection (DAC)?**
 
     Organize your DAC in a standard way (such as BIDS), because will make it much easier to share the data at a later point in time. Below is one example from the BIDS website. See for more examples here.
@@ -249,6 +251,8 @@ Organize data collections
     For all types of data we recommend that you add a 'readme' document that describes the organization of the data over the files and directories.
    
     For an example of a well-organized DAC from a DCCN project see here (pdf, 75 kB). The first page of this document contains the content of the 'readme_general' file, including the DAC abstract.
+
+.. _faq-rdc-files:
 
 3.  **Which files should and should I not upload to a Research Documentation Collection (RDC)?**
 
@@ -264,6 +268,8 @@ Organize data collections
 
     Before closing the RDC, the preliminary results may be removed.
 
+.. _faq-refer-data-not-collected-by-researcher:
+
 4.  **How to refer to the data that the researcher did not collect?**
 
     It is possible to publish papers without having collected data yourself. For example, modeling work or using an existing data set. There are three ways to link these types of data to the new RDC.
@@ -272,13 +278,19 @@ Organize data collections
 
     If the data is not represented in the repository, the researchers must either add the data to the repository, or document the data by a persistent identifier (e.g. DOI or URL). This situation applies when a DAC is not yet archived or the data was collected at another institute. 
 
+.. _faq-rdc-organisation:
+
 5.  **How should I organize the data in a Research Documentation Collection (RDC)?**
 
     Data in a RDC should be organized in separate folders and sub-folders according to the type of data (e.g. raw data, scripts, peer-review process, etc.). The names of the folders should clearly indicate to the content of the folder.
 
+.. _faq-document-experimental-setup:
+
 6.  **How should I document the experimental setup?**
 
     You must describe your experiment in a document (txt, csv, tsv, pdf, MS Word or MS Excel) that you upload to the collection. In this document, give a brief description of your experimental setup, which tasks you used and what they attend to manipulate and measure. In that document, you also explain how the conditions, stimuli and responses are represented in the presentation log files and the trigger channel of your data acquisition system. A PowerPoint presentation of the project proposal will contribute to the documentation of the experiment. Also the original presentation code (NBS Presentation, E-Prime, etc.) will contribute to the documentation. Add relevant part of this information to the appropriate collection (DAC, RDC and DSC).
+
+.. _faq-where-store-personal-information:
 
 7.  **Where should I store personal information about the participants?**
 
@@ -302,6 +314,8 @@ Publish data
 2.  **Can I share my data if they belong to an ongoing project?**
 
     When a research project is still ongoing (i.e. the Data Acquisition Collection is still open), and the researchers want to write a paper using the data collected until present, then they can create a Data Sharing Collection (DSC) in which the data that were used in the publication are shared. You should document in the DSC that these shared data are part of a larger project, of which only a part is shared in the current DSC.
+
+.. _faq-dsc-files:
 
 3.  **What data should I share in a Data Sharing Collection (DSC)?**
 
