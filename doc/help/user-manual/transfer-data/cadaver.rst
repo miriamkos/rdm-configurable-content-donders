@@ -110,7 +110,7 @@ As last example we show you how to download a file with the command get.
 Command list
 ------------
 
-.. rst-class:: table table-striped
+.. rst-class:: table table-bordered table-striped
 
 +-------------------------------------------+----------------------------------------------------------+
 | **Command**                               | **Function**                                             |
