@@ -140,6 +140,9 @@ html_sidebars = {
     ]
 }
 
+html_add_permalinks = '' 
+
+smartquotes = False
 
 # -- Options for HTMLHelp output ------------------------------------------
 
