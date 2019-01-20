@@ -19,9 +19,8 @@ To review the details of a collection (e.g. title, :ref:`abstract <faq-abstract>
 
 .. note::
 
-    If you are a viewer of a collection, you cannot edit its details.</p>
-
-    If you are a viewer and want to access the data of the collection, please continue reading section :ref:`access-shared-data`.
+    - If you are a viewer of a collection, you cannot edit its details.
+    - If you are a viewer and want to access the data of the collection, please continue reading section :ref:`access-shared-data`.
 
 .. figure:: images/edit_collection.jpg
 
@@ -31,12 +30,10 @@ To edit the details of a collection, click on the *Edit* button.
 
 Depending on your role (see this FAQ: :ref:`What are the differences between the different roles in a collection <faq-differences-between-roles>`) in the collection, the edit dialog allows you to:
 
-
 - specify the details of a collection
 - specify who can modify and/or access the collection (manager, contributor, viewer)
 - link the collection to associated publications (e.g. in PubMed)
 - link the collection to associated collections in the repository
-
 
 .. note::
 
