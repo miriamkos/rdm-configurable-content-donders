@@ -4,7 +4,7 @@
     Home <index.rst>
     Introduction <rdm-nutshell.rst>
     User manual <user-manual.rst>
-    FAQ <faq/index.rst>
+    FAQ <faq.rst>
     References <references.rst>
 ..    Get started <get-started.rst>
 ..    Transfer data <transfer-data.rst>
