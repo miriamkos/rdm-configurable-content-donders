@@ -14,8 +14,8 @@ Download the installer from software's website and follow instructions step-by-s
 
 .. figure:: images/cd1.png
 
-Start with _cyberduck
----------------------
+Start with cyberduck
+--------------------
 
 When you open Cyberduck after installation, the interface looks like this:
 
