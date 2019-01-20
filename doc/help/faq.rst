@@ -59,9 +59,9 @@ Get started: deposit data
 
    There are three collection types, one for data acquisition (Data Acquisition Collection), one for research documentation (Research Documentation Collection) and one for data sharing (Data Sharing Collection).
 
-   - **Data Acquisition Collection (DAC).** In a Data Acquisition Collection, the research data are archived in their original form. Here, “original” means without any manipulations that limit future analyses of these data. To learn more about the files that you must upload to a Data Acquisition Collection, see :ref:`what to upload for DAC <DACfiles>`.
+   - **Data Acquisition Collection (DAC).** In a Data Acquisition Collection, the research data are archived in their original form. Here, "original" means without any manipulations that limit future analyses of these data. To learn more about the files that you must upload to a Data Acquisition Collection, see :ref:`what to upload for DAC <DACfiles>`.
 
-   - **Research Documentation Collection (RDC).** When a paper is accepted for publication, the associated RDC must document the process via which data are converted into the to-be-published results. Prior to the paper being accepted for publication, the RDC can be used as a collaboration platform via which all kinds of files are shared (analysis scripts, preliminary figures, the different versions of the paper, …). To learn more about the files that you must upload to a RDC, see this FAQ.
+   - **Research Documentation Collection (RDC).** When a paper is accepted for publication, the associated RDC must document the process via which data are converted into the to-be-published results. Prior to the paper being accepted for publication, the RDC can be used as a collaboration platform via which all kinds of files are shared (analysis scripts, preliminary figures, the different versions of the paper, ...). To learn more about the files that you must upload to a RDC, see this FAQ.
 
    .. _faq-dsc:
 
@@ -77,7 +77,7 @@ Get started: deposit data
 
    All information that is (1) generated as a part of the research process and (2) on which a scientific report is/will be based.
 
-   This definition of research data does not only include empirical data, but also simulated data, computer scripts for analysis and simulations, stimuli presented in experiments and the computer scripts for presenting them, etc. A good way to determine what is the research data on which a study is based, is asking oneself what information has contributed to the results on which you report in your publication. And a good way to delineate the empirical from the other research data, is by asking oneself whether one has used some device for obtaining these data: empirical data are always collected using a device (a button box, a keyboard, an MRI scanner, an EEG or MEG system, a video camera, a touch screen, a microscope, …).
+   This definition of research data does not only include empirical data, but also simulated data, computer scripts for analysis and simulations, stimuli presented in experiments and the computer scripts for presenting them, etc. A good way to determine what is the research data on which a study is based, is asking oneself what information has contributed to the results on which you report in your publication. And a good way to delineate the empirical from the other research data, is by asking oneself whether one has used some device for obtaining these data: empirical data are always collected using a device (a button box, a keyboard, an MRI scanner, an EEG or MEG system, a video camera, a touch screen, a microscope, ...).
 
    Not all studies and publications depend on research data, as defined above. This holds for theoretical, perspective and opinion papers, as well as for reviews. The Donders Repository is only relevant for those studies and publications that do depend on research data.
 
@@ -97,7 +97,7 @@ Ethics & privacy
 
 #. **Where should I apply for ethics approval for studies that involve animals?**
 
-   The Centrale Commissie Dierproeven (CCD) has approved 17 Animal Ethics Committees (Dierexperimentencommissie, DEC) in the Netherlands that review the applications for projects involving animal research. All research involving animals at the Donders Institute requires approval from the Radboud University’s Animal Experiment Committee.
+   The Centrale Commissie Dierproeven (CCD) has approved 17 Animal Ethics Committees (Dierexperimentencommissie, DEC) in the Netherlands that review the applications for projects involving animal research. All research involving animals at the Donders Institute requires approval from the Radboud University's Animal Experiment Committee.
 
 #. **How should I specify the "ethics approval identifier"?**
 
@@ -192,7 +192,7 @@ Organize data collections
 
    Our definition of “data” is a broad one. For instance, it also includes computer scripts, as used for analysis or modeling work. Thus, if the published results depend on computer scripts, these must be added to the RDC.
 
-   The RDC is a platform for sharing preliminary results (figures, tables, PowerPoint presentations, etc.) with collaborators in a project team. A RDC should contain the documents of the editorial and peer-review process pertaining to the publication that is linked to this collection (uploaded manuscripts, reviews, reply to the reviewers, …). An archived RDC must be linked to one publication. 
+   The RDC is a platform for sharing preliminary results (figures, tables, PowerPoint presentations, etc.) with collaborators in a project team. A RDC should contain the documents of the editorial and peer-review process pertaining to the publication that is linked to this collection (uploaded manuscripts, reviews, reply to the reviewers, ...). An archived RDC must be linked to one publication. 
 
    Also include a description of the experimental setup.
 
