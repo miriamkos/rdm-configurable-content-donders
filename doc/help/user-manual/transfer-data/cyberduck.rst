@@ -71,7 +71,7 @@ If you try to upload files to a directory for which you are not authorized (i.e.
 .. figure:: images/cd10.png
 
 Read more about the content of collections
-==========================================
+------------------------------------------
 
 - What files should I upload in different collections? Read the FAQ about files in the Data Aquisition Collection (:ref:`DAC <faq-dac-files>`), Research Documentation Collection (:ref:`RDC <faq-rdc-files>`) and Data Sharing Collection (:ref:`DSC <faq-dsc-files>`)?
 - How should I organize my data? Read the FAQ about organizing data in a :ref:`DAC <faq-dac-organisation>` and :ref:`RDC <faq-rdc-organisation>`?
