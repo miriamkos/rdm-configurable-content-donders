@@ -8,7 +8,7 @@ On Windows and OS X you can mount the webdav connection directly as a network dr
 Mounting webdav on OS X
 -----------------------
 
-Open Finder, click "Go -> Connect to server..." or press the shortcut ⌘K.
+Open Finder, click "Go -> Connect to server..." or press the shortcut ``Command-K``.
 
 Enter your username and the server address as https://U123456-ru.nl@webdav.data.donders.ru.nl. You can click the "+" symbol on the right to add it to your list of favorite servers.
 
@@ -17,7 +17,7 @@ Press enter and you will be prompted for your password. Enter the one time passw
 Mounting webdav on Windows
 --------------------------
 
-Open File explorer, right-click on "Network", and click "map network drive". Then click "connect to a web site that you can use to store your documents and pictures'"-> next -> choose custom network location -> next -> add network address https://webdav.data.donders.ru.nl.
+Open File explorer, right-click on "Network", and click "map network drive". Then click "connect to a web site that you can use to store your documents and pictures" -> next -> choose custom network location -> next -> add network address https://webdav.data.donders.ru.nl.
 
 Windows will prompt you for your username and password, which you can get from the :ref:`data access account <data-access-account>`.
 
