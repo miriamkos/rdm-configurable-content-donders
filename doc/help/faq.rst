@@ -8,10 +8,10 @@ Login and collection roles
 
 .. _faq-surfconext:
 
-1.  **What is SURFconext?**
+1. **What is SURFconext?**
 
     SURFconext allows all academic institutes and schools in The Netherlands to use a single login. SURFconext allows you to access online services with the username and password issued by your own institution.
- 
+
     In SURFconext your personal details are only provided to a service provider (such as the Donders Repository) if these details are needed to use the service.
  
 2.  **In my browser I cannot select any institution. What should I do?**
@@ -171,8 +171,13 @@ Ethics & privacy
     Depending on the ethics approval board, the format of the identifier is slightly different. The identifier always specifies the board that approved it, followed by the number at which it is known at that board. Here are some examples:
 
     - CMO regio A-N 2014/288
+      
+      about CMO
+
     - ECSW 2013-0410-133
+    
     - RUDEC 2013-180
+    
     - IRBN 2014/005
 
     Besides the local ethics board identifier, an ABR ("Algemeen Beoordeling en Registratie") number might be assigned. The combination of these two ensures that the study is registered and can be identified both at the local as well as at the central level (i.e. at the CCMO in The Hague). Through the ABR number, the ethics application can be queried in a public database.
@@ -356,6 +361,8 @@ Publish data
     The DUA specifies the conditions under which data in a DSC is shared, e.g. to give attribution. The DUA may also include details on specific limitations on the reuse of the data. As manager or contributor to the DSC you specify under which DUA the data is to be shared. When the external researcher agrees with the collection’s DUA, he/she will be automatically added as a viewer to it, which gives him/her read access.
 
     The repository provides two default DUAs: for collections that include potentially identifiable data from individual human subjects, please use RU-DI-HD-1.0; for collections that only include data that cannot be identified in any way (e.g. only group results, or data that does not originate from human subjects), please use RU-DI-NH-1.0. We also support several others DUAs for other types of data. If a dataset has more specific requirements for data sharing (e.g. due to sensitivity of data or requirements of funders or collaborating partners), it is required to make a custom DUA. See here a list of aspects to consider in the design of a DUA. For further help, please send an email to datasupport@donders.ru.nl.
+
+.. _faq-persistent-identifier:
 
 6.  **What is a persistent identifier?**
 
