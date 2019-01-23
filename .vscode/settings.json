@@ -1,4 +1,4 @@
 {
     "editor.wordWrap": "on",
-    "restructuredtext.confPath": "${workspaceFolder}/doc/help"
+    "restructuredtext.confPath": "${workspaceFolder}\\doc\\help"
 }
