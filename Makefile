@@ -57,6 +57,7 @@ $(DIR_HELPDOC_HTML):
 	cp -R $(DIR_HELPDOC)/* $(TMPDIR) && \
 		if [ -d $(TMPDIR)/_build ]; then rm -rf $(TMPDIR)/_build; fi && \
 		ls -l $(TMPDIR) && \
+		rm -f $(TMPDIR)/conf.py && \
 		cp -R $(shell pwd)/tools/sphinx/* $(TMPDIR) && \
 		make -C $(TMPDIR) html
 	find $(TMPDIR)/_build/html -name '*.html' -exec \
