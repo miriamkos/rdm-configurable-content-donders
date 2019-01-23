@@ -1,1 +1,1 @@
-tools/sphinx/conf.py
+../../tools/sphinx/conf.py
