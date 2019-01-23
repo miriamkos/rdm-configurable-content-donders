@@ -81,13 +81,13 @@ Get started: deposit data
 
     There are three collection types, one for data acquisition (Data Acquisition Collection), one for research documentation (Research Documentation Collection) and one for data sharing (Data Sharing Collection).
 
-    - **Data Acquisition Collection (DAC).** In a Data Acquisition Collection, the research data are archived in their original form. Here, "original" means without any manipulations that limit future analyses of these data. To learn more about the files that you must upload to a Data Acquisition Collection, see :ref:`what to upload for DAC <faq-dac-files>`.
+    - **Data Acquisition Collection (DAC).** In a Data Acquisition Collection, the research data are archived in their original form. Here, "original" means without any manipulations that limit future analyses of these data. To learn more about the files that you must upload to a Data Acquisition Collection, see :ref:`what to upload to a DAC <faq-dac-files>`.
 
-    - **Research Documentation Collection (RDC).** When a paper is accepted for publication, the associated RDC must document the process via which data are converted into the to-be-published results. Prior to the paper being accepted for publication, the RDC can be used as a collaboration platform via which all kinds of files are shared (analysis scripts, preliminary figures, the different versions of the paper, ...). To learn more about the files that you must upload to a RDC, see this FAQ.
+    - **Research Documentation Collection (RDC).** When a paper is accepted for publication, the associated RDC must document the process via which data are converted into the to-be-published results. Prior to the paper being accepted for publication, the RDC can be used as a collaboration platform via which all kinds of files are shared (analysis scripts, preliminary figures, the different versions of the paper, ...). To learn more about the files that you must upload to a RDC, see :ref:`what to upload to a RDC <faq-rdc-files>`.
 
     .. _faq-dsc:
 
-    - **Data Sharing Collection (DSC).** A DSC contains the data on which the published results are based, allowing other researchers to extend scientific findings by re-analyzing data with new methods, and/or by addressing new research questions using these data. To learn more about the files that you must upload to a DSC, see :ref:`faq-organise-data-collections`.
+    - **Data Sharing Collection (DSC).** A DSC contains the data on which the published results are based, allowing other researchers to extend scientific findings by re-analyzing data with new methods, and/or by addressing new research questions using these data. To learn more about the files that you must upload to a DSC, see :ref:`what to upload to a DSC <faq-dsc-files>`.
 
 .. _faq-how-to-request-collection:
 
@@ -356,11 +356,13 @@ Publish data
 
     For all types of data we recommend that you add a text document (txt, pdf or Microsoft Word) that describes the organization of the data over the files and directories.
 
+.. _faq-data-use-agreement:
+
 5.  **What is a Data Use Agreement (DUA)?**
 
     The DUA specifies the conditions under which data in a DSC is shared, e.g. to give attribution. The DUA may also include details on specific limitations on the reuse of the data. As manager or contributor to the DSC you specify under which DUA the data is to be shared. When the external researcher agrees with the collection’s DUA, he/she will be automatically added as a viewer to it, which gives him/her read access.
 
-    The repository provides two default DUAs: for collections that include potentially identifiable data from individual human subjects, please use RU-DI-HD-1.0; for collections that only include data that cannot be identified in any way (e.g. only group results, or data that does not originate from human subjects), please use RU-DI-NH-1.0. We also support several others DUAs for other types of data. If a dataset has more specific requirements for data sharing (e.g. due to sensitivity of data or requirements of funders or collaborating partners), it is required to make a custom DUA. See here a list of aspects to consider in the design of a DUA. For further help, please send an email to datasupport@donders.ru.nl.
+    The repository provides two default DUAs: for collections that include potentially identifiable data from individual human subjects, please use :ref:`RU-DI-HD-1.0 <>`; for collections that only include data that cannot be identified in any way (e.g. only group results, or data that does not originate from human subjects), please use RU-DI-NH-1.0. We also support several others DUAs for other types of data. If a dataset has more specific requirements for data sharing (e.g. due to sensitivity of data or requirements of funders or collaborating partners), it is required to make a custom DUA. See here a list of aspects to consider in the design of a DUA. For further help, please send an email to datasupport@donders.ru.nl.
 
 .. _faq-persistent-identifier:
 
@@ -410,7 +412,11 @@ Share data with external reviewers
 
 1.  **How do I share data with external reviewers?**
 
-    The Donders Repository includes the possibility of sharing data from a Data Sharing Collection with external reviewers (i.e. before publication) in a way that protects the anonymity of the reviewers. For details on this see the manual on data sharing.
+    The Donders Repository includes the possibility of sharing data from a Data Sharing Collection with external reviewers (i.e. before publication) in a way that protects the anonymity of the reviewers. For details :ref:`see here <publish-dsc-share-data>`.
+
+2.  **I received a "reviewer access URL". How should I use it?**
+
+    The reviewer access URL is for review purposes only and leads to the collection page of a Data Sharing Collection that is not yet published. See :ref:`this page <reviewer-access>` for information on conditions of use and downloading data.
 
 Access shared data
 ------------------
@@ -419,7 +425,7 @@ Access shared data
 
     The majority of data sets shared through the Donders Repository include data collected in human subjects. If the data is potentially identifiable - e.g. MRI data - these data are shared with restrictions to ensure the privacy of research participants. In line with privacy legislation, the Radboud University (security officer) and local ethical committee require that users of these data publications can be identified (e.g. in case of violation of a Data Use Agreement). Therefore, authentication in the Donders Repository is required to download these data sets.
 
-    Downloading completely anonymized datasets and non-human / non-sensitive datasets published under an OpenDataCommons or CreativeCommons license, preferably does not require authentication. Developments to allow anonymous access to these data publications are currently ongoing. (Expected release: January 2019).
+    Downloading completely anonymized datasets and non-human / non-sensitive datasets published under an OpenDataCommons or CreativeCommons license, preferably does not require authentication. Developments to allow anonymous access to these data publications are currently ongoing. (Expected release: March 2019).
 
 2.  **I logged in with my ORCID-iD but it appears I have not the right permissions to download data, what should I do?**
 

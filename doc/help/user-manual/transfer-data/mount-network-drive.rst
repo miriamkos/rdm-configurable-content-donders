@@ -10,7 +10,7 @@ Mounting webdav on OS X
 
 Open Finder, click "Go -> Connect to server..." or press the shortcut ``Command-K``.
 
-Enter your username and the server address as https://U123456-ru.nl@webdav.data.donders.ru.nl. You can click the "+" symbol on the right to add it to your list of favorite servers.
+Enter your username and the server address as https://U123456@ru.nl@webdav.data.donders.ru.nl. You can click the "+" symbol on the right to add it to your list of favorite servers.
 
 Press enter and you will be prompted for your password. Enter the one time password from the :ref:`datra access account <data-access-account>`. It is convenient for browsing to store your password in your Keychain, but note that it will only be valid for 72 hour after which you have to enter the new password.
 
