@@ -40,6 +40,8 @@ DIST_ZIP:=rdm-configurable-content-$(VERSION).tar.gz
 # convert contents into proper formats
 build: $(COLL_KEYWORDS) $(CMS_SNIPPETS_MD) $(BUILDINFO) $(DIR_HELPDOC_HTML)
 
+help: $(DIR_HELPDOC_HTML)
+
 $(COLL_KEYWORDS):
 	@echo "--> converting keyword: $@"
 	python "$(shell pwd)/tools/csv2json.py" "$(patsubst %.json,%.csv,$@)" "$@"

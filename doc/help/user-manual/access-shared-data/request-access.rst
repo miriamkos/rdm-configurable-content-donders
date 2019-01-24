@@ -10,7 +10,7 @@ You can find and retrieve shared data in the Donders Research Data Repository th
 
 For example, say you are interested in the data used in the paper by van der Meij, van Ede and Maris (2016, PLos ONE).You can find the persistent identifier linked to the data on the publication's webpage.
 
-:ref:`http://journals.plos.org/plosone/article?d=10.1371/journal.pone.0154881 <http://journals.plos.org/plosone/article?d=10.1371/journal.pone.0154881>`
+`http://journals.plos.org/plosone/article?d=10.1371/journal.pone.0154881 <http://journals.plos.org/plosone/article?d=10.1371/journal.pone.0154881>`_
 
 .. figure:: images/s4_0.png
 
