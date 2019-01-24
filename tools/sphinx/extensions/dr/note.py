@@ -1,9 +1,9 @@
 """
 
-Sphinx extension: dr.info
+Sphinx extension: dr.note
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This extension overwrite the `info` directive of docutils to append bootstrap `alert` classes for rendering HTML with bootstrap.
+This extension overwrite the `note` directive of docutils to append bootstrap `alert` classes for rendering HTML with bootstrap.
 
 """
 from docutils import nodes
@@ -13,24 +13,27 @@ from sphinx.locale import _
 
 def setup(app):
     app.add_node(
-        Info,
+        Note,
         html=(
             html_visit_node,
             html_depart_node
         )
     )
-    app.add_directive('info', InfoDirective)
+    app.add_directive('note', NoteDirective)
 
-class Info(nodes.Admonition, nodes.Element):
+class Note(nodes.Admonition, nodes.Element):
     pass
 
-class InfoDirective(Directive):
+class NoteDirective(Directive):
     has_content = True
     required_arguments = 0
-    optional_arguments = 1
+    optional_arguments = 0
     option_spec = {'mode': unchanged}
 
     def run(self):
+
+        # this maps mode to specific admonition in docutils. 
+        admonition = {'info': 'note', 'warning': 'warning', 'danger':'danger'}
 
         mode = 'info'
         if 'mode' in self.options.keys() and self.options['mode'] in ['info','warning','danger']:
@@ -38,11 +41,11 @@ class InfoDirective(Directive):
 
         env = self.state.document.settings.env
 
-        targetid = "dr-info-%d" % env.new_serialno('dr-info')
+        targetid = "dr-note-%d" % env.new_serialno('dr-note')
         targetnode = nodes.target('','', ids=[targetid])
 
-        node = Info('\n'.join(self.content))
-        node.set_class("note")
+        node = Note('\n'.join(self.content))
+        node.set_class(admonition[mode])
         node.set_class("alert")
         node.set_class("alert-%s" % mode)
         node += nodes.title(_(mode.upper()), _(mode.upper()))
