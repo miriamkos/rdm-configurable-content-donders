@@ -146,9 +146,6 @@ html_add_permalinks = ''
 
 smartquotes = False
 
-# disable copying RST source files to the final build
-html_copy_source = False
-
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
