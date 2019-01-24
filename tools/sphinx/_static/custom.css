@@ -125,6 +125,10 @@ pre {
 }
 
 @media screen and (max-width: 875px) {
+    div.body {
+        min-width: 400px;
+    }
+
     div.sphinxsidebar {
         padding: 0px;
         background: #fff;
