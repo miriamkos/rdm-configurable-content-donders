@@ -30,6 +30,7 @@ div.footer {
 }
 
 div.body {
+    min-width: 320px;
     max-width: 100%;
 }
 
@@ -125,10 +126,6 @@ pre {
 }
 
 @media screen and (max-width: 875px) {
-    div.body {
-        min-width: 400px;
-    }
-
     div.sphinxsidebar {
         padding: 0px;
         background: #fff;
