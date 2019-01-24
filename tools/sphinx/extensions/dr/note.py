@@ -21,6 +21,8 @@ def setup(app):
     )
     app.add_directive('note', NoteDirective)
 
+    return {'version': '0.1'}
+
 class Note(nodes.Admonition, nodes.Element):
     pass
 
