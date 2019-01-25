@@ -38,7 +38,7 @@ Login and collection roles
 
 4.  **What is an ORCID-iD?**
 
-    ORCID provides you with a unique individual and persistent digital identifier that enables you to connect research contributions and to share information on large scale with other researchers. You can login to the Donders Repository using your ORCID-iD. Read how to create and ORCID-iD on the webpage (https://orcid.org/). Note that you must set your ORCID account **e-mail settings** such that your e-mail address is shared with at least trusted parties (such as the Donders Repository). This is required to verify your identity on the background.
+    ORCID provides you with a unique individual and persistent digital identifier that enables you to connect research contributions and to share information on large scale with other researchers. You can login to the Donders Repository using your ORCID-iD. Read how to create and ORCID-iD on the webpage (https://orcid.org/). Note that you must set your ORCID account **e-mail settings** such that your e-mail address is shared with at least trusted parties (such as the Donders Repository). This is required to verify your identity on the background. See also :ref:`this FAQ <faq-orcid-permissions>`.
 
 .. _faq-onegini:
 
@@ -171,8 +171,6 @@ Ethics & privacy
     Depending on the ethics approval board, the format of the identifier is slightly different. The identifier always specifies the board that approved it, followed by the number at which it is known at that board. Here are some examples:
 
     - CMO regio A-N 2014/288
-      
-      about CMO
 
     - ECSW 2013-0410-133
     
@@ -188,7 +186,7 @@ Ethics & privacy
     - NL47093.091.13
     - NL45835.091.13
 
-    On www.toetsingsonline.nl you can find details on studies with an ABR number.
+    On https://www.toetsingonline.nl/ you can find details on studies with an ABR number.
 
 .. _faq-organise-data-collections:
 
@@ -200,9 +198,7 @@ Organize data collections
 
 1.  **Which files should and should I not upload to a Data Acquisition Collection (DAC)?**
 
-    A DAC must contain all raw data plus a description that would allow a colleague to make sense of the .
-
-    By raw, we mean without any manipulations that limit future analyses of these data. In other words, raw data are original data.
+    A DAC must contain all raw data plus a description that would allow a colleague to make sense of the data. By raw, we mean without any manipulations that limit future analyses of these data. In other words, raw data are original data.
 
     Some examples for the different methods:
 
@@ -257,7 +253,7 @@ Organize data collections
    
     For all types of data we recommend that you add a 'readme' document that describes the organization of the data over the files and directories.
    
-    For an example of a well-organized DAC from a DCCN project see here (pdf, 75 kB). The first page of this document contains the content of the 'readme_general' file, including the DAC abstract.
+    For an example of a well-organized DAC from a DCCN project see this :download:`example <documents/DAC_example.pdf>`. The first page of this document contains the content of the 'readme general' file, including the DAC abstract.
 
 .. _faq-rdc-files:
 
@@ -362,7 +358,7 @@ Publish data
 
     The DUA specifies the conditions under which data in a DSC is shared, e.g. to give attribution. The DUA may also include details on specific limitations on the reuse of the data. As manager or contributor to the DSC you specify under which DUA the data is to be shared. When the external researcher agrees with the collection’s DUA, he/she will be automatically added as a viewer to it, which gives him/her read access.
 
-    The repository provides two default DUAs: for collections that include potentially identifiable data from individual human subjects, please use :dua:`RU-DI-HD-1.0`; for collections that only include data that cannot be identified in any way (e.g. only group results, or data that does not originate from human subjects), please use RU-DI-NH-1.0. We also support several others DUAs for other types of data. If a dataset has more specific requirements for data sharing (e.g. due to sensitivity of data or requirements of funders or collaborating partners), it is required to make a custom DUA. See here a list of aspects to consider in the design of a DUA. For further help, please send an email to datasupport@donders.ru.nl.
+    The repository provides two default DUAs: for collections that include potentially identifiable data from individual human subjects, please use :dua:`RU-DI-HD-1.0`; for collections that only include data that cannot be identified in any way (e.g. only group results, or data that does not originate from human subjects), please use :dua:`RU-DI-NH-1.0`. We also support :dua:`several others DUAs <index>` for other types of data. If a dataset has more specific requirements for data sharing (e.g. due to sensitivity of data or requirements of funders or collaborating partners), it is required to make a custom DUA. See here a list of aspects to consider in the design of a DUA. For further help, please send an email to datasupport@donders.ru.nl.
 
 .. _faq-persistent-identifier:
 
@@ -426,6 +422,8 @@ Access shared data
     The majority of data sets shared through the Donders Repository include data collected in human subjects. If the data is potentially identifiable - e.g. MRI data - these data are shared with restrictions to ensure the privacy of research participants. In line with privacy legislation, the Radboud University (security officer) and local ethical committee require that users of these data publications can be identified (e.g. in case of violation of a Data Use Agreement). Therefore, authentication in the Donders Repository is required to download these data sets.
 
     Downloading completely anonymized datasets and non-human / non-sensitive datasets published under an OpenDataCommons or CreativeCommons license, preferably does not require authentication. Developments to allow anonymous access to these data publications are currently ongoing. (Expected release: March 2019).
+
+.. _faq-orcid-permissions:
 
 2.  **I logged in with my ORCID-iD but it appears I have not the right permissions to download data, what should I do?**
 

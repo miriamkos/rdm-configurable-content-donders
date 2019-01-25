@@ -24,7 +24,7 @@ To review the details of a collection (e.g. title, :ref:`abstract <faq-abstract>
 
 .. figure:: images/edit_collection.jpg
 
-To edit the details of a collection, click on the *Edit* button.
+To edit the details of a collection, click on the *Edit metadata* button.
 
 .. figure:: images/edit-details_60.png
 

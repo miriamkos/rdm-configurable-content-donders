@@ -23,11 +23,11 @@ When the status of the current DSC is "reviewable internal", you can change its 
 
 .. figure:: images/switch_to_reviewable_external.jpg
 
-A collection-specific URL is available specifically for external reviewers to access your collection. This URL should only be shared with the editor of the journal to which you send your manuscript. You can retrieve the URL by clicking the &lsquo;get reviewer access URL&rsquo; button. Any reviewer that uses the link is added to the DSC having the same rights a viewer has.
+A collection-specific URL is available specifically for external reviewers to access your collection. This URL should only be shared with the editor of the journal to which you send your manuscript. You can retrieve the URL by clicking the "get reviewer access URL" button. Any reviewer that uses the link is added to the DSC having the same rights a viewer has.
 
 .. figure:: images/get_reviewer_access_url.jpg
 
-When sharing the URL with the journal editor, make sure to include a small explanation about how to access the repository and download data. Here&rsquo;s a template e-mail that you can use for that:
+When sharing the URL with the journal editor, make sure to include a small explanation about how to access the repository and download data. Here's a template e-mail that you can use for that:
 
 ::
 
@@ -41,11 +41,43 @@ When the manuscript is accepted for publication, the Data Sharing Collection sho
 
 .. note::
     
-    Keep in mind that this step is irreversible!
+    Keep in mind that this step is irreversible! See below for information about re-opening a collection.
+    
 
 .. figure:: images/switch_to_published.jpg
 
-After the collection is published a permanent read-only copy of the collection will be created and a :ref:`persistent identifier <faq-persistent-identifier>` will be assigned. The persistent identifier can be used for future references.
+After the collection is published a permanent read-only copy of the collection will be created and a :ref:`persistent identifier <faq-persistent-identifier>` will be assigned. The persistent identifier can be used for future references. 
 
-A few details of a DSC can still be changed after it has been published, e.g., linking publications to it.
+A few details of a DSC can still be changed - using the "edit metadata" button - after it has been published, e.g., linking publications to it, and changing its collection users.
+
+After the collection is published, a version number (1) is assigned.
+
+.. figure:: images/metadata_published_collection.jpg
+
+In case you discover mistakes in your collection content, it is possible to re-open a collection. However, be aware that it is not preferred, as creating a second version of the collection will use double the amount of storage space.
+
+.. note::
+
+    As indicated when clicking the "switch to editable" button, you must contact datasupport@donders.ru.nl to ask the system administrator to reopen the collection.
+
+After the collection has been reopend by the system administrator, an "editable" *draft version* is created. You can edit the collection content in the same way as before publishing it. You can still view the details of "Version 1", but these are no longer editable and you cannot edit its content.
+
+.. figure:: images/reopend_dsc_draft.jpg
+
+Once you have updated the *draft* version of your collection, you should follow the same procedure for publishing the collection again, as described before on this page.
+
+After publishing this collection, a new version number (2) is assigned.
+
+
+
+
+
+
+
+
+
+
+
+
+
 

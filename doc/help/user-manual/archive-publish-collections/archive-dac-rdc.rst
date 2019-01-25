@@ -9,7 +9,7 @@ When a research project is completed, the associated :ref:`Data Acquisition Coll
 
     Only the manager of a collection can archive a collection.
 
-To archive a DAC or a RDC, log in to the portal :ref:`(see 1.1) <login-portal>` on your collections page, select the collection you want to archive, and click the button "switch to 'reviewable internal". This updates the status of the collection to a 'read-only' state that allows colleagues to review its content before archiving.
+To archive a DAC or a RDC, log in to the portal :ref:`(see 1.1) <login-portal>` on your collections page, select the collection you want to archive, and click the button "switch to reviewable internal". This updates the status of the collection to a 'read-only' state that allows colleagues to review its content before archiving.
 
 
 .. figure:: images/switch_to_reviewable_internal.jpg
