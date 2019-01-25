@@ -5,7 +5,7 @@ Check transferred data
 
 After transferring files (uploading or downloading) between the repository and your computer you need to make sure all the files are transferred completely. Especially when transferring a large number of files and/or large files, something can go wrong along the way (e.g., short interruption in the network connection, unexpected downtime of the server, etc.).
 
-To check the presence (i.e. the number) and the content of the files, you can use the *manifest file* for the collection. This contains a list of all files with a checksum for each. You can download the manifest file from the collection's content page.
+To check the presence (i.e. the number) and the content of the files, you can use the *manifest file* for the collection. This contains a list of all files with a checksum for each. You can download the manifest file from the manifest tab on the collection's page.
 
 .. figure:: images/manifest_file.jpg
 

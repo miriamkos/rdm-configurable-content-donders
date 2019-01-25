@@ -23,11 +23,11 @@ When the status of the current DSC is "reviewable internal", you can change its 
 
 .. figure:: images/switch_to_reviewable_external.jpg
 
-A collection-specific URL is available specifically for external reviewers to access your collection. This URL should only be shared with the editor of the journal to which you send your manuscript. You can retrieve the URL by clicking the &lsquo;get reviewer access URL&rsquo; button. Any reviewer that uses the link is added to the DSC having the same rights a viewer has.
+A collection-specific URL is available specifically for external reviewers to access your collection. This URL should only be shared with the editor of the journal to which you send your manuscript. You can retrieve the URL by clicking the "get reviewer access URL" button. Any reviewer that uses the link is added to the DSC having the same rights a viewer has.
 
 .. figure:: images/get_reviewer_access_url.jpg
 
-When sharing the URL with the journal editor, make sure to include a small explanation about how to access the repository and download data. Here&rsquo;s a template e-mail that you can use for that:
+When sharing the URL with the journal editor, make sure to include a small explanation about how to access the repository and download data. Here's a template e-mail that you can use for that:
 
 ::
 
