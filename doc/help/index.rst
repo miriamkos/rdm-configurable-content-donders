@@ -22,8 +22,7 @@ Every step in the research workflow can be easily documented.
 
 You can easily share your research data with collaborators around the world with predefined restrictions.
 
-Get started!
-------------
+**Get started!**
 
 * :ref:`The Donders Repository in a nutshell <rdm-nutshell>`
 
