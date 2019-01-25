@@ -30,6 +30,7 @@ div.footer {
 }
 
 div.body {
+    min-width: 320px;
     max-width: 100%;
 }
 
