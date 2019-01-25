@@ -202,3 +202,6 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
+# the setup function to add extra css file to the HTML
+def setup(app):
+    app.add_stylesheet('webportal.css')

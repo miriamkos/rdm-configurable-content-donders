@@ -92,43 +92,43 @@ todo_include_todos = False
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-html_theme_options = {
-    'page_width'             : "1140px",
-    'sidebar_width'          : "250px",
-    'fixed_sidebar'          : "false",
-    'sidebar_includehidden'  : "false",
-    'body_text'              : "#3E4349",
-    'body_text_align'        : "left",
-    'link'                   : "#004B6B",
-    'link_hover'             : "#6D4100",
-    'sidebar_header'         : "",
-    'sidebar_text'           : "#555",
-    'sidebar_link'           : "",
-    'sidebar_link_underscore': "#999",
-    'sidebar_search_button'  : "#CCC",
-    'sidebar_list'           : "#000",
-    'anchor'                 : "#DDD",
-    'anchor_hover_fg'        : "",
-    'anchor_hover_bg'        : "#EAEAEA",
-    'narrow_sidebar_bg'      : "#333",
-    'narrow_sidebar_fg'      : "#FFF",
-    'narrow_sidebar_link'    : "",
-    'note_bg'                : "#8bcbeb",
-    'note_border'            : "#16acdd",
-    'font_size'              : "14px",
-    'caption_font_size'      : '20px',
-    'code_font_size'         : '0.9em',
-    'code_font_family'       : "'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace",
-    'code_highlight'         : "#FFC",
-    'font_family'            : "'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
-    'head_font_family'       : "'Noto Serif', Georgia, 'Times New Roman', Times, serif",
-    'caption_font_family'    : "'Noto Serif', Georgia, 'Times New Roman', Times, serif"
-}
+#html_theme_options = {
+#    'page_width'             : "1140px",
+#    'sidebar_width'          : "250px",
+#    'fixed_sidebar'          : "false",
+#    'sidebar_includehidden'  : "false",
+#    'body_text'              : "#3E4349",
+#    'body_text_align'        : "left",
+#    'link'                   : "#004B6B",
+#    'link_hover'             : "#6D4100",
+#    'sidebar_header'         : "",
+#    'sidebar_text'           : "#555",
+#    'sidebar_link'           : "",
+#    'sidebar_link_underscore': "#999",
+#    'sidebar_search_button'  : "#CCC",
+#    'sidebar_list'           : "#000",
+#    'anchor'                 : "#DDD",
+#    'anchor_hover_fg'        : "",
+#    'anchor_hover_bg'        : "#EAEAEA",
+#    'narrow_sidebar_bg'      : "#333",
+#    'narrow_sidebar_fg'      : "#FFF",
+#    'narrow_sidebar_link'    : "",
+#    'note_bg'                : "#8bcbeb",
+#    'note_border'            : "#16acdd",
+#    'font_size'              : "14px",
+#    'caption_font_size'      : '20px',
+#    'code_font_size'         : '0.9em',
+#    'code_font_family'       : "'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace",
+#    'code_highlight'         : "#FFC",
+#    'font_family'            : "'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif",
+#    'head_font_family'       : "'Noto Serif', Georgia, 'Times New Roman', Times, serif",
+#    'caption_font_family'    : "'Noto Serif', Georgia, 'Times New Roman', Times, serif"
+#}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['_static', '../../tools/sphinx/_static']
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -202,3 +202,6 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
+# the setup function to add extra css file to the HTML
+def setup(app):
+    app.add_stylesheet('preview.css')
