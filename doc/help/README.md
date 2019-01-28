@@ -6,11 +6,11 @@ The content of the help document could/should be edited with a plain-text editor
 
 Hereafter are possible utilities/workflows that will make this process a bit easier.
 
-## Edit on GitHub and preview with Readthedocs
+## Method 1: edit on GitHub and preview with Readthedocs
 
 One can edit the ReST documents directly on the [GitHub repository](https://github.com/donders-research-data-management/rdm-configurable-content-donders/tree/master/doc/help).  A corresponding [ReadTheDocs](https://readthedocs.org/) project has been linked to this repository.  As soon as changes are made in the GitHub repository, a process is triggered to rebuild the documentation at this [preview on ReadTheDocs](https://rdm-configurable-content-donders.readthedocs.io/en/latest/).
 
-## Edit with desktop tools
+## Method 2: edit with desktop tools
 
 - [GitHub desktop](https://desktop.github.com/) for syncrhonizing updates between desktop and the GitHub repository.
 - [Visual Studio Code](https://code.visualstudio.com/) for editing and previewing the reStructuredText documentations. It requires an [extension](https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext) which makes use of [Sphinx](http://www.sphinx-doc.org/en/master/usage/installation.html) to build ReST.
