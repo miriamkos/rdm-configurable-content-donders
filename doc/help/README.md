@@ -13,5 +13,4 @@ One can edit the ReST documents directly on the [GitHub repository](https://gith
 ## Edit with desktop tools
 
 - [GitHub desktop](https://desktop.github.com/) for syncrhonizing updates between desktop and the GitHub repository.
-- [Visual Studio Code](https://code.visualstudio.com/) for editing and previewing the reStructuredText documentations.
-- [Sphinx](http://www.sphinx-doc.org/en/master/usage/installation.html) for building ReST.
+- [Visual Studio Code](https://code.visualstudio.com/) for editing and previewing the reStructuredText documentations. It requires an [extension](https://marketplace.visualstudio.com/items?itemName=lextudio.restructuredtext) which makes use of [Sphinx](http://www.sphinx-doc.org/en/master/usage/installation.html) to build ReST.
