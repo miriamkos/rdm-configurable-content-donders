@@ -63,6 +63,8 @@ div.sphinxsidebar {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     height: 100%;
+    position: sticky;
+    top: 0;
 }
 
 div.sphinxsidebar h3,
