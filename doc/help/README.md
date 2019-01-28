@@ -1,6 +1,6 @@
 # How to edit the help document
 
-The online help is written with the [reStructuredText (ReST)](https://en.wikipedia.org/wiki/ReStructuredText). It is a light-weight markup language separating the documentation presentation from the documentation content.  With this separation, editor can focus on content writing; while the presentation is taken care by a build process.
+The online help is written with the [reStructuredText (ReST)](https://en.wikipedia.org/wiki/ReStructuredText). It is a light-weight markup language with separation between documentation content and presentation. With this separation, editor can focus on content writing; while the presentation is taken care by a build process.
 
 The content of the help document could/should be edited with a plain-text editor (such as the Notepad application on Windows, Vim on the command-line of Linux/MacOSX). Following to the editing, one builds the content with a presentation template (e.g. a theme or HTML CSS) for previewing the document in a web browser.
 
