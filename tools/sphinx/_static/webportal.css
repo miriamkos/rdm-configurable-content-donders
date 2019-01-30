@@ -102,6 +102,22 @@ div.sphinxsidebar p.caption {
     font-size: 20px;
 }
 
+div.sphinxsidebar a.current {
+    font-weight: bold;
+}
+
+div.sphinxsidebar li.toctree-l1 {
+    font-size: 14px;
+}
+
+div.sphinxsidebar li.toctree-l2 {
+    font-size: 14px;
+}
+
+div.sphinxsidebar li.toctree-l3 {
+    font-size: 12px;
+}
+
 div.sphinxsidebarwrapper {
     padding: 10px 5px 0 10px;
 }
