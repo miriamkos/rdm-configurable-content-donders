@@ -1,5 +1,8 @@
+Table of contents
+=================
+
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
     Home <index.rst>
     Introduction <rdm-nutshell.rst>
