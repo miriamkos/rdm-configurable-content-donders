@@ -6,7 +6,7 @@ User Manual
 This user manual will help you get a jump start with the Donders Repository.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    Get started <user-manual/get-started.rst>
    Transfer data <user-manual/transfer-data.rst>
