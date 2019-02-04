@@ -12,6 +12,7 @@
   "badges" : "/doc/badges.html",
   "footer" : "/doc/footer.html",
   "privacyPolicy" : "/doc/privacy_policy.html",
+  "dataAccess" : "/doc/data_access.html",
 
   "editCollection.confirmSocialUser" : "/doc/editcollection/confirmsocialuser.html",
   "changeStateFromEditableToReviewableInternal" : "/doc/changestate/editabletoreviewableinternal.html",
