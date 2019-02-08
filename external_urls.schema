@@ -12,6 +12,7 @@
         "login",
         "logout",
         "footer",
+        "dataAccess",
         "emailCollectionChangesLeadText",
         "emailManagerLessCollectionsLeadText",
         "oneTimePasswordModal.explanationLink",
