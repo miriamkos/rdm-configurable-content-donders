@@ -96,15 +96,41 @@ Organize data collections
 
     Data in a RDC should be organized in separate folders and sub-folders according to the type of data (e.g. raw data, scripts, peer-review process, etc.). The names of the folders should clearly indicate to the content of the folder.
 
+    .. _faq-preferred-formats:
+
+6.  **Which data formats should I use to ensure that my data remains usable in the future?**
+    Using general and common file formats is important to ensure research data will remain usable in the future. For research data collected or processed within the Donders Institute and archived or published using the Donders Repository, it is encouraged to use the following standard, open or exchangeable file formats:
+
+
+    ============================  ===================================================
+    Type                          Preferred format
+    ============================  ===================================================
+    Free text                     ASCII text, MarkDown, .docx (MS Word), .pdf
+    Structured text               .json, .xml
+    Tabular data                  CSV or TSV (comma- or tab-separated values)
+    Images                        .jpg, .tiff, .PNG
+    Videos                        .avi or .mp4 with h264 coding
+    Audio                         .wav
+    Numerical data                CSV, TSV, .mat (MATLAB), .npz(NumPy)
+    EEG data                      .eeg, .vhdr, .vmrk (BrainVision), EDF, BIDS
+    MEG data                      .ds (CTF), BIDS
+    MRI data                      .ima (DICOM), .nii(NIFTI) with header details in .json,                               BIDS
+    Eye tracker data              .edf (Eyelink), .idf (SMI), ASCII text
+    Articles and documentation    .docx (MS Word), .pdf
+    Code and analysis scripts     Native representation, for example .m (MATLAB), .py                                   (Python), .sps (SPSS)
+    README files                  Plain text (ASCII) 
+    ============================  ===================================================
+
+
 .. _faq-document-experimental-setup:
 
-6.  **How should I document the experimental setup?**
+7.  **How should I document the experimental setup?**
 
     You must describe your experiment in a document (txt, csv, tsv, pdf, MS Word or MS Excel) that you upload to the collection. In this document, give a brief description of your experimental setup, which tasks you used and what they attend to manipulate and measure. In that document, you also explain how the conditions, stimuli and responses are represented in the presentation log files and the trigger channel of your data acquisition system. A PowerPoint presentation of the project proposal will contribute to the documentation of the experiment. Also the original presentation code (NBS Presentation, E-Prime, etc.) will contribute to the documentation. Add relevant part of this information to the appropriate collection (DAC, RDC and DSC).
 
 .. _faq-where-store-personal-information:
 
-7.  **Where should I store personal information about the participants?**
+8.  **Where should I store personal information about the participants?**
 
     For data acquisition you have to know who are your participants and you need to be able to contact them. This requires personal information to be stored. The mapping of the personal information on the participant number is called the "pseudonimization key". The pseudonimization key should be stored in an encrypted file that is stored separately from the experimental data. The file should be protected by a strong password according to the RU password policy. The password is only to be known to the PI and the researchers involved in data acquisition.
 
