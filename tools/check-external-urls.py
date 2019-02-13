@@ -8,10 +8,19 @@ import json
 import zipfile
 import tarfile
 import operator
+import socket
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from common import getMyLogger
 
 import argparse
+
+class MyHTTPRedirectHandler(urllib2.HTTPRedirectHandler):
+    '''
+    Stop following the redirect.
+    '''
+    def http_error_302(self, req, fp, code, msg, headers):
+        raise urllib2.HTTPError(fp=fp,code=302,msg=msg,hdrs=headers,url='')
+    http_error_301 = http_error_303 = http_error_307 = http_error_302
 
 if __name__ == "__main__":
 
@@ -77,14 +86,18 @@ if __name__ == "__main__":
         bad_urls={}
         
         cookies = cookielib.LWPCookieJar()
-        handlers = [ urllib2.HTTPHandler(), urllib2.HTTPSHandler(), urllib2.HTTPCookieProcessor(cookies)]
+        handlers = [ urllib2.HTTPHandler(), urllib2.HTTPSHandler(), urllib2.HTTPCookieProcessor(cookies), MyHTTPRedirectHandler() ]
         opener = urllib2.build_opener(*handlers)
-        
         for k, v in sorted(d_urls.items(), key=operator.itemgetter(1)):
 
             if re.match('.*{.*.}.*', v ):
                 logger.warn("file or dir for {}: SKIPPED".format(v))
                 continue
+
+            #if re.match('.*urlPrefix$', v):
+            #    # ignore checking the urlPrefix
+            #    logger.warn("url prefix for {}: SKIPPED".format(v))
+            #    continue
 
             if re.match('^%s' % args.url_prefix, v):
                 # the URL matches url_prefix, should just check whether the file is provided by the package
@@ -104,15 +117,22 @@ if __name__ == "__main__":
             else:
                 try:
                     #connection = urllib2.urlopen(v)
-                    connection = opener.open(v)
+                    connection = opener.open(v,timeout=3)
                     code = connection.getcode()
                     connection.close()
                     logger.info("URL of {0}: [{1}] OK".format(k, code))
-                except urllib2.URLError, e:
-                    logger.error("URL of {0}: {1}".format(k, e.reason))
+                except socket.timeout, e:
+                    logger.error("URL of {0}: {1} - {2}".format(k, "socket timeout",v))
                     bad_urls[k] = v
                 except urllib2.HTTPError, e:
-                    logger.error("URL of {0}: [{1}] {2}".format(k, e.code, e.reason))
+                    if 300 <= e.code < 400:
+                        # take redirect as "success"
+                        logger.info("URL of {0}: [{1}] {2}".format(k, e.code, e.reason))
+                    else:
+                        logger.error("URL of {0}: [{1}] {2}".format(k, e.code, e.reason))
+                        bad_urls[k] = v
+                except urllib2.URLError, e:
+                    logger.error("URL of {0}: {1}".format(k, e.reason))
                     bad_urls[k] = v
     except Exception:
         raise
