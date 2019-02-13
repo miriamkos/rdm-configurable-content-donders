@@ -115,7 +115,7 @@ html_theme_options = {
     'narrow_sidebar_link'    : "",
     'note_bg'                : "#8bcbeb",
     'note_border'            : "#16acdd",
-    'font_size'              : "14px",
+    'font_size'              : "16px",
     'caption_font_size'      : '20px',
     'code_font_size'         : '0.9em',
     'code_font_family'       : "'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace",
@@ -202,3 +202,6 @@ texinfo_documents = [
      'Miscellaneous'),
 ]
 
+# the setup function to add extra css file to the HTML
+def setup(app):
+    app.add_stylesheet('webportal.css')

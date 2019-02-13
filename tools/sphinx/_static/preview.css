@@ -1,0 +1,7 @@
+/*
+ * This customized css is for previewing HTML document locally and on RTD.
+ */
+pre {
+    white-space: pre-wrap;
+    word-break: keep-all;
+}
