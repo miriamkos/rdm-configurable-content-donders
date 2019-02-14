@@ -31,8 +31,8 @@
   "collections.header" : "/doc/help/faq/deposit-data.html",
 
   "editCollectionModal.form.dataUseAgreementId": "/doc/dua/index.html",
-  "editCollectionModal.form.ethicalApprovalsBorder" : "/doc/help/faq/ethics-privacy.html",
-  "editCollectionModal.form.ethicalApprovalsLabel" : "/doc/help/faq/ethics-privacy.html",
+  "editCollectionModal.form.ethicalApprovalsBorder" : "/doc/help/faq/ethics-privacy.html#faq-ethical-approval-identifier",
+  "editCollectionModal.form.ethicalApprovalsLabel" : "/doc/help/faq/ethics-privacy.html#faq-ethical-approval-identifier",
   "editCollectionModal.form.meshKeywordsBorder" : "/doc/help/faq/edit-collection-metadata.html#faq-keyword-mesh",
   "editCollectionModal.form.meshKeywordsLabel" : "/doc/help/faq/edit-collection-metadata.html#faq-keyword-mesh",
   "editCollectionModal.form.sfnKeywordsBorder" : "/doc/help/faq/edit-collection-metadata.html#faq-keyword-sfn",
