@@ -94,12 +94,11 @@ if __name__ == "__main__":
                 logger.warn("file or dir for {}: SKIPPED".format(v))
                 continue
 
-            #if re.match('.*urlPrefix$', v):
-            #    # ignore checking the urlPrefix
-            #    logger.warn("url prefix for {}: SKIPPED".format(v))
-            #    continue
-
             if re.match('^%s' % args.url_prefix, v):
+
+                # remove the possible anchor part
+                v = v.split('#')[0]
+
                 # the URL matches url_prefix, should just check whether the file is provided by the package
                 rel_fname = os.path.relpath(v, args.url_prefix)
 
