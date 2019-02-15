@@ -19,7 +19,8 @@
         "user.researcherId.urlPrefix",
         "user.openResearcherAndContributorId.urlPrefix",
         "collection.mesh2015Keyword.urlPrefix",
-        "collection.requestaccess"
+        "collection.requestaccess",
+        "collection.publishing"
     ],
     "properties": {
         "controlledVocabularies": { "type": "string" },

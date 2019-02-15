@@ -55,6 +55,7 @@
   "login.authenticationHash.success.message": "/doc/login/hashSignInSuccess.html",
   "login.authenticationHash.failed.message": "/doc/login/hashSignInFailed.html",
 
+  "collection.publishing" : "/doc/collection/publishing.html",
   "collection.tab.metadata.loggedin" : "/doc/collection/metadata_loggedin.html",
   "collection.tab.metadata.anonymous" : "/doc/collection/metadata_anonymous.html",
   "collection.tab.files.loggedin" : "/doc/collection/files_loggedin.html",
