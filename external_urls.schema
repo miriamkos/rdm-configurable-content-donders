@@ -20,7 +20,8 @@
         "user.openResearcherAndContributorId.urlPrefix",
         "collection.mesh2015Keyword.urlPrefix",
         "collection.requestaccess",
-        "collection.publishing"
+        "collection.publish.publishing",
+        "collection.publish.readme"
     ],
     "properties": {
         "controlledVocabularies": { "type": "string" },
