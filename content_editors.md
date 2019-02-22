@@ -100,6 +100,10 @@ Supported snippets are listed below:
 
 * [doc/email/managerLessCollectionsLeadText.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/email/managerLessCollectionsLeadText.html) provides leading message of the notification email concerning manager-less collections.
 
+* [doc/collection/publish/publishing.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/collection/publish/publishing.html) contains text informing user the collection is being published.
+
+* [doc/collection/publish/readme.txt](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/collection/publish/readme.txt) contains the readme file to be added to a collection when published.
+
 * [doc/dua/\*.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/dua/RU-DI-HD-1.0.html) provides contents of a specific data use agreement.
 
 ### styles
@@ -127,6 +131,7 @@ The following variables are supported, which is a combination of variables that 
 |`collectionRdcDraftCount`|| Number of Research Documentation Collections that have not been archived |
 |`collectionSizeTotal`|| Total size of all collections in the repository |
 |`downloadLink`|[doc/downloadcontent.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/downloadcontent.html)|Link to download the Collection's content |
+|`collectionPersistentIdentifier`|[doc/collection/publish/readme.txt](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/collection/publish/readme.txt)|Persistent identifier link to access the collection's metadata |
 
 Please be aware that when using variables that do not exist within a certain context the system will not be able to present the corresponding page on the web portal, or send out corresponding emails.
 
