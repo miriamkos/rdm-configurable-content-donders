@@ -15,7 +15,7 @@ VOC_PUBLICATION_SYSTEM=doc/publication/publication_system.json
 CMS_EXT_RSRC_IDX=external_urls.json
 CMS_SNIPPETS_MD=$(patsubst %.md,%.html,$(wildcard doc/privacy/*.md))
 CMS_SNIPPETS_HTML=$(wildcard doc/privacy/*.html doc/*.html doc/email/*.html doc/messages/*.html doc/changestate/*.html doc/login/*.html doc/editcollection/*.html doc/collection/*.html doc/collection/publish/*.html)
-COLL_README_TXT=doc/collection/publish/readme.txt
+COLL_README_TXT=doc/collection/publish/README.txt
 
 #the directory containing help documentations in RST format
 DIR_HELPDOC=doc/help
