@@ -100,6 +100,8 @@ Supported snippets are listed below:
 
 * [doc/email/managerLessCollectionsLeadText.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/email/managerLessCollectionsLeadText.html) provides leading message of the notification email concerning manager-less collections.
 
+* [doc/collection/publish/files_reserved.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/collection/publish/files_reserved.html) contains text informing user the collection could not be published because it has reserved files.
+
 * [doc/collection/publish/publishing.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/collection/publish/publishing.html) contains text informing user the collection is being published.
 
 * [doc/collection/publish/readme.txt](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/collection/publish/readme.txt) contains the readme file to be added to a collection when published.
@@ -132,6 +134,8 @@ The following variables are supported, which is a combination of variables that 
 |`collectionSizeTotal`|| Total size of all collections in the repository |
 |`downloadLink`|[doc/downloadcontent.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/downloadcontent.html)|Link to download the Collection's content |
 |`collectionPersistentIdentifier`|[doc/collection/publish/readme.txt](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/collection/publish/readme.txt)|Persistent identifier link to access the collection's metadata |
+|`readmeFile`|[doc/collection/publish/reserved_files.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/collection/publish/files_reserved.html)|Name of the readme file which is created when a collection is published |
+|`licenseFile`|[doc/collection/publish/files_reserved.html](https://github.com/donders-research-data-management/rdm-configurable-content-donders/blob/master/doc/collection/publish/files_reserved.html)|Name of the license file that contains the data use agreement which is created when a collection is published |
 
 Please be aware that when using variables that do not exist within a certain context the system will not be able to present the corresponding page on the web portal, or send out corresponding emails.
 

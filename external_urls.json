@@ -64,6 +64,7 @@
   "collection.tab.manifest.loggedin" : "/doc/collection/manifest_loggedin.html",
   "collection.tab.manifest.anonymous" : "/doc/collection/manifest_anonymous.html",
 
+  "collection.publish.filesReserved" : "/doc/collection/publish/files_reserved.html",
   "collection.publish.publishing" : "/doc/collection/publish/publishing.html",
   "collection.publish.readme" : "/doc/collection/publish/README.txt"
 }
