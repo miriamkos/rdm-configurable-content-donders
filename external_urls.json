@@ -65,6 +65,6 @@
   "collection.tab.manifest.anonymous" : "/doc/collection/manifest_anonymous.html",
 
   "collection.publish.filesReserved" : "/doc/collection/publish/files_reserved.html",
-  "collection.publish.publishing" : "/doc/collection/publish/publishing.html",
+  "collection.publish.beingPublished" : "/doc/collection/publish/being_published.html",
   "collection.publish.readme" : "/doc/collection/publish/README.txt"
 }
