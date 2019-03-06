@@ -1,6 +1,6 @@
 # Citation
 
-${collectionAuthors} (${publicationYear}).
+${collectionAuthors} (${collectionPublicationYear}).
 ${collectionTitle} [Data set].
 ${collectionPersistentIdentifier}.
 
