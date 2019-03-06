@@ -22,9 +22,10 @@
         "collection.requestaccess",
         "collection.publish.filesReserved",
         "collection.publish.beingPublished",
-        "collection.publish.readme"
+        "collection.publish.readme",
+        "collection.archive.beingArchived"
     ],
-    "properties": {
+"properties": {
         "controlledVocabularies": { "type": "string" },
         "dataUseAgreement": { "type": "string" },
         "publicationSystems": { "type": "string" },
