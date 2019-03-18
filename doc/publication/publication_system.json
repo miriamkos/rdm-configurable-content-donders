@@ -1,37 +1,37 @@
 [
    {
+      "scheme":"DOI",
       "system":"Digital object identifier",
-      "pidType":"DOI",
       "urlPrefix":"https://doi.org/"
    },
    {
+      "scheme":"ePIC",
       "system":"European persistent identifier consortium",
-      "pidType":"ePIC",
       "urlPrefix":"http://hdl.handle.net/"
    },
    {
+      "scheme":"handle",
       "system":"Handle persistent identifier",
-      "pidType":"handle",
       "urlPrefix":"http://hdl.handle.net/"
    },
    {
+      "scheme":"PMID",
       "system":"PubMed",
-      "pidType":"PMID",
       "urlPrefix":"http://www.ncbi.nlm.nih.gov/pubmed/"
    },
    {
+      "scheme":"arXiv",
       "system":"arXiv.org: e-print archive",
-      "pidType":"arXiv",
       "urlPrefix":"http://arxiv.org/abs/"
    },
    {
+      "scheme":"ISBN",
       "system":"International Standard Book Number",
-      "pidType":"ISBN",
       "urlPrefix":null
    },
    {
+      "scheme":"URL",
       "system":"Uniform Resource Identifier",
-      "pidType":"URL",
       "urlPrefix":null
    }
 ]
