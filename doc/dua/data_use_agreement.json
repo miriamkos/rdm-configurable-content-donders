@@ -2,7 +2,6 @@
    {
      "id":"RU-DI-HD-1.0",
      "name":"Radboud University - Donders Institute - Human Data 1.0",
-     "path":"/doc/dua/RU-DI-HD-1.0.html",
      "pathHtml":"/doc/dua/RU-DI-HD-1.0.html",
      "pathPlainText":"/doc/dua/RU-DI-HD-1.0.txt",
      "filesAnonymousAccess":false
@@ -10,7 +9,6 @@
    {
      "id":"RU-DI-NH-1.0",
      "name":"Radboud University - Donders Institute - Non-Human Data 1.0",
-     "path":"/doc/dua/RU-DI-NH-1.0.html",
      "pathHtml":"/doc/dua/RU-DI-NH-1.0.html",
      "pathPlainText":"/doc/dua/RU-DI-NH-1.0.txt",
      "filesAnonymousAccess":false
@@ -18,7 +16,6 @@
    {
       "id":"ODC-BY-1.0",
       "name":"OpenDataCommons Attribution License",
-      "path":"/doc/dua/ODC-BY-1.0.html",
       "pathHtml":"/doc/dua/ODC-BY-1.0.html",
       "pathPlainText":"/doc/dua/ODC-BY-1.0.txt",
       "filesAnonymousAccess":true
@@ -26,7 +23,6 @@
    {
       "id":"ODC-ODbL-1.0",
       "name":"OpenDataCommons Open Database License",
-      "path":"/doc/dua/ODC-ODbL-1.0.html",
       "pathHtml":"/doc/dua/ODC-ODbL-1.0.html",
       "pathPlainText":"/doc/dua/ODC-ODbL-1.0.txt",
       "filesAnonymousAccess":true
@@ -34,7 +30,6 @@
    {
       "id":"ODC-PDDL-1.0",
       "name":"OpenDataCommons Public Domain Dedication & Licence",
-      "path":"/doc/dua/ODC-PDDL-1.0.html",
       "pathHtml":"/doc/dua/ODC-PDDL-1.0.html",
       "pathPlainText":"/doc/dua/ODC-PDDL-1.0.txt",
       "filesAnonymousAccess":true
@@ -42,7 +37,6 @@
    {
       "id":"CC0-1.0",
       "name":"CreativeCommons Zero 1.0 Public Domain Dedication",
-      "path":"/doc/dua/CC0-1.0.html",
       "pathHtml":"/doc/dua/CC0-1.0.html",
       "pathPlainText":"/doc/dua/CC0-1.0.txt",
       "filesAnonymousAccess":true
@@ -50,7 +44,6 @@
    {
       "id":"CC-BY-4.0",
       "name":"CreativeCommons Attribution 4.0 International",
-      "path":"/doc/dua/CC-BY-4.0.html",
       "pathHtml":"/doc/dua/CC-BY-4.0.html",
       "pathPlainText":"/doc/dua/CC-BY-4.0.txt",
       "filesAnonymousAccess":true
@@ -58,7 +51,6 @@
    {
       "id":"CC-BY-ND-4.0",
       "name":"CreativeCommons Attribution-NoDerivatives 4.0 International",
-      "path":"/doc/dua/CC-BY-ND-4.0.html",
       "pathHtml":"/doc/dua/CC-BY-ND-4.0.html",
       "pathPlainText":"/doc/dua/CC-BY-ND-4.0.txt",
       "filesAnonymousAccess":true
@@ -66,7 +58,6 @@
    {
       "id":"CC-BY-SA-4.0",
       "name":"CreativeCommons Attribution-ShareAlike 4.0 International",
-      "path":"/doc/dua/CC-BY-SA-4.0.html",
       "pathHtml":"/doc/dua/CC-BY-SA-4.0.html",
       "pathPlainText":"/doc/dua/CC-BY-SA-4.0.txt",
       "filesAnonymousAccess":true
@@ -74,7 +65,6 @@
    {
       "id":"CC-BY-NC-4.0",
       "name":"CreativeCommons Attribution-NonCommercial 4.0 International",
-      "path":"/doc/dua/CC-BY-NC-4.0.html",
       "pathHtml":"/doc/dua/CC-BY-NC-4.0.html",
       "pathPlainText":"/doc/dua/CC-BY-NC-4.0.txt",
       "filesAnonymousAccess":true
@@ -82,7 +72,6 @@
    {
       "id":"CC-BY-NC-ND-4.0",
       "name":"CreativeCommons Attribution-NonCommercial-NoDerivatives 4.0 International",
-      "path":"/doc/dua/CC-BY-NC-ND-4.0.html",
       "pathHtml":"/doc/dua/CC-BY-NC-ND-4.0.html",
       "pathPlainText":"/doc/dua/CC-BY-NC-ND-4.0.txt",
       "filesAnonymousAccess":true
@@ -90,7 +79,6 @@
    {
       "id":"CC-BY-NC-SA-4.0",
       "name":"CreativeCommons Attribution-NonCommercial-ShareAlike 4.0 International",
-      "path":"/doc/dua/CC-BY-NC-SA-4.0.html",
       "pathHtml":"/doc/dua/CC-BY-NC-SA-4.0.html",
       "pathPlainText":"/doc/dua/CC-BY-NC-SA-4.0.txt",
       "filesAnonymousAccess":true
@@ -98,7 +86,6 @@
    {
       "id":"GPL-2.0",
       "name":"GNU General Public License v2.0",
-      "path":"/doc/dua/GPL-2.0.html",
       "pathHtml":"/doc/dua/GPL-2.0.html",
       "pathPlainText":"/doc/dua/GPL-2.0.txt",
       "filesAnonymousAccess":true
@@ -106,7 +93,6 @@
    {
       "id":"GPL-3.0",
       "name":"GNU General Public License v3.0",
-      "path":"/doc/dua/GPL-3.0.html",
       "pathHtml":"/doc/dua/GPL-3.0.html",
       "pathPlainText":"/doc/dua/GPL-3.0.txt",
       "filesAnonymousAccess":true
@@ -114,7 +100,6 @@
    {
       "id":"LGPL-3.0",
       "name":"GNU Lesser General Public License v3.0",
-      "path":"/doc/dua/LGPL-3.0.html",
       "pathHtml":"/doc/dua/LGPL-3.0.html",
       "pathPlainText":"/doc/dua/LGPL-3.0.txt",
       "filesAnonymousAccess":true
@@ -122,7 +107,6 @@
    {
       "id":"APACHE-2.0",
       "name":"Apache License 2.0",
-      "path":"/doc/dua/APACHE-2.0.html",
       "pathHtml":"/doc/dua/APACHE-2.0.html",
       "pathPlainText":"/doc/dua/APACHE-2.0.txt",
       "filesAnonymousAccess":true
@@ -130,7 +114,6 @@
    {
       "id":"ARTISTIC-2.0",
       "name":"Artistic License 2.0",
-      "path":"/doc/dua/ARTISTIC-2.0.html",
       "pathHtml":"/doc/dua/ARTISTIC-2.0.html",
       "pathPlainText":"/doc/dua/ARTISTIC-2.0.txt",
       "filesAnonymousAccess":true
@@ -138,7 +121,6 @@
    {
       "id":"BSD",
       "name":"BSD 2-clause \"Simplified\" License",
-      "path":"/doc/dua/BSD.html",
       "pathHtml":"/doc/dua/BSD.html",
       "pathPlainText":"/doc/dua/BSD.txt",
       "filesAnonymousAccess":true
@@ -146,7 +128,6 @@
    {
       "id":"EPL-1.0",
       "name":"Eclipse Public License 1.0",
-      "path":"/doc/dua/EPL-1.0.html",
       "pathHtml":"/doc/dua/EPL-1.0.html",
       "pathPlainText":"/doc/dua/EPL-1.0.txt",
       "filesAnonymousAccess":true
@@ -154,7 +135,6 @@
    {
       "id":"MIT",
       "name":"MIT License",
-      "path":"/doc/dua/MIT.html",
       "pathHtml":"/doc/dua/MIT.html",
       "pathPlainText":"/doc/dua/MIT.txt",
       "filesAnonymousAccess":true
@@ -162,7 +142,6 @@
    {
       "id":"MPL-2.0",
       "name":"Mozilla Public License 2.0",
-      "path":"/doc/dua/MPL-2.0.html",
       "pathHtml":"/doc/dua/MPL-2.0.html",
       "pathPlainText":"/doc/dua/MPL-2.0.txt",
       "filesAnonymousAccess":true
@@ -170,7 +149,6 @@
    {
       "id":"ISC",
       "name":"ISC License",
-      "path":"/doc/dua/MIT.html",
       "pathHtml":"/doc/dua/MIT.html",
       "pathPlainText":"/doc/dua/MIT.txt",
       "filesAnonymousAccess":true
@@ -178,7 +156,6 @@
    {
       "id":"PD",
       "name":"Public Domain",
-      "path":"/doc/dua/PD.html",
       "pathHtml":"/doc/dua/PD.html",
       "pathPlainText":"/doc/dua/PD.txt",
       "filesAnonymousAccess":true

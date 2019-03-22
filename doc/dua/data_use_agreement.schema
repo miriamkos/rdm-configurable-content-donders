@@ -16,10 +16,6 @@
                  "description": "Full name of the Data Use Agreement",
                  "type": "string"
              },
-            "path": {
-                 "description": "Content of the Data Use Agreement",
-                 "type": "string"
-             },
             "pathHtml": {
                  "description": "Content of the Data Use Agreement in HTML format",
                  "type": "string"
@@ -31,7 +27,7 @@
             "filesAnonymousAccess": {
                  "description": "Indicates whether this DUA allows anonymous file access",
                  "type": "boolean"
-             }               
+             }
         }
     }
 }
