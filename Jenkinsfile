@@ -8,6 +8,8 @@ node {
         stage('Build') {
             sh 'echo "Git hash: `git rev-parse --verify HEAD` , Build on `date`" > build.txt'
             sh "make dist"
+            sh "docker-compose build"
+            sh "docker-compose push"
         }
 
         stage('Archive') {

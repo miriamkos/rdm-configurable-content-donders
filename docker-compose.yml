@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  rdm-configurable-content:
+    build: .
+    image: docker.platbuik.uci.ru.nl/donders/rdm-configurable-content:latest
+    container_name: rdm-configurable-content
+    logging:
+      options:
+       max-size: "20m"
+       max-file: "2"
+    restart: unless-stopped
+    ports:
+      - 8082:80
+    networks:
+      - rdm-network
+networks:
+  rdm-network:
+    external: true
